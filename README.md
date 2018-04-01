@@ -1,5 +1,6 @@
 # DrumsUI
-A custom interface for EverQuest 2. Originally created and maintained until I (Drumstix42) stopped playing ~2015.
+A custom interface for EverQuest 2. Originally created and maintained by **Drumstix42**.
+Continued support from the community, with the main contributor and maintenance by EQ2i user **Blackhood**!
 
 # Updater
 EQ2Interface link: http://www.eq2interface.com/downloads/info4965-DrumsUIUpdater.html
