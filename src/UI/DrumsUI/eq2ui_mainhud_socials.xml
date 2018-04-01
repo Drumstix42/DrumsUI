@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="517,298" Name="Socials" OnShow="SetMacroPage.press=true" ScrollExtent="316,311" Size="316,311" UserMovable="true">
+    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="14,7" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="133,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="133,20" TextAlignmentVertical="Center" TextColor="#F0D080">:9d797bef58e17e0a:Socials</Text>
+    <Button Name="SetMacroPage" OnPress="Parent.WindowFrame.TabPane.ActiveTab=1&#xD;&#xA;Parent.OnShow=&apos; &apos;" Visible="false" />
+    <ImageStyle Filter="true" Name="voiceImage">
+        <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="122,202,137,217" />
+    </ImageStyle>
+    <DataSource Name="TabSource">
+        <Data Name="Emotes" target="MainTabPage.EmotesPage" text=":9d797bef9131eec2:Emotes" />
+        <Data Name="Macros" target="MainTabPage.MacrosPage" text=":9d797bef0c26aa2e:Macros" />
+    </DataSource>
+    <Page Location="2,31" Name="MainTabPage" PackLocation="left,top" RStyleMouseOver=" " RStyleMouseOverActivated=" " RStyleMouseOverSelected=" " RStyleSelected=" " ScrollExtent="314,278" Size="314,278">
+        <Page AbsorbsInput="false" Enabled="false" Location="-1,-2" Name="EmotesPage" ScrollExtent="317,280" Size="317,280" Visible="false">
+            <Page Location="5,9" Name="Entry0" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="46,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="53,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3:Dance like a fool</Text>
+            </Page>
+            <Page Location="5,55" Name="Entry1" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="46,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="53,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3_1:Dance like a fool</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="5,101" Name="Entry2" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="46,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="53,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3_2:Dance like a fool</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="5,147" Name="Entry3" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="46,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="53,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3_3:Dance like a fool</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="5,193" Name="Entry4" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="46,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="53,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3_4:Dance like a fool</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="156,9" Name="Entry5" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="93,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="1,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3_5:Dance like a fool</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="109,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="156,55" Name="Entry6" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="93,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="1,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3_6:Dance like a fool</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="109,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="156,101" Name="Entry7" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="93,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="1,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3_7:Dance like a fool</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="109,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="156,147" Name="Entry8" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="93,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="1,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3_8:Dance like a fool</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="109,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="156,193" Name="Entry9" ScrollExtent="155,48" Size="155,48">
+                <Image AbsorbsInput="false" Location="93,2" Name="Voice" PackLocation="left,bottom" ScrollExtent="15,15" Size="15,15" Style="voiceImage" />
+                <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="1,6" Name="Name" ScrollExtent="102,34" ShadowStyle="/ShadowStylesNew.Drop.style" Size="102,34" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797befdc193be3_9:Dance like a fool</Text>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="109,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Button Location="2,246" Name="Previous" ScrollExtent="75,30" Size="75,30" Style="/CommonElements.PushButton.data.style">:9d797bef04460075:Previous</Button>
+            <Button Location="239,246" Name="Next" ScrollExtent="75,30" Size="75,30" Style="/CommonElements.PushButton.data.style">:9d797bef5be240fd:Next</Button>
+            <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="104,253" Name="PageText" ScrollExtent="106,17" ShadowStyle="/ShadowStylesNew.Drop.style" Size="106,17" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797bef21ec01bd:Page 1 of 10</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="-1,-2" Name="MacrosPage" ScrollExtent="317,280" Size="317,280">
+            <ButtonStyle DisabledTextColor="#AEAF9C" DisabledTextStyle="/Fonts.FontZapf15" MouseOverTextColor="#ECDDA4" MouseOverTextStyle="/Fonts.FontZapf15" Name="bright_textonly_button_right" NormalTextColor="#FAF9F5" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/Fonts.FontZapf15" PressedTextColor="#FFFC8C" PressedTextStyle="/Fonts.FontZapf15" RStyleActivated="textonly_button_dummy_image" RStyleDefault="textonly_button_dummy_image" RStyleDisabled="textonly_button_dummy_image" RStyleMouseOver="textonly_button_dummy_image" RStyleMouseOverSelected="textonly_button_dummy_image" RStyleSelected="textonly_button_dummy_image" SelectedTextStyle="/Fonts.FontZapf15" TextAlignment="Right" />
+            <ButtonStyle DisabledTextColor="#AEAF9C" DisabledTextStyle="/Fonts.FontZapf15" MouseOverTextColor="#E9DCA7" MouseOverTextStyle="/Fonts.FontZapf15" Name="dull_textonly_button_right" NormalTextColor="#99978E" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/Fonts.FontZapf15" PressedTextStyle="/Fonts.FontZapf15" RStyleActivated="textonly_button_dummy_image" RStyleDefault="textonly_button_dummy_image" RStyleDisabled="textonly_button_dummy_image" RStyleMouseOver="textonly_button_dummy_image" RStyleMouseOverSelected="textonly_button_dummy_image" RStyleSelected="textonly_button_dummy_image" SelectedTextStyle="/Fonts.FontZapf15" TextAlignment="Right" />
+            <ButtonStyle DisabledTextColor="#AEAF9C" DisabledTextStyle="/Fonts.FontZapf15" MouseOverTextColor="#ECDDA4" MouseOverTextStyle="/Fonts.FontZapf15" Name="bright_textonly_button_left" NormalTextColor="#FAF9F5" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/Fonts.FontZapf15" PressedTextColor="#FFFC8C" PressedTextStyle="/Fonts.FontZapf15" RStyleActivated="textonly_button_dummy_image" RStyleDefault="textonly_button_dummy_image" RStyleDisabled="textonly_button_dummy_image" RStyleMouseOver="textonly_button_dummy_image" RStyleMouseOverSelected="textonly_button_dummy_image" RStyleSelected="textonly_button_dummy_image" SelectedTextStyle="/Fonts.FontZapf15" TextAlignment="Left" />
+            <ButtonStyle DisabledTextColor="#AEAF9C" DisabledTextStyle="/Fonts.FontZapf15" MouseOverTextColor="#E9DCA7" MouseOverTextStyle="/Fonts.FontZapf15" Name="dull_textonly_button_left" NormalTextColor="#99978E" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/Fonts.FontZapf15" PressedTextStyle="/Fonts.FontZapf15" RStyleActivated="textonly_button_dummy_image" RStyleDefault="textonly_button_dummy_image" RStyleDisabled="textonly_button_dummy_image" RStyleMouseOver="textonly_button_dummy_image" RStyleMouseOverSelected="textonly_button_dummy_image" RStyleSelected="textonly_button_dummy_image" SelectedTextStyle="/Fonts.FontZapf15" TextAlignment="Left" />
+            <Page Location="5,9" Name="Entry0" ScrollExtent="157,48" Size="157,48">
+                <Button BackgroundOpacity="0.000" Location="50,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_left" TextMaxLines="2">:9d797befe8f38e02:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="5,55" Name="Entry1" ScrollExtent="157,48" Size="157,48">
+                <Button BackgroundOpacity="0.000" Location="50,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_left" TextMaxLines="2">:9d797befe8f38e02_1:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="5,101" Name="Entry2" ScrollExtent="157,48" Size="157,48">
+                <Button BackgroundOpacity="0.000" Location="50,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_left" TextMaxLines="2">:9d797befe8f38e02_2:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="5,147" Name="Entry3" ScrollExtent="157,48" Size="157,48">
+                <Button BackgroundOpacity="0.000" Location="50,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_left" TextMaxLines="2">:9d797befe8f38e02_3:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="5,193" Name="Entry4" ScrollExtent="157,48" Size="157,48">
+                <Button BackgroundOpacity="0.000" Location="50,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_left" TextMaxLines="2">:9d797befe8f38e02_4:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="3,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="153,9" Name="Entry5" ScrollExtent="158,48" Size="158,48">
+                <Button BackgroundOpacity="0.000" Location="1,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_right" TextMaxLines="2">:9d797befe8f38e02_5:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="111,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="153,55" Name="Entry6" ScrollExtent="158,48" Size="158,48">
+                <Button BackgroundOpacity="0.000" Location="1,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_right" TextMaxLines="2">:9d797befe8f38e02_6:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="111,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="153,101" Name="Entry7" ScrollExtent="158,48" Size="158,48">
+                <Button BackgroundOpacity="0.000" Location="1,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_right" TextMaxLines="2">:9d797befe8f38e02_7:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="111,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="153,147" Name="Entry8" ScrollExtent="158,48" Size="158,48">
+                <Button BackgroundOpacity="0.000" Location="1,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_right" TextMaxLines="2">:9d797befe8f38e02_8:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="111,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Page Location="153,193" Name="Entry9" ScrollExtent="158,48" Size="158,48">
+                <Button BackgroundOpacity="0.000" Location="1,6" Name="Button" PackLocation="proportional,proportional" ScrollExtent="107,34" Size="107,34" Style="dull_textonly_button_right" TextMaxLines="2">:9d797befe8f38e02_9:(Click to edit)</Button>
+                <Icon BackgroundTint="#000000" Dragable="true" IconStyle="/IconStyles.button" Location="111,3" MouseOverColor="#FFFF00" Name="Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+            </Page>
+            <Button Location="2,246" Name="Previous" ScrollExtent="75,30" Size="75,30" Style="/CommonElements.PushButton.data.style">:9d797bef04460075_1:Previous</Button>
+            <Button Location="239,246" Name="Next" ScrollExtent="75,30" Size="75,30" Style="/CommonElements.PushButton.data.style">:9d797bef5be240fd_1:Next</Button>
+            <Text AbsorbsInput="false" Color="#F1E8DA" Font="/Fonts.FontZapf15" Location="104,253" Name="PageText" ScrollExtent="106,17" ShadowStyle="/ShadowStylesNew.Drop.style" Size="106,17" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:9d797bef21ec01bd_1:Page 1 of 10</Text>
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="340,327" Size="340,327">
+        <Button Location="308,6" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":9d797bef2d3f513f:Close" UserMovable="true" />
+        <TabbedPane ActiveTab="1" DataSource="TabSource" Location="146,4" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="181,36" Size="181,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="MainTabPage" />
+        <Page AbsorbsInput="false" Location="150,0" Name="RightGrouper" PackLocation="right,top" ScrollExtent="190,70" Size="190,70" />
+        <Page AbsorbsInput="false" Name="LeftGrouper" ScrollExtent="300,70" Size="300,70" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,-1" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="320,316" Size="320,316" />
+        <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="0,-32" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="340,70" Size="340,70" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,7" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="340,320" Size="340,320" />
+    </Page>
+</Page>

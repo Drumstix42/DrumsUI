@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="959,690" MaximumSize="65,77" MinimumSize="65,62" Name="Clock" PackLocation="right,bottom" ScrollExtent="65,77" Size="65,77" UserMovable="true" UserResizable="true" version="1.0.1" version_note="AbsorbsInput=false everywhere">
+    <Text DynamicData="/GameData.General.EarthTime" Font="/TextStyles.Normal.NormalStyle" Location="4,54" Margin="1,1,1,1" MaxLines="1" Name="Time" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="59,19" ShadowStyle="/ShadowStylesNew.Outline.style" Size="59,19" TextAlignment="Center">99:99</Text>
+    <Image AbsorbsInput="false" BoundaryPolygon="26.000,1.000,10.000,6.000,0.000,26.000,8.000,47.000,26.000,53.000,45.000,45.000,53.000,27.000,47.000,9.000" Enabled="false" GetsInput="true" Location="8,7" Name="Frame" ScrollExtent="52,50" Size="52,50" SourceRect="362,234,417,289" SourceResource="images/specialelements.dds" />
+    <Image AbsorbsInput="false" GetsInput="true" Location="13,31" Name="Foreground" ScrollExtent="42,23" Size="42,23" SourceRect="302,374,347,402" SourceResource="images/specialelements.dds" />
+    <Image AbsorbsInput="false" GetsInput="true" Location="13,13" Name="Dial" Rotation="-0.190" ScrollExtent="43,41" Size="43,41" SourceRect="248,371,295,418" SourceResource="images/specialelements.dds" />
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="65,77" Size="65,77">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="65,77" Size="65,77" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="62,73" Size="62,73" />
+    </Page>
+</Page>

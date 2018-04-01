@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="864,681" MaximumSize="172,100" MinimumSize="94,52" Name="Compass" PackLocation="right,bottom" ScrollExtent="94,85" Size="94,85" UserMovable="true" UserResizable="true" version="1.0.1" version_note="AbsorbsInput=false everywhere">
+    <Checkbox Location="4,47" Name="InventoryToggle" OnPress="Parent.ZoneLocalName.visible=(!Parent.ZoneLocalName.visible)&#xD;&#xA;Parent.ZoneLocation.visible=(!Parent.ZoneLocation.visible)" PackLocation="left,top" PackSize="a,a" ScrollExtent="86,33" Size="86,33" Tooltip="Toggle Location" />
+    <Text AbsorbsInput="false" DynamicData="/GameData.Self.ZoneLocaleName" Font="/TextStyles.Normal.NormalStyle" Location="4,47" Margin="1,1,1,1" MaxLines="3" Name="ZoneLocalName" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="86,33" ShadowStyle="/ShadowStylesNew.Outline.style" Size="86,33" TextAlignment="Center" />
+    <Text AbsorbsInput="false" DynamicData="/GameData.Self.Location" Font="/TextStyles.Normal.NormalStyle" Location="4,47" Margin="1,1,1,1" MaxLines="3" Name="ZoneLocation" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="86,33" ShadowStyle="/ShadowStylesNew.Outline.style" Size="86,33" TextAlignment="Center" Visible="false" />
+    <Page AbsorbsInput="false" Location="4,7" Name="Frame" PackLocation="left,top" PackSize="absolute" ScrollExtent="86,41" Size="86,41" Tooltip=":6a39fef89bc1f3d8:Bob was here">
+        <Image AbsorbsInput="false" Location="28,28" Name="BottomOrnament" PackLocation="proportional,bottom" ScrollExtent="26,14" Size="26,14" SourceRect="185,157,211,171" SourceResource="images/specialelements.dds" />
+        <Image AbsorbsInput="false" Location="28,-2" Name="TopOrnament" PackLocation="proportional,top" ScrollExtent="26,12" Size="26,12" SourceRect="185,144,211,156" SourceResource="images/specialelements.dds" />
+        <Image AbsorbsInput="false" Location="76,5" Name="RightOrnament" PackLocation="right,proportional" ScrollExtent="10,26" Size="10,26" SourceRect="171,145,181,171" SourceResource="images/specialelements.dds" />
+        <Image AbsorbsInput="false" Location="0,5" Name="LeftOrnament" PackLocation="left,proportional" ScrollExtent="10,26" Size="10,26" SourceRect="160,145,170,171" SourceResource="images/specialelements.dds" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.Compass.data.frame.rect" ScrollExtent="86,41" Size="86,41" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Glass" PackSize="absolute,absolute" RStyleDefault="/SpecialElements.Compass.data.glass.rect" ScrollExtent="86,41" Size="86,41" />
+    </Page>
+    <Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="8,18" Name="CropPage" PackLocation="left,top" PackSize="absolute" ScrollExtent="77,20" Size="77,20">
+        <Page AbsorbsInput="false" Location="-216,0" Name="ScrollPage" PackLocation="cfc,fixed" PackSize="fixed,fixed" ScrollExtent="475,22" Size="475,22">
+            <Image AbsorbsInput="false" Location="117,0" Name="CompassDirections_Mid" ScrollExtent="157,22" Size="157,22" SourceRect="4,196,164,218" SourceResource="images/specialelements.dds" Style=" " />
+            <Image AbsorbsInput="false" Location="274,0" Name="CompassDirections_Right" ScrollExtent="157,22" Size="157,22" SourceRect="4,196,164,218" SourceResource="images/specialelements.dds" Style=" " />
+            <Image AbsorbsInput="false" Location="-40,0" Name="CompassDirections_Left" ScrollExtent="157,22" Size="157,22" SourceRect="4,196,164,218" SourceResource="images/specialelements.dds" Style=" " />
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="4,6" Name="Bkg" PackLocation="left,top" PackSize="absolute" RStyleDefault="/SpecialElements.Compass.data.bkg.rect" ScrollExtent="86,42" Size="86,42" />
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="94,85" Size="94,85">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="94,85" Size="94,85" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="1,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="93,83" Size="93,83" />
+    </Page>
+</Page>

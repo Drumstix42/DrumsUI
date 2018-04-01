@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Based on: Othesus's Browser Favorites
+Recently updated by: konan of EQ2Interface
+**************************************
+Setup your personalized favorites here.
+
+GoFlag="0" is for meu dividers. Otherwise set to GoFlag="1"
+Text is what shows in the Dropdown menu.
+url is the web address.
+**************************************
+-->
+
+    <DataSource Name="FavoritesDS">
+        <Data GoFlag="0" text="Favorites -----" url=" " />
+        <Data GoFlag="1" text="EQ2 Players" url="http://eq2players.station.sony.com" />
+        <Data GoFlag="1" text="EQ2 Forums" url="http://forums.station.sony.com/eq2/" />
+        <Data GoFlag="1" text="Live Update Notes (from Launchpad)" url="https://forums.station.sony.com/eq2/index.php?forums/game-update-notes-live.6/" />
+        <Data GoFlag="1" text="Test Update Notes (from Launchpad)" url="https://forums.station.sony.com/eq2/index.php?forums/in-testing-test-server-updates.7/" />
+        <Data GoFlag="1" text="EQ2Interface" url="http://www.eq2interface.com" />
+        <Data GoFlag="1" text="EQ2i Wiki" url="http://eq2i.com" />
+        <Data GoFlag="1" text="EQ2 ZAM" url="http://eq2.allakhazam.com/" />
+        <Data GoFlag="1" text="The EQ2 Wire" url="http://eq2wire.feldoncentral.com/" />
+		<Data GoFlag="1" text="EQ2 Traders Corner" url="http://eq2.eqtraders.com/articles/news_page.php" />
+		<Data GoFlag="1" text="Chains of Eternity ZAM" url="http://eq2.zam.com/wiki/Chains_of_Eternity" />
+		<Data GoFlag="1" text="EQ2i Chains of Eternity" url="http://eq2.wikia.com/wiki/Category:Chains_of_Eternity" />
+		<Data GoFlag="1" text="A Harvester&apos;s Guide" url="http://eq2.zam.com/wiki/A_Harvester%27s_Guide#Tier_10" />
+		<Data GoFlag="1" text="EQ2flames" url="http://www.eq2flames.com/" />
+		<Data GoFlag="1" text="EQU" url="http://u.eq2wire.com/" />
+		
+        
+        <Data GoFlag="0" text="Utilities -----" url=" " />
+        <Data GoFlag="0" text="Advanced Combat Tracker" url="http://advancedcombattracker.com/" />
+        <Data GoFlag="1" text="EQ2 Loot Database" url="http://www.lootdb.com/" />
+        <Data GoFlag="1" text="EQ2 LLinks" url="http://www.eq2llinks.com/" />
+		<Data GoFlag="1" text="EQ2Mission" url="http://eq2mission.flame.org/" />
+		<Data GoFlag="1" text="EQ2 Slash Commands" url="http://eq2.zam.com/wiki/slash_commands_%28eq2%29" />
+        
+        <Data GoFlag="0" text="Misc -----" url=" " />
+        <Data GoFlag="1" text="Google" url="http://www.google.com/" />
+		<Data GoFlag="1" text="The Noob" url="http://www.thenoobcomic.com/index.php" />
+    </DataSource>

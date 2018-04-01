@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page actiontype="Mercenary" DynamicDataFilter="0005" eq2usescomwndcontrols="true" Location="794,178" MaximumSize="650,139" MinimumSize="167,75" Name="Mercenary" OnHoverIn="Close.visible=true&#xD;&#xA;Minimize.visible=true&#xD;&#xA;UserResizable=true" OnHoverOut="Close.visible=false&#xD;&#xA;Minimize.visible=false" PackLocation="right,bottom" ScrollExtent="167,139" Size="167,139" UserMovable="true" UserResizable="true">
+    <Button Location="145,6" Name="Close" OnPress="togglemerc" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip="Close" UserMovable="true" Visible="false" />
+    <Button Location="129,6" Name="Minimize" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.maximize.style" Tooltip=":949e60501073d3ad:Minimize/Maximize" UserMovable="true" Visible="false" />
+    <Page Location="5,70" Name="Behaviors" PackSize="a,a" ScrollExtent="157,64" Size="157,64">
+        <Dropdownbox BackgroundOpacity="1.000" DataSource="GroupMembersSource" Location="62,3" MaximumSize="65525,65525" MinimumSize="50,20" Name="FollowCombo" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="90,20" Size="90,20" Style="/dropdownlist.dropdown_default" />
+        <Text Color="#F0D090" Font="/TextStyles.Normal.NormalStyle" Location="-12,2" Margin="1,1,2,2" MaximumSize="80,20" MinimumSize="80,20" Name="FollowName" ScrollExtent="80,20" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="80,20" TextAlignment="Center" Tooltip=":949e605088e92746:The person your mercenary will follow.">Follow</Text>
+        <Dropdownbox BackgroundOpacity="1.000" DataSource="GroupMembersSource" Location="62,24" MaximumSize="65525,65525" MinimumSize="50,20" Name="MainTankCombo" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="90,20" Size="90,20" Style="/dropdownlist.dropdown_default" />
+        <Text Color="#F0D090" Font="/TextStyles.Normal.NormalStyle" Location="-12,23" Margin="1,1,2,2" MaximumSize="80,20" MinimumSize="80,20" Name="MTName" ScrollExtent="80,20" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="80,20" TextAlignment="Center" Tooltip=":949e60500732cec9:Priority for your mercenary is to keep this group member alive by protecting it as much as possible.">Protect</Text>
+        <Dropdownbox BackgroundOpacity="1.000" DataSource="GroupMembersSource" Location="62,44" MaximumSize="65535,65535" MinimumSize="50,20" Name="MainAssistCombo" PackSize="a,f" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="90,20" Size="90,20" Style="/dropdownlist.dropdown_default" />
+        <Text Color="#F0D090" Font="/TextStyles.Normal.NormalStyle" Location="-12,43" Margin="1,1,2,2" MaximumSize="80,20" MinimumSize="80,20" Name="MAName" ScrollExtent="80,20" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="80,20" TextAlignment="Center" Tooltip=":949e6050efcaf631:Your mercenary will fight alongside this group member, working to destroy the same target throughout the combat.">Assist</Text>
+    </Page>
+    <DataSource Name="GroupMembersSource">
+        <Data Name="TestMember1" text=":949e605005311487:Zoltaroth" />
+    </DataSource>
+    <Text AbsorbsInput="false" Color="#F0D090" DynamicData="/GameData.Mercenary.Name" Font="/TextStyles.Normal.NormalStyle" Location="3,6" Margin="1,1,2,2" Name="Name" PackLocation="top,left" PackSize="absolute, fixed" ScrollExtent="125,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="125,18" TextAlignment="Center">:f:Mercenary Name</Text>
+    <Text AbsorbsInput="false" actiontype="Target" Color="#00FF40" DynamicData="/GameData.Mercenary.Health" Font="/Fonts.FontZapf15" Location="131,16" MaximumSize="124,17" MaxLines="1" Name="Health" PackLocation="right,top" ScrollExtent="30,16" ShadowStyle="/ShadowStyles.Outline1" Size="30,16" TextAlignment="Right" TruncateElipsis="false">100%</Text>
+    <Text AbsorbsInput="false" actiontype="Target" Color="#6F64FE" DynamicData="/GameData.Mercenary.Power" DynamicDataFilter="FBFF" Font="/Fonts.FontZapf15" Location="131,27" MaximumSize="124,17" MaxLines="1" Name="Power" PackLocation="right,top" PackSize="f,f" ScrollExtent="30,16" ShadowStyle="/ShadowStyles.Outline1" Size="30,16" TextAlignment="Right" TruncateElipsis="false">100%</Text>
+    <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="2,24" Name="Health" PackSize="absolute" ScrollExtent="126,8" Size="126,8">
+        <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Mercenary.Health" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="0.500" ScrollExtent="112,5" Size="112,5" Style="/progressbarlist.progress_default" />
+        <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#440000" Location="7,-1" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="112,10" Size="112,10" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+    </Page>
+    <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="2,31" Name="Power" PackSize="absolute" ScrollExtent="126,8" Size="126,8">
+        <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Mercenary.Power" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="0.750" ScrollExtent="112,4" Size="112,4" Style="/progressbarlist.progress_default" />
+        <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#000044" Location="7,-1" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="112,8" Size="112,8" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+    </Page>
+    <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="2,38" Name="Confidence" PackSize="absolute" ScrollExtent="126,8" Size="126,8">
+        <Progressbar AbsorbsInput="false" Color="#E45AEC" DynamicData="/GameData.Mercenary.Confidence" DynamicDataFilter="FFFB" Location="7,0" Name="Bar" PackSize="absolute,absolute" Progress="0.750" ScrollExtent="112,3" Size="112,3" Style="/progressbarlist.progress_default" />
+        <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Color="#280028" Location="7,-1" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="112,7" Size="112,7" Style="/SpecialElements.GreyscaleVitalBar.data.bkg.style" />
+    </Page>
+    <Page Location="9,26" Name="_Health" PackSize="absolute,fixed" ScrollExtent="114,6" Size="114,6" Visible="false">
+        <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="115,6" Size="115,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+        <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Mercenary.Health" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="95,4" Size="95,4" Style="/progressbarlist.progress_default" />
+        <Image AbsorbsInput="false" BackgroundColor="#440000" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="108,6" Size="108,6" />
+    </Page>
+    <Page Location="9,34" Name="_Power" PackSize="absolute,fixed" ScrollExtent="114,6" Size="114,6" Visible="false">
+        <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="115,6" Size="115,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+        <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Mercenary.Power" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="95,4" Size="95,4" Style="/progressbarlist.progress_default" Visible="false" />
+        <Image AbsorbsInput="false" BackgroundColor="#000044" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="108,6" Size="108,6" />
+    </Page>
+    <Page Location="9,42" Name="_Confidence" PackSize="absolute,fixed" ScrollExtent="114,6" Size="114,6" Visible="false">
+        <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="115,6" Size="115,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+        <Progressbar AbsorbsInput="false" Color="#E45AEC" DynamicData="/GameData.Mercenary.Confidence" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="95,4" Size="95,4" Style="/progressbarlist.progress_default" Visible="false" />
+        <Image AbsorbsInput="false" BackgroundColor="#000044" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="108,6" Size="108,6" />
+    </Page>
+    <VolumePage AbsorbsInput="false" BackgroundColor="#FF0000" CellCount="5,1" CellSelectable="false" CellSize="19,19" Location="11,45" MinimumScrollExtent="107,23" Name="Volume" PackLocation="cfc,top" ScrollExtent="109,24" Size="109,24">
+        <Icon ActionData="command mercenaryAttack" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="2,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Attack" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command mercenaryBackOff" BackgroundTint="#000000" Dragable="true" IconID="11" IconStyle="/IconStyles.button" Location="23,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Backoff" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command mercenaryProtectMe" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="44,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="ProtectMe" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command mercenaryProtectSelf" BackgroundTint="#000000" Dragable="true" IconID="13" IconStyle="/IconStyles.button" Location="65,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="ProtectSelf" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command mercenarySuspend" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="86,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Suspend" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+    </VolumePage>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="167,139" Size="167,139">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="167,139" Size="167,139" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,3" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="162,134" Size="162,134" />
+    </Page>
+</Page>

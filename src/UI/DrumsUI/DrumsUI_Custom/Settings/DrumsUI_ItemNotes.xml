@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page eq2usescomwndcontrols="true" Name="DrumsUI_ItemNotes" OnShow="Location=99999,99999" UserMovable="true" version="1.0">
+<include>POI/drumsui_itemnotes.xml</include>
+</Page>

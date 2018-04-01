@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page eq2usescomwndcontrols="true" Location="315,570" MaximumSize="1000,27" MinimumSize="50,14" Name="Savagery" ScrollExtent="250,18" Size="250,18" UserMovable="true" UserResizable="true">
+    <Text DynamicData="/GameData.Self.SavageryLevel" Font="/TextStyles.Large.LargeStyle" Location="212,0" Name="SavageryLevelText" Opacity="0.900" PackLocation="right,cfc" PackSize="f,f" ScrollExtent="29,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.st" Size="29,18" TextAlignment="Right" TextAlignmentVertical="Center">5</Text>
+    <Text DynamicData="/GameData.Self.Savagery" Font="/TextStyles.Normal.NormalStyle" Location="9,0" Name="SavageryText" Opacity="0.900" PackLocation="left,cfc" PackSize="f,f" ScrollExtent="29,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.st" Size="29,18" TextAlignmentVertical="Center">50%</Text>
+    <Page BackgroundOpacity="1.000" Location="-1,-2" Name="Frame" PackSize="a,a" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="251,21" Size="251,21" />
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" BackgroundTint="#000000" Enabled="false" GetsInput="false" Location="42,2" Name="Tick" Opacity="0.500" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="1,14" Size="1,14" />
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" BackgroundTint="#000000" Enabled="false" GetsInput="false" Location="82,2" Name="Tick" Opacity="0.500" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="1,14" Size="1,14" />
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" BackgroundTint="#000000" Enabled="false" GetsInput="false" Location="123,2" Name="Tick" Opacity="0.500" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="1,14" Size="1,14" />
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" BackgroundTint="#000000" Enabled="false" GetsInput="false" Location="163,2" Name="Tick" Opacity="0.500" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="1,14" Size="1,14" />
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" BackgroundTint="#000000" Enabled="false" GetsInput="false" Location="203,2" Name="Tick" Opacity="0.500" PackLocation="proportional" PackSize="fixed,absolute" ScrollExtent="1,14" Size="1,14" />
+    <Progressbar Color="#2539F3" DynamicData="/GameData.Self.Savagery" Location="3,4" Name="Savagery" PackSize="a,a" Progress="1.000" ScrollExtent="243,10" Size="243,10" Style="/progressbarlist.Casting.casting_style" />
+    <Page BackgroundOpacity="1.000" Location="4,3" Name="Background" PackSize="a,a" RStyleDefault="/progressbarlist.Casting.Bkg.rect" ScrollExtent="243,12" Size="243,12" />
+</Page>

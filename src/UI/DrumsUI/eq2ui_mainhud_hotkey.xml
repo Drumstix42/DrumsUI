@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page clientmarginframe="10,10,5,10" clientmarginnone="10,10,5,10" eq2usescomwndcontrols="true" Location="138,685" Name="Hotkey" OnHoverIn="ConfigureOverlay.Press=true" OnHoverOut="Handle.visible=false" OnShow="MinimumSize=&apos;0,0&apos;&#xD;&#xA;VerticalSizeOf40ResizeBugAndOnShowNotWorkingOnNewHotbarOpenBugWorkaround.Size=Icons.Size&#xD;&#xA;IconsSize=Icons.Size&#xD;&#xA;Size=VerticalSizeOf40ResizeBugAndOnShowNotWorkingOnNewHotbarOpenBugWorkaround.RealHotkeySize.Size&#xD;&#xA;Icons.Size=IconsSize&#xD;&#xA;ConfigureOverlay.Press=true" PackLocation="left,bottom" ScrollExtent="396,32" Size="396,32" UserMovable="true" UserResizable="true" version="2.0" version_note="Replaced volume page continaing icons with iconbank">
+    <Text changed="0" COND="true" DynamicData="/GameData.General.Time" Name="StartInitialize" OnHide="OnTextChanged=&apos; &apos;" OnShow="changed=0&#xD;&#xA;OnTextChanged=originalCode" OnTextChanged="Parent.ConfigureOverlay.press=true&#xD;&#xA;changed=changed + 1&#xD;&#xA;COND=(changed &lt; 35)&#xD;&#xA;Visible=COND" originalCode="Parent.ConfigureOverlay.press=true&#xD;&#xA;changed=changed + 1&#xD;&#xA;COND=(changed &lt; 35)&#xD;&#xA;Visible=COND" />
+    <Text DynamicData="/GameData.Self.Name" Name="PlayerName" OnTextChanged="parent.StartInitialize.visible=false&#xD;&#xA;parent.StartInitialize.visible=true" Visible="false" />
+    <Button Name="ConfigureOverlay" OnPress="TMP1=Parent.Icons.IconSize + Parent.Icons.IconPadding&#xD;&#xA;Size=TMP1 ## &apos;,0&apos;&#xD;&#xA;Parent.TextOverlay.CellSize=Width ## &apos;,&apos; ## Width&#xD;&#xA;Parent.BarOverlay.CellSize=Width ## &apos;,&apos; ## Width&#xD;&#xA;&#xD;&#xA;TMP1=Parent.Icons.Width + Parent.Icons.IconPadding&#xD;&#xA;TMP2=Parent.Icons.Height + Parent.Icons.IconPadding&#xD;&#xA;Size=TMP1 ## &apos;,&apos; ## TMP2&#xD;&#xA;Parent.TextOverlay.Size=Size&#xD;&#xA;Parent.BarOverlay.Size=Size&#xD;&#xA;&#xD;&#xA;TMP1=Parent.Icons.IconSize ## &apos;,&apos; ## Parent.Icons.IconSize&#xD;&#xA;Parent.TextOverlay.1.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.2.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.3.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.4.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.5.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.6.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.7.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.8.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.9.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.10.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.11.ReuseSec.Size=TMP1&#xD;&#xA;Parent.TextOverlay.12.ReuseSec.Size=TMP1&#xD;&#xA;Parent.BarOverlay.1.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.2.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.3.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.4.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.5.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.6.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.7.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.8.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.9.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.10.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.11.Bar.Size=TMP1&#xD;&#xA;Parent.BarOverlay.12.Bar.Size=TMP1&#xD;&#xA;&#xD;&#xA;Parent.UpdateOverlayBank.Press=true" Visible="false" />
+    <Button BankNo="0" Name="UpdateOverlayBank" OnPress="BankNo=Parent.BankPage.CurrentBank.Text&#xD;&#xA;Parent.TextOverlay.1.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_1.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.2.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_2.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.3.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_3.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.4.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_4.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.5.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_5.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.6.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_6.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.7.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_7.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.8.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_8.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.9.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_9.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.10.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_10.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.11.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_11.ReuseSec&apos;&#xD;&#xA;Parent.TextOverlay.12.ReuseSec.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_12.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.1.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_1.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.2.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_2.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.3.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_3.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.4.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_4.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.5.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_5.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.6.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_6.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.7.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_7.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.8.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_8.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.9.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_9.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.10.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_10.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.11.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_11.ReuseSec&apos;&#xD;&#xA;Parent.BarOverlay.12.Bar.Progress.DynamicData=&apos;/GameData.SpellInfo.Bank_&apos; ## BankNo ## &apos;.Key_12.ReuseSec&apos;" Visible="false" />
+    <Page Name="ResizeTop" PackLocation="left,top" PackSize="a,f" ScrollExtent="396,1" Size="396,1" />
+    <Page Location="0,31" Name="ResizeBottom" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="396,1" Size="396,1" />
+    <Page Name="ResizeLeft" PackLocation="left,top" PackSize="f,a" ScrollExtent="1,32" Size="1,32" />
+    <Page Location="395,0" Name="ResizeRight" PackLocation="right,top" PackSize="f,a" ScrollExtent="1,32" Size="1,32" />
+    <Image GetsInput="true" Location="385,21" Name="Handle" PackLocation="right,bottom" ScrollExtent="12,12" Size="12,12" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Visible="false" />
+    <ImageStyle Name="RedBarStyle">
+        <ImageFrame Name="bar_red" Source="DrumsUI_Custom/images/hotkey.dds" SourceRect="3,2,4,3" />
+    </ImageStyle>
+    <ImageStyle Name="GreenBarStyle">
+        <ImageFrame Name="bar_green" Source="DrumsUI_Custom/images/hotkey.dds" SourceRect="3,7,4,8" />
+    </ImageStyle>
+    <ImageStyle Name="GrayBarStyle">
+        <ImageFrame Name="bar_empty" Source="DrumsUI_Custom/images/hotkey.dds" SourceRect="25,12,26,14" />
+    </ImageStyle>
+    <ProgressbarStyle Bar.Background="RedBarStyle" Bar.BackgroundEmpty="GreenBarStyle" Name="TimerBarStyle" />
+    <RectangleStyle Center="/imagelist.win_blank_space" East="timer_border" EastStretch="false" Name="timer_border_style" North="timer_border" NorthStretch="false" South="timer_border" SouthStretch="false" TitleStretch="false" West="timer_border" WestStretch="false" />
+    <ImageStyle Filter="true" Name="timer_border">
+        <ImageFrame Name="image" Source="DrumsUI_Custom/images/hotkey.dds" SourceRect="10,16,11,17" />
+    </ImageStyle>
+    <Page AbsorbsInput="false" Location="1,1" Name="BankPage" OnHide="Parent.MinimumSize=&apos;0,0&apos;&#xD;&#xA;Parent.TextOverlay.Left=1&#xD;&#xA;Parent.BarOverlay.Left=1" OnShow="Parent.MinimumSize=&apos;0,0&apos;&#xD;&#xA;Parent.TextOverlay.Left=11&#xD;&#xA;Parent.BarOverlay.Left=11" PackLocation="x,FFC" ScrollExtent="13,30" Size="13,30">
+        <Button Name="UpArrow" PackLocation="x,FFC" ScrollExtent="9,9" Size="9,9" Style="/ButtonStyles.arrow_up" Tooltip=":b7d61af6b99ebb95:Next Bank">:b7d61af629ef352d:Up</Button>
+        <Text AbsorbsInput="false" Color="#F0D0A0" Font="/TextStyles.Small.SmallStyle" Location="-2,9" Name="CurrentBank" PackLocation="x,FFC" ScrollExtent="14,12" ShadowStyle="/ShadowStylesNew.Outline.style" Size="14,12" TextAlignment="Center" UserMovable="true" UserResizable="true">:b7d61af6e24785eb_1:6</Text>
+        <Button Location="0,21" Name="DownArrow" PackLocation="x,FFC" ScrollExtent="9,9" Size="9,9" Style="/ButtonStyles.arrow_down" Tooltip=":b7d61af6404eacdc:Previous Bank">:b7d61af680392b5e:Dn</Button>
+    </Page>
+    <VolumePage AbsorbsInput="false" CellPadding="0,0" CellSelectable="false" Location="11,3" Name="TextOverlay" PackSize="a,a" ScrollExtent="384,32" Size="384,32" Visible="false">
+        <Page AbsorbsInput="false" Name="1" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" ScrollExtent="32,32" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="32,0" Name="2" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" ScrollExtent="32,32" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="64,0" Name="3" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" RShadowStyle="/ShadowStyles.Outline1" ScrollExtent="32,32" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="96,0" Name="4" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" ScrollExtent="32,32" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="128,0" Name="5" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" ScrollExtent="32,32" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="160,0" Name="6" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" RShadowStyle="/ShadowStyles.Outline1" ScrollExtent="32,32" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="192,0" Name="7" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" RShadowStyle="/ShadowStyles.Outline1" ScrollExtent="32,32" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="224,0" Name="8" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" ScrollExtent="32,32" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="256,0" Name="9" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" ScrollExtent="32,32" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="288,0" Name="10" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" ScrollExtent="32,32" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="320,0" Name="11" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" ScrollExtent="32,32" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="352,0" Name="12" Visible="false">
+            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaxLines="1" Name="ReuseSec" ScrollExtent="32,32" ShadowStyle="/ShadowStyles.Outline1" Size="32,32" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#DDDDDD">2</Text>
+        </Page>
+    </VolumePage>
+    <VolumePage AbsorbsInput="false" CellCount="12,1" CellPadding="0,0" CellSelectable="false" Location="11,-2" MinimumScrollExtent="384,32" Name="BarOverlay" PackSize="a,a" ScrollExtent="384,32" Size="384,32" Visible="false">
+        <Page AbsorbsInput="false" Name="1">
+            <Page AbsorbsInput="false" Name="Bar" ScrollExtent="32,32" Size="32,32">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" minimumsiz="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="32,0" Name="2">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="64,0" Name="3">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="96,0" Name="4">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="128,0" Name="5">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="160,0" Name="6">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="192,0" Name="7">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="224,0" Name="8">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="256,0" Name="9">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="288,0" Name="10">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="320,0" Name="11">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="352,0" Name="12">
+            <Page AbsorbsInput="false" MaximumSize="16384,6" Name="Bar" ScrollExtent="32,6" Size="32,6">
+                <Progressbar AbsorbsInput="false" Location="2,2" MaximumSize="16384,2" MinimumSize="0,2" Name="Progress" PackSize="a,a" ScrollExtent="28,2" Size="28,2" Style="TimerBarStyle" />
+                <Page BackgroundOpacity="1.000" MaximumSize="16384,6" MinimumSize="0,6" Name="New Page" PackSize="a,a" RStyleDefault="timer_border_style" ScrollExtent="32,6" Size="32,6" Visible="false" />
+            </Page>
+        </Page>
+    </VolumePage>
+    <IconBank Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconframepadding="0" iconpadding="0" iconstyle="/IconStyles.button" Location="11,0" Name="Icons" PackSize="a,a" renderframe="true" renderoutlines="true" ScrollExtent="384,32" Size="384,32" textcolor="#C3C3C3" textmargin="2,-1,2,-2" treatasbutton="true" />
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Backdrop" PackSize="a,a" ScrollExtent="396,32" Size="396,32" />
+    <Page Name="WC_Frame" OnHide="Parent.TextOverlay.Visible=false" OnShow="Parent.ConfigureOverlay.Press=true&#xD;&#xA;Parent.TextOverlay.Visible=true&#xD;&#xA;Parent.TextOverlay.Left=Parent.Icons.Left" PackSize="a,a" ScrollExtent="396,32" Size="396,32" Visible="false" />
+    <Page Name="WC_Titlebar" OnHide="Parent.BarOverlay.Visible=false" OnShow="Parent.ConfigureOverlay.Press=true&#xD;&#xA;Parent.BarOverlay.Visible=true&#xD;&#xA;Parent.BarOverlay.Left=Parent.Icons.Left" />
+    <Page Location="4000,4000" Name="VerticalSizeOf40ResizeBugAndOnShowNotWorkingOnNewHotbarOpenBugWorkaround" PackSize="a,a" ScrollExtent="384,32" Size="384,32">
+        <Page Name="RealHotkeySize" PackSize="a,a" ScrollExtent="396,32" Size="396,32" />
+    </Page>
+</Page>

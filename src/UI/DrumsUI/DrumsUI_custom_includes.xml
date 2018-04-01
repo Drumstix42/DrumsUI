@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+********************************************************************
+ONLY EDIT BELOW THIS COMMENT
+********************************************************************
+-->
+
+
+<include>DrumsUI_custom/DrumsUI_MenuWindow.xml</include>
+<include>DrumsUI_custom/DrumsUI_STI.xml</include>
+<include>DrumsUI_custom/DrumsUI_TargetCasting.xml</include>
+<include>DrumsUI_custom/SpellTimer/DrumsUI_ST.xml</include>
+<include>DrumsUI_custom/SpellTimer/DrumsUI_ST_Settings.xml</include>
+<include>DrumsUI_custom/CastingMacros/DrumsUI_CM_Settings.xml</include>
+<include>DrumsUI_custom/CureFinder/DrumsUI_CF.xml</include>
+<include>DrumsUI_custom/CureFinder/DrumsUI_CF_Settings.xml</include>
+<include>DrumsUI_custom/Settings/DrumsUI_MainSettings.xml</include>
+<include>DrumsUI_custom/Settings/DrumsUI_ClickButtonSettings.xml</include>
+<include>DrumsUI_custom/Settings/DrumsUI_EffectsSettings.xml</include>
+<include>DrumsUI_custom/Settings/DrumsUI_StatBarSettings.xml</include>
+<include>DrumsUI_custom/Settings/DrumsUI_TextSettings.xml</include>
+<include>DrumsUI_custom/Settings/DrumsUI_ItemNotes.xml</include>
+<include>DrumsUI_custom/Settings/DrumsUI_ChatSettings.xml</include>
+<include>DrumsUI_custom/Settings/DrumsUI_XPSettings.xml</include>
+
+
+<!--
+********************************************************************
+ONLY EDIT ABOVE THIS COMMENT
+********************************************************************
+-->

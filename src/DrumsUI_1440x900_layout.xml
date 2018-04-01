@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UISettings time="1265030710" version="7">
+    <Module Name="ArenaChampions" window_version="36">
+        <Window Name="ArenaMain" alignment="8" alignment_offset="-47,-39" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="810,530" />
+        <Window Name="ArenaMatch" alignment="0" alignment_offset="103,85" size="810,578" />
+        <Window Name="ArenaScore" alignment="6" alignment_offset="151,-186" backdrop_mo_o="0" backdrop_n_o="0" click_through="true" frame_mo_o="0" frame_n_o="0" size="250,93" window_style="1" />
+    </Module>
+    <Module Name="Community" window_version="36">
+        <Window Name="Community" alignment="8" alignment_offset="-74,-118" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="460,425">
+            <Properties ignore_offline_friends="true" />
+        </Window>
+    </Module>
+    <Module Name="Custom" window_version="36">
+        <Window Name="Attack" alignment="5" alignment_offset="334,-208" backdrop_mo_o="0" backdrop_n_o="0" size="150,34" />
+    </Module>
+    <Module Name="Examine" window_version="36">
+        <Window Name="ExamineItem_clone_0" alignment="8" alignment_offset="112,51" size="306,756">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ExamineItem_clone_1" alignment="8" alignment_offset="45,14" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="306,560">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ExamineItem_clone_2" alignment="5" alignment_offset="-201,63" size="306,692">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ExamineItem_clone_3" alignment="3" alignment_offset="-125,79" size="306,626">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ExamineSpell_clone_0" alignment="8" alignment_offset="-227,-78" size="306,393">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ExamineSpell_clone_1" alignment="8" alignment_offset="287,-46" size="306,457">
+            <Properties clone_version="4" />
+        </Window>
+    </Module>
+    <Module Name="Inventory" window_version="36">
+        <Window Name="Bag_clone_0_-3" alignment="1" alignment_offset="-275,56" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_0_-4" alignment="8" alignment_offset="-275,157" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_0_-5" alignment="1" alignment_offset="102,175" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" locked="true" size="136,293">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="32" version="1" />
+        </Window>
+        <Window Name="Bag_clone_0_0" alignment="7" alignment_offset="1,-192" locked="true" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_10_-3" alignment="8" alignment_offset="68,-15" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_11_-3" alignment="8" alignment_offset="240,-15" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_17_-1" alignment="4" alignment_offset="-351,-2" locked="true" size="86,135">
+            <Properties bag_size="14" clone_version="4" icon_padding="0" icon_size="26" version="1" />
+        </Window>
+        <Window Name="Bag_clone_1_-3" alignment="1" alignment_offset="-104,56" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_1_-4" alignment="8" alignment_offset="-104,157" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_1_-5" alignment="1" alignment_offset="238,175" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" locked="true" size="136,293">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="32" version="1" />
+        </Window>
+        <Window Name="Bag_clone_1_0" alignment="7" alignment_offset="173,-192" locked="true" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_2_-3" alignment="1" alignment_offset="68,56" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_2_-4" alignment="8" alignment_offset="68,157" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_2_-5" alignment="8" alignment_offset="102,115" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" locked="true" size="136,293">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="32" version="1" />
+        </Window>
+        <Window Name="Bag_clone_2_0" alignment="7" alignment_offset="1,-21" locked="true" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_3_-3" alignment="1" alignment_offset="240,56" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_3_-4" alignment="8" alignment_offset="240,157" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_3_0" alignment="7" alignment_offset="173,-21" locked="true" size="176,173">
+            <Properties bag_size="34" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_4_-3" alignment="8" alignment_offset="-275,-187" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_4_-4" alignment="5" alignment_offset="-275,-85" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_4_0" alignment="7" alignment_offset="1,150" locked="true" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_5_-3" alignment="8" alignment_offset="-104,-187" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_5_-4" alignment="5" alignment_offset="-104,-85" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_5_0" alignment="7" alignment_offset="173,150" locked="true" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_6_-3" alignment="8" alignment_offset="68,-187" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_6_-4" alignment="5" alignment_offset="67,-85" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_7_-3" alignment="8" alignment_offset="240,-187" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_7_-4" alignment="8" alignment_offset="-117,78" size="136,69">
+            <Properties bag_size="8" clone_version="4" icon_padding="0" icon_size="32" version="1" />
+        </Window>
+        <Window Name="Bag_clone_8_-3" alignment="8" alignment_offset="-275,-15" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bag_clone_9_-3" alignment="8" alignment_offset="-104,-15" size="176,173">
+            <Properties bag_size="36" clone_version="4" icon_padding="0" icon_size="28" version="1" />
+        </Window>
+        <Window Name="Bank" alignment="2" alignment_offset="-178,63" size="260,270" />
+        <Window Name="CommissionedWork" alignment="1" alignment_offset="109,72" size="458,478" />
+        <Window Name="Container_clone_0" alignment="8" alignment_offset="-267,-91" size="350,282">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="Container_clone_1" alignment="8" alignment_offset="-190,-8" size="350,450">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="Container_clone_2" alignment="8" alignment_offset="110,-28" size="350,450">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="Container_clone_3" alignment="8" alignment_offset="-14,-29" size="350,527">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="DressingRoom" alignment="8" alignment_offset="224,4" size="425,833">
+            <Properties paperdoll_heading="101" />
+        </Window>
+        <Window Name="GuildBank" alignment="8" alignment_offset="-107,-16" size="423,444" />
+        <Window Name="Inventory" alignment="3" alignment_offset="-129,38" size="308,429">
+            <Properties paperdoll_heading="162" />
+        </Window>
+        <Window Name="Loot_clone_0" alignment="3" alignment_offset="-174,175" size="306,172">
+            <Properties base_location="1196,588" base_size="306,172" />
+        </Window>
+        <Window Name="Market" alignment="8" alignment_offset="-65,-41" size="718,469" />
+        <Window Name="Marketplace" alignment="7" alignment_offset="77,-11" size="805,504" />
+        <Window Name="Merchant" alignment="8" alignment_offset="-189,-51" size="388,523" />
+        <Window Name="Trade" alignment="8" alignment_offset="-254,-113" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="370,395" />
+    </Module>
+    <Module Name="Journals" window_version="36">
+        <Window Name="ActiveQuest" alignment="0" alignment_offset="217,-5" backdrop_n_o="0" frame_n_o="0" locked="true" size="252,149" window_style="1" />
+        <Window Name="JournalsQuest" alignment="8" alignment_offset="-79,-33" size="763,478">
+            <Splitters>
+                <Splitter name="ActiveSplitter" value="284" />
+                <Splitter name="CompletedSplitter" value="328" />
+                <Splitter name="GroupSplitter" value="336" />
+                <Splitter name="AchievementsSplitter" value="178" />
+            </Splitters>
+            <Properties active_sort="0" active_tab="0" collection_sort="4" group_sort="1" hide_completed="false" hide_completed_medals="false" medal_sort="0" show_helper="true" show_hidden="true" show_repeatable="false">
+                <QuestNode index="3452627230" open="true" sort="1" />
+                <QuestNode index="1740715548" open="true" sort="2" />
+                <QuestNode index="1747462280" open="true" sort="3" />
+            </Properties>
+        </Window>
+    </Module>
+    <Module Name="MainHUD" window_version="36">
+        <Window Name="Achievements" alignment="8" alignment_offset="-99,6" size="652,650" />
+        <Window Name="AdvancementButton" alignment="2" alignment_offset="-251,0" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" size="62,62" visible="true" window_style="1" />
+        <Window Name="Browser" alignment="7" alignment_offset="125,5" size="1059,667" />
+        <Window Name="Casting" alignment="5" alignment_offset="29,-222" backdrop_mo_o="0" backdrop_n_o="0" click_through="true" frame_mo_o="0" frame_n_o="0" locked="true" size="449,58" window_style="0" />
+        <Window Name="ChatOptions" alignment="7" alignment_offset="215,-94" size="588,458" />
+        <Window Name="Clock" alignment="0" alignment_offset="8,-5" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="65,63" visible="true" window_style="1" />
+        <Window Name="Compass" alignment="0" alignment_offset="77,-4" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0.15" frame_n_o="0" locked="true" size="126,85" visible="true" window_style="1" />
+        <Window Name="ConnectionStats" alignment="0" alignment_offset="-13,169" backdrop_mo_o="0" backdrop_n_o="0" click_through="true" frame_mo_o="0" frame_n_o="0" locked="true" size="93,62" visible="true" window_style="0">
+            <Properties graph_type="2" graph_visible="false" />
+        </Window>
+        <Window Name="Customization" alignment="8" alignment_offset="-69,-17" size="661,755" />
+        <Window Name="Death" alignment="8" alignment_offset="-19,-6" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="483,420" />
+        <Window Name="DetrimentalEffects" alignment="4" alignment_offset="-114,-1" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0.17" frame_n_o="0" locked="true" size="113,470" visible="true" window_style="1" />
+        <Window Name="EditMacro" alignment="8" alignment_offset="-90,9" size="435,400" />
+        <Window Name="Effects" alignment="4" alignment_offset="5,-2" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0.1" frame_n_o="0" size="106,527" visible="true" window_style="1" />
+        <Window Name="Experience" alignment="0" alignment_offset="-3,75" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" size="229,54" visible="true" window_style="1">
+            <Properties version="2" />
+        </Window>
+        <Window Name="GroupMembers" alignment="2" alignment_offset="-10,155" backdrop_mo_o="0" backdrop_n_o="0" click_through="true" frame_mo_o="0.09" frame_n_o="0" locked="true" size="135,272" visible="true" window_style="1" />
+        <Window Name="Guild" alignment="8" alignment_offset="-60,-19" size="793,515">
+            <Splitters>
+                <Splitter name="Splitter" value="85" />
+            </Splitters>
+            <Properties active_tab="1" class_display="1" days_online="0" sort_order="0" sort_reversed="false" version="5" />
+        </Window>
+        <Window Name="GuildRecruiterSettings" alignment="8" alignment_offset="-123,22" size="560,315" />
+        <Window Name="GuildRecruiting" alignment="7" alignment_offset="195,-80" size="776,604" />
+        <Window Name="Help" alignment="7" alignment_offset="102,-25" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="954,675" />
+        <Window Name="Heroic" alignment="3" alignment_offset="-115,178" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" size="186,206" window_style="0" />
+        <Window Name="Hotkey_clone_0" alignment="5" alignment_offset="199,-142" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="410,34" visible="true" window_style="1">
+            <Properties allow_dragging="true" bank="0" clone_version="4" icon_padding="0" icon_size="34" keymapping="0" reverse_spinner="true" show_outline="true" spinner="false" text_style="2" version="6" />
+        </Window>
+        <Window Name="Hotkey_clone_1" alignment="5" alignment_offset="199,-108" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="410,34" visible="true" window_style="1">
+            <Properties allow_dragging="true" bank="1" clone_version="4" icon_padding="0" icon_size="34" keymapping="1" reverse_spinner="true" show_outline="true" spinner="false" text_style="2" version="6" />
+        </Window>
+        <Window Name="Hotkey_clone_2" alignment="5" alignment_offset="199,-74" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="410,34" visible="true" window_style="1">
+            <Properties allow_dragging="true" bank="2" clone_version="4" icon_padding="0" icon_size="34" keymapping="2" reverse_spinner="true" show_outline="true" spinner="false" text_style="2" version="6" />
+        </Window>
+        <Window Name="Hotkey_clone_3" alignment="5" alignment_offset="199,-40" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="410,34" visible="true">
+            <Properties allow_dragging="true" bank="3" clone_version="4" icon_padding="0" icon_size="34" keymapping="3" reverse_spinner="true" show_outline="true" spinner="false" text_style="1" version="6" />
+        </Window>
+        <Window Name="Hotkey_clone_4" alignment="5" alignment_offset="199,-6" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="410,34" visible="true">
+            <Properties allow_dragging="true" bank="4" clone_version="4" icon_padding="0" icon_size="34" keymapping="4" reverse_spinner="false" show_outline="true" spinner="false" text_style="2" version="6" />
+        </Window>
+        <Window Name="Hotkey_clone_5" alignment="5" alignment_offset="-34,-3" backdrop_mo_o="0" backdrop_n_o="0" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="0" frame_n_o="0" locked="true" size="54,156" visible="true" window_style="1">
+            <Properties allow_dragging="true" bank="5" clone_version="4" icon_padding="0" icon_size="26" keymapping="5" reverse_spinner="false" show_outline="true" spinner="false" text_style="1" version="6" />
+        </Window>
+        <Window Name="Hotkey_clone_6" alignment="5" alignment_offset="-88,-3" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="54,156" visible="true" window_style="1">
+            <Properties allow_dragging="true" bank="6" clone_version="4" icon_padding="0" icon_size="26" keymapping="6" reverse_spinner="false" show_outline="true" spinner="false" text_style="1" version="6" />
+        </Window>
+        <Window Name="Hotkey_clone_7" alignment="8" alignment_offset="120,199" backdrop_mo_o="0" backdrop_n_o="0" force_hidden="true" frame_mo_o="0" frame_n_o="0" size="362,80" window_style="1">
+            <Properties allow_dragging="true" bank="7" clone_version="4" icon_padding="0" icon_size="40" keymapping="10" reverse_spinner="false" show_outline="true" spinner="false" text_style="1" version="6" />
+        </Window>
+        <Window Name="ImpliedTarget" alignment="2" alignment_offset="-343,-4" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="183,128" visible="true" window_style="1" />
+        <Window Name="Instruction" alignment="3" alignment_offset="-294,-117" size="329,343" />
+        <Window Name="InstructionButton_clone_0" alignment="2" alignment_offset="-252,1" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="58,60" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="InstructionButton_clone_1" alignment="2" alignment_offset="-252,1" backdrop_mo_o="0" backdrop_n_o="0" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="0" frame_n_o="0" locked="true" size="58,60" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="InstructionButton_clone_2" alignment="2" alignment_offset="-252,1" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="58,60" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="InstructionButton_clone_3" alignment="2" alignment_offset="-252,1" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="58,60" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="InstructionButton_clone_4" alignment="2" alignment_offset="-252,1" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="58,60" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="Knowledge" alignment="8" alignment_offset="-218,60" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="478,391" />
+        <Window Name="KnowledgeSort" alignment="3" alignment_offset="-180,-77" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="380,245" />
+        <Window Name="LFG" alignment="8" alignment_offset="40,-56" size="904,717">
+            <Properties selected_roles="163" />
+        </Window>
+        <Window Name="Lotto" alignment="8" alignment_offset="-59,-105" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="335,300" />
+        <Window Name="Mail" alignment="3" alignment_offset="-283,-120" size="377,438" />
+        <Window Name="MainChat_clone_0" alignment="6" alignment_offset="-3,2" backdrop_mo_o="0.9" backdrop_n_o="0.9" locked="true" size="547,196" window_style="1">
+            <Properties clone="0" clone_version="4" currenttab="0" version="19">
+                <ChatTab default_channel="guildsay" display_id="0" filter="ffe70b07000000000000800078c0100000000000000000000000000000000000000000000000000000000000000000000000" title="Main" />
+                <ChatTab default_channel="officersay" display_id="0" filter="2100d00000000000000000000000c00000000000000000000000000000000000000000000000000000000000000000000000" title="Tell" />
+                <ChatTab default_channel="gsay" display_id="0" filter="0100000000000000000000000000c00000000000000000000000000000000000000000000000000000000000000000000000" title="Chat">
+                    <Channel name="Auction" />
+                </ChatTab>
+                <ChatTab default_channel="raidsay" display_id="0" filter="01000000a0fcfff31f0000fc803ee21f00000000000000000000000000000000000000000000000000000000000000000000" title="Combat" />
+                <ChatTab default_channel="gsay" display_id="0" filter="611000006001000000ba00010001c00000000000000000000000000000000000000000000000000000000000000000000000" title="Other" />
+                <ChatTab default_channel="say" display_id="0" filter="610030000000000000003f020700cc0000000000000000000000000000000000000000000000000000000000000000000000" title="Spam" />
+                <ChatTab default_channel="raidsay" display_id="0" filter="0100000000000000e00000000000010000000000000000000000000000000000000000000000000000000000000000000000" title="Loot" />
+            </Properties>
+        </Window>
+        <Window Name="MainChat_clone_1" alignment="5" alignment_offset="-171,64" backdrop_mo_o="0.8" backdrop_n_o="0.8" size="567,230">
+            <Properties clone="0" clone_version="4" currenttab="0" version="19" />
+        </Window>
+        <Window Name="MainChat_clone_2" alignment="8" alignment_offset="-84,-5" backdrop_mo_o="0.8" backdrop_n_o="0.8" size="397,180">
+            <Properties clone="0" clone_version="4" currenttab="0" version="19" />
+        </Window>
+        <Window Name="Maintained" alignment="1" alignment_offset="-35,1" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0.13" frame_n_o="0" size="435,129" visible="true" window_style="1" />
+        <Window Name="Map" alignment="8" alignment_offset="182,22" size="465,612">
+            <Properties hide_fog="false" zoom="1.40791" />
+        </Window>
+        <Window Name="Map2_clone_0" alignment="7" alignment_offset="2,-156" frame_n_o="0.31" size="142,146" visible="true" window_style="1">
+            <Properties clone_version="4" hidefog="false" maximized="false" useworldzoom="true" version="4" worldzoom="0.747939">
+                <MapSettings alignment="0" location="421,149" mode="0" offset="421,149" size="837,703" />
+                <MapSettings alignment="0" location="0,0" mode="1" offset="0,0" size="1280,1024" />
+                <MapSettings alignment="7" location="2,221" mode="2" offset="2,-156" size="142,146" />
+            </Properties>
+        </Window>
+        <Window Name="Map2_clone_1" alignment="8" alignment_offset="40,10" size="656,597">
+            <Properties clone_version="4" enable_poi_filter="true" hidefog="false" maximized="false" poi_unknown_type_filter="false" useworldzoom="false" version="4" worldzoom="0.570507">
+                <MapSettings alignment="8" location="352,224" mode="0" offset="40,10" size="656,597" />
+                <MapSettings alignment="0" location="0,0" mode="1" offset="0,0" size="1680,1050" />
+                <MapSettings alignment="0" location="75,75" mode="2" offset="75,75" size="150,150" />
+                <TypeFilter filter="false" type="BELL" />
+                <TypeFilter filter="false" type="BOOK" />
+                <TypeFilter filter="false" type="HOUSE" />
+                <TypeFilter filter="false" type="LOCATION" />
+                <TypeFilter filter="false" type="MOB" />
+                <TypeFilter filter="false" type="MOBHEROIC" />
+                <TypeFilter filter="false" type="MOBNAMED" />
+                <TypeFilter filter="false" type="MOBSOLO" />
+                <TypeFilter filter="false" type="NPC" />
+                <TypeFilter filter="false" type="QUESTSTART" />
+                <TypeFilter filter="false" type="QUESTUPDATE" />
+                <TypeFilter filter="false" type="SHOP" />
+                <TypeFilter filter="false" type="TRANSPORT" />
+                <TypeFilter filter="false" type="ZONE" />
+            </Properties>
+        </Window>
+        <Window Name="OnscreenMessage" alignment="1" alignment_offset="1,59" backdrop_mo_o="0" backdrop_n_o="0" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="0" frame_n_o="0" size="457,79" window_style="0" />
+        <Window Name="OpenedMail" alignment="8" alignment_offset="-132,-44" size="388,523" />
+        <Window Name="Persona" alignment="8" alignment_offset="90,9" size="373,485">
+            <Properties stats_page="0" />
+        </Window>
+        <Window Name="Pet" alignment="2" alignment_offset="-1,83" backdrop_mo_o="0" backdrop_n_o="0" force_hidden="true" foreground_n_o="0.77" frame_mo_o="0" frame_n_o="0" size="177,81" window_style="1" />
+        <Window Name="Player" alignment="2" alignment_offset="1,2" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="170,94" visible="true" window_style="1" />
+        <Window Name="Raid" alignment="3" alignment_offset="-149,-53" backdrop_mo_o="1" backdrop_n_o="0.33" force_hidden="true" foreground_mo_o="1" frame_mo_o="1" frame_n_o="0" size="310,486" window_style="0">
+            <Properties show_advanced="true" version="1" />
+        </Window>
+        <Window Name="ReplyDialog" alignment="8" alignment_offset="-1,79" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="345,110" window_style="1" />
+        <Window Name="ReplyDialog_clone_0" alignment="8" alignment_offset="-324,-77" size="345,144" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ReplyDialog_clone_1" alignment="8" alignment_offset="-306,-55" size="345,145" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ReplyDialog_clone_16" alignment="8" alignment_offset="273,-130" size="345,144" window_style="1" />
+        <Window Name="ReplyDialog_clone_17" alignment="8" alignment_offset="286,-205" size="345,127" window_style="1" />
+        <Window Name="ReplyDialog_clone_2" alignment="8" alignment_offset="-71,-128" size="345,144" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ReplyDialog_clone_20" alignment="3" alignment_offset="-320,-106" size="345,144" window_style="1" />
+        <Window Name="ReplyDialog_clone_3" alignment="1" alignment_offset="90,193" size="345,127" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ReplyDialog_clone_5" alignment="8" alignment_offset="86,56" size="345,174" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ReplyDialog_clone_7" alignment="8" alignment_offset="-185,-74" size="345,192" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ReplyDialog_clone_8" alignment="8" alignment_offset="114,-162" size="345,144" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="ReplyDialog_clone_9" alignment="8" alignment_offset="133,-142" size="345,127" window_style="1">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="Researcher" alignment="8" alignment_offset="295,-47" size="462,500" />
+        <Window Name="Socials" alignment="3" alignment_offset="-87,-99" size="332,351" />
+        <Window Name="StartButton" alignment="0" alignment_offset="1,141" backdrop_n_o="0.4" frame_n_o="0.27" size="743,37" visible="true" window_style="1" />
+        <Window Name="Target" alignment="2" alignment_offset="-161,-4" backdrop_mo_o="0" backdrop_n_o="0" frame_mo_o="0" frame_n_o="0" locked="true" size="183,112" visible="true" window_style="1" />
+        <Window Name="Threat" alignment="5" alignment_offset="66,-192" backdrop_mo_o="0" backdrop_n_o="0" click_through="true" frame_mo_o="0" frame_n_o="0" size="160,22" visible="true" window_style="1" />
+        <Window Name="Tracking" alignment="7" alignment_offset="147,-12" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="302,596">
+            <Properties filter="0" version="1" />
+        </Window>
+        <Window Name="VoiceBar" alignment="6" alignment_offset="-3,-190" backdrop_mo_o="0" backdrop_n_o="0" click_through="true" frame_mo_o="0.3" frame_n_o="0" locked="true" size="543,29" window_style="1">
+            <Properties version="0" />
+        </Window>
+        <Window Name="VoiceChat" alignment="7" alignment_offset="0,76" backdrop_mo_o="0.33" backdrop_n_o="0" frame_mo_o="0.36" frame_n_o="0" size="153,313" visible="true">
+            <Properties mode="0" version="0" />
+        </Window>
+        <Window Name="Waypoint" alignment="7" alignment_offset="157,-23" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="286,587" />
+        <Window Name="Welcome" alignment="8" alignment_offset="-153,-57" size="800,625" />
+        <Window Name="ZoneReuse" alignment="8" alignment_offset="32,0" size="871,476" />
+    </Module>
+    <Module Name="Options" window_version="36">
+        <Window Name="ColorChooser" alignment="7" alignment_offset="259,-97" size="510,362" />
+        <Window Name="OptionGame" alignment="8" alignment_offset="-45,-23" size="890,597" />
+    </Module>
+    <Module Name="PlayerHousing" window_version="36">
+        <Window Name="HouseDisplay_clone_0" alignment="8" alignment_offset="-258,-97" size="329,403">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="InteriorCustomization" alignment="7" alignment_offset="83,-47" size="400,519" />
+        <Window Name="PlayerHouse" alignment="3" alignment_offset="-140,-2" size="691,488" />
+        <Window Name="VisitInnRoom" alignment="8" alignment_offset="-302,-39" size="452,486" />
+    </Module>
+    <Module Name="Popup" window_version="36">
+        <Window Name="AchievementMerchant" alignment="7" alignment_offset="215,-86" size="452,335" />
+        <Window Name="AddPoi" alignment="8" alignment_offset="-181,-111" size="370,240" />
+        <Window Name="Altar" alignment="8" alignment_offset="-169,-54" size="529,573" />
+        <Window Name="Book_Simple" alignment="0" alignment_offset="154,121" size="697,509" />
+        <Window Name="BugReport" alignment="8" alignment_offset="10,0" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="666,600" />
+        <Window Name="FeedbackReport" alignment="3" alignment_offset="-126,-73" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="580,510" />
+        <Window Name="FilterPoi" alignment="7" alignment_offset="102,-34" size="370,460" />
+        <Window Name="GroupOptions" alignment="0" alignment_offset="191,106" size="440,395" />
+        <Window Name="HotkeyOptions" alignment="0" alignment_offset="305,138" size="457,330" />
+        <Window Name="LoadSkin" alignment="8" alignment_offset="2,0" size="400,430" />
+        <Window Name="Mentor" alignment="8" alignment_offset="320,-81" size="350,304" />
+        <Window Name="PetOptions" alignment="8" alignment_offset="-16,-54" size="342,200" />
+        <Window Name="RewardPack_clone_0" alignment="7" alignment_offset="306,-62" size="334,361">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="RewardPack_clone_1" alignment="7" alignment_offset="137,-54" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="334,330">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="RewardPack_clone_10" alignment="7" alignment_offset="291,144" size="334,421" />
+        <Window Name="RewardPack_clone_11" alignment="7" alignment_offset="297,84" size="334,421" />
+        <Window Name="RewardPack_clone_12" alignment="7" alignment_offset="324,112" size="334,453" />
+        <Window Name="RewardPack_clone_13" alignment="8" alignment_offset="-145,-35" locked="true" size="334,437" />
+        <Window Name="RewardPack_clone_14" alignment="7" alignment_offset="311,107" size="334,542" />
+        <Window Name="RewardPack_clone_15" alignment="7" alignment_offset="191,124" size="334,445" />
+        <Window Name="RewardPack_clone_16" alignment="7" alignment_offset="249,81" size="334,529" />
+        <Window Name="RewardPack_clone_17" alignment="8" alignment_offset="-118,50" size="334,389" />
+        <Window Name="RewardPack_clone_18" alignment="7" alignment_offset="198,77" size="334,336" />
+        <Window Name="RewardPack_clone_19" alignment="8" alignment_offset="-312,93" size="334,521" />
+        <Window Name="RewardPack_clone_2" alignment="7" alignment_offset="137,-44" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="334,330">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="RewardPack_clone_20" alignment="7" alignment_offset="293,6" size="334,445" />
+        <Window Name="RewardPack_clone_21" alignment="8" alignment_offset="-43,53" size="334,268" />
+        <Window Name="RewardPack_clone_22" alignment="7" alignment_offset="229,111" size="334,498" />
+        <Window Name="RewardPack_clone_23" alignment="6" alignment_offset="281,-131" size="334,453" />
+        <Window Name="RewardPack_clone_24" alignment="7" alignment_offset="322,48" size="334,567" />
+        <Window Name="RewardPack_clone_25" alignment="8" alignment_offset="-213,-120" size="334,331" />
+        <Window Name="RewardPack_clone_26" alignment="8" alignment_offset="-275,104" size="334,454" />
+        <Window Name="RewardPack_clone_27" alignment="8" alignment_offset="-179,-38" size="334,454" />
+        <Window Name="RewardPack_clone_28" alignment="8" alignment_offset="-140,21" size="334,392" />
+        <Window Name="RewardPack_clone_29" alignment="7" alignment_offset="225,106" size="334,486" />
+        <Window Name="RewardPack_clone_3" alignment="7" alignment_offset="138,22" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="334,330">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="RewardPack_clone_30" alignment="1" alignment_offset="-30,63" size="334,445" />
+        <Window Name="RewardPack_clone_31" alignment="7" alignment_offset="319,-12" size="334,445" />
+        <Window Name="RewardPack_clone_32" alignment="7" alignment_offset="252,110" size="334,470" />
+        <Window Name="RewardPack_clone_33" alignment="7" alignment_offset="189,5" size="334,515" />
+        <Window Name="RewardPack_clone_34" alignment="7" alignment_offset="271,84" size="334,578" />
+        <Window Name="RewardPack_clone_35" alignment="7" alignment_offset="277,53" size="334,483" />
+        <Window Name="RewardPack_clone_36" alignment="8" alignment_offset="-268,52" size="334,603" />
+        <Window Name="RewardPack_clone_37" alignment="7" alignment_offset="191,104" size="334,405" />
+        <Window Name="RewardPack_clone_38" alignment="7" alignment_offset="247,-4" size="334,523" />
+        <Window Name="RewardPack_clone_39" alignment="6" alignment_offset="191,-104" size="334,493" />
+        <Window Name="RewardPack_clone_4" alignment="7" alignment_offset="162,-87" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="334,330">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="RewardPack_clone_40" alignment="8" alignment_offset="-169,-113" size="334,521" />
+        <Window Name="RewardPack_clone_41" alignment="8" alignment_offset="-324,-103" size="334,405" />
+        <Window Name="RewardPack_clone_42" alignment="7" alignment_offset="277,31" size="334,529" />
+        <Window Name="RewardPack_clone_43" alignment="8" alignment_offset="-327,-78" size="334,509" />
+        <Window Name="RewardPack_clone_44" alignment="8" alignment_offset="-283,67" size="334,470" />
+        <Window Name="RewardPack_clone_45" alignment="8" alignment_offset="-181,40" size="334,470" />
+        <Window Name="RewardPack_clone_46" alignment="7" alignment_offset="295,-52" size="334,493" />
+        <Window Name="RewardPack_clone_47" alignment="7" alignment_offset="198,-8" size="334,477" />
+        <Window Name="RewardPack_clone_48" alignment="8" alignment_offset="-324,21" size="334,509" />
+        <Window Name="RewardPack_clone_49" alignment="7" alignment_offset="193,122" size="334,445" />
+        <Window Name="RewardPack_clone_5" alignment="7" alignment_offset="163,-37" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="334,330">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="RewardPack_clone_50" alignment="7" alignment_offset="266,14" size="334,530" />
+        <Window Name="RewardPack_clone_51" alignment="7" alignment_offset="243,10" size="334,493" />
+        <Window Name="RewardPack_clone_52" alignment="7" alignment_offset="296,64" size="334,521" />
+        <Window Name="RewardPack_clone_53" alignment="8" alignment_offset="-87,12" size="334,521" />
+        <Window Name="RewardPack_clone_6" alignment="7" alignment_offset="147,65" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="334,330">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="RewardPack_clone_7" alignment="7" alignment_offset="157,9" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="334,330">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="RewardPack_clone_8" alignment="7" alignment_offset="172,-24" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="334,330">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="RewardPack_clone_9" alignment="7" alignment_offset="191,65" backdrop_mo_o="1" backdrop_n_o="1" foreground_mo_o="1" foreground_n_o="1" frame_mo_o="1" frame_n_o="1" size="334,330">
+            <Properties clone_version="4" />
+        </Window>
+        <Window Name="SetPrice" alignment="8" alignment_offset="-118,150" size="280,235" />
+        <Window Name="UISettings" alignment="8" alignment_offset="-335,-111" size="326,456" />
+        <Window Name="ZoneTeleporter" alignment="8" alignment_offset="-242,7" size="374,318" />
+    </Module>
+    <Module Name="TradeSkills" window_version="36">
+        <Window Name="TradeSkills" alignment="3" alignment_offset="-123,99" size="752,346">
+            <Properties drag_icons="true" enable_tooltips="true" version="1" />
+        </Window>
+    </Module>
+    <ChatChannels joined="true" version="2">
+        <Channel index="1" name="Auction" />
+    </ChatChannels>
+    <VoiceChat version="0" />
+    <InputControlSet index="0" readcamdist="6.10896" version="4210688001" />
+</UISettings>

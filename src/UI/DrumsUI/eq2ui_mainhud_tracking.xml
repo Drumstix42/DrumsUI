@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="342,154" MaximumSize="1024,16384" MinimumSize="130,110" Name="Tracking" OnHoverIn="CheckboxFrame0.visible=true&#xD;&#xA;CheckboxFrame1.visible=true&#xD;&#xA;CheckboxFrame2.visible=true&#xD;&#xA;CheckboxFrame3.visible=true&#xD;&#xA;CheckboxFrame4.visible=true&#xD;&#xA;CheckboxFrame5.visible=true&#xD;&#xA;CheckboxFrame6.visible=true&#xD;&#xA;ConCheckbox0.visible=true&#xD;&#xA;ConCheckbox1.visible=true&#xD;&#xA;ConCheckbox2.visible=true&#xD;&#xA;ConCheckbox3.visible=true&#xD;&#xA;ConCheckbox4.visible=true&#xD;&#xA;ConCheckbox5.visible=true&#xD;&#xA;ConCheckbox6.visible=true&#xD;&#xA;TrackingImg.visible=true&#xD;&#xA;TablePage.Top=38&#xD;&#xA;TablePage.Height=(Height - 42)" OnHoverOut="CheckboxFrame0.visible=false&#xD;&#xA;CheckboxFrame1.visible=false&#xD;&#xA;CheckboxFrame2.visible=false&#xD;&#xA;CheckboxFrame3.visible=false&#xD;&#xA;CheckboxFrame4.visible=false&#xD;&#xA;CheckboxFrame5.visible=false&#xD;&#xA;CheckboxFrame6.visible=false&#xD;&#xA;ConCheckbox0.visible=false&#xD;&#xA;ConCheckbox1.visible=false&#xD;&#xA;ConCheckbox2.visible=false&#xD;&#xA;ConCheckbox3.visible=false&#xD;&#xA;ConCheckbox4.visible=false&#xD;&#xA;ConCheckbox5.visible=false&#xD;&#xA;ConCheckbox6.visible=false&#xD;&#xA;TrackingImg.visible=false&#xD;&#xA;TablePage.Top=23&#xD;&#xA;TablePage.Height=(Height - 27)" ScrollExtent="189,218" Size="189,218" UserMovable="true" UserResizable="true">
+    <Button Location="171,2" Name="CloseBtn" OnPress="Parent.WindowFrame.Close.press=true" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":30ce89b72d3f513f:Close" UserMovable="true" />
+    <Button BackgroundOpacity="0.000" Location="171,25" Name="TrackingBtn" OnPress="Parent.OkButton.press=true" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" Style="/ButtonStyles.invisible" Tooltip="Track" />
+    <Image Location="171,25" Name="TrackingImg" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" SourceRect="483,177,497,191" SourceResource="images/windowelements.dds" Visible="false" />
+    <RectangleStyle Center="Checked" CenterShrinkH="true" CenterShrinkV="true" Name="CheckedRect" />
+    <RectangleStyle Center="Unchecked" CenterShrinkH="true" CenterShrinkV="true" Name="UncheckedRect" />
+    <ImageStyle Filter="true" Name="Unchecked">
+        <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="153,209,171,227" />
+    </ImageStyle>
+    <ImageStyle Filter="true" Name="Checked">
+        <ImageFrame Name="image" Source="images/widgets01.dds" SourceRect="153,190,171,208" />
+    </ImageStyle>
+    <CheckboxStyle DisabledTextStyle="/Fonts.FontZapf15" Name="CheckboxStyle" NormalTextStyle="/Fonts.FontZapf15" RStyleActivated="CheckedRect" RStyleDefault="UncheckedRect" RStyleMouseOver=" " TextOffset="20,-1" />
+    <Image Location="64,25" Name="CheckboxFrame0" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" SourceRect="153,171,171,189" SourceResource="images/widgets01.dds" Style="CheckboxFrame" Visible="false" />
+    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="64,25" Name="ConCheckbox0" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" Style="CheckboxStyle" Visible="false" />
+    <Image Location="79,25" Name="CheckboxFrame1" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" SourceRect="153,171,171,189" SourceResource="images/widgets01.dds" Style="CheckboxFrame" Visible="false" />
+    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="79,25" Name="ConCheckbox1" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" Style="CheckboxStyle" Visible="false" />
+    <Image Location="94,25" Name="CheckboxFrame2" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" SourceRect="153,171,171,189" SourceResource="images/widgets01.dds" Style="CheckboxFrame" Visible="false" />
+    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="94,25" Name="ConCheckbox2" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" Style="CheckboxStyle" Visible="false" />
+    <Image Location="109,25" Name="CheckboxFrame3" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" SourceRect="153,171,171,189" SourceResource="images/widgets01.dds" Style="CheckboxFrame" Visible="false" />
+    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="109,25" Name="ConCheckbox3" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" Style="CheckboxStyle" Visible="false" />
+    <Image Location="124,25" Name="CheckboxFrame4" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" SourceRect="153,171,171,189" SourceResource="images/widgets01.dds" Style="CheckboxFrame" Visible="false" />
+    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="124,25" Name="ConCheckbox4" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" Style="CheckboxStyle" Visible="false" />
+    <Image Location="139,25" Name="CheckboxFrame5" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" SourceRect="153,171,171,189" SourceResource="images/widgets01.dds" Style="CheckboxFrame" Visible="false" />
+    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="139,25" Name="ConCheckbox5" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" Style="CheckboxStyle" Visible="false" />
+    <Image Location="154,25" Name="CheckboxFrame6" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" SourceRect="153,171,171,189" SourceResource="images/widgets01.dds" Style="CheckboxFrame" Visible="false" />
+    <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="154,25" Name="ConCheckbox6" PackLocation="right,top" ScrollExtent="12,12" Size="12,12" Style="CheckboxStyle" Visible="false" />
+    <DataSource Name="FilterDS">
+        <Data Name="Placeholder1" text=":30ce89b70c825029:&lt;Filters&gt;" />
+    </DataSource>
+    <DataSource Name="HarvestFilterDS">
+        <Data Name="Placeholder1" text=":30ce89b7d393dc1d:&lt;Harvest Filters&gt;" />
+    </DataSource>
+    <Dropdownbox DataSource="FilterDS" Location="2,5" Name="FilterDropdown" OnHoverIn="width=100" OnHoverOut="width=14" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="14,19" Size="14,19" Style="/dropdownlist.dropdown_default" />
+    <Dropdownbox DataSource="HarvestFilterDS" Location="2,2" Name="HarvestFilterDropdown" OnHoverIn="width=100" OnHoverOut="width=14" RowTemplate="/Templates.dropdowntemplate" ScrollExtent="14,19" Size="14,19" Style="/dropdownlist.dropdown_default" Visible="false" />
+    <TextboxStyle CaratColor="#FFFF00" Cursor="/Cursor.Text" DisabledTextStyle="/Fonts.FontArial14" Name="inputStyle" NormalTextStyle="/Fonts.FontArial14" SelectedTextStyle="/Fonts.FontArial14" SelectionColor="#4A404A" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0" />
+    <Textbox BackgroundOpacity="1.000" Color="#F0F0F0" Cursor="/Cursor.Text" Location="18,4" MaxLength="40" Name="FilterText" PackSize="a,f" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="136,19" Size="136,19" Style="inputStyle" TextColor="#F0F0F0">:30ce89b7b6a6a978:[DEVL]FilterText</Textbox>
+    <Page BackgroundOpacity="1.000" Color="#262422" Location="18,4" Name="BioGrouperBkg" PackSize="a,f" RStyleDefault="/FrameStyles.BkgRoundedGreyscale.rect" ScrollExtent="136,19" Size="136,19" />
+    <Page Location="3,23" Name="TablePage" PackSize="absolute,absolute" ScrollExtent="183,191" Size="183,191">
+        <TableHeader BackgroundColor="#FFFFFF" BackgroundOpacity="0.000" ButtonStyle="/ButtonStyles.invisible" Location="1,3" MinimumScrollExtent="168,0" Name="TableHeader" PackLocation="left,top" PackSize="absolute" ScrollExtent="181,16" Size="181,16" Table="Table" />
+        <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="-2,0" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="187,22" Size="187,22" />
+        <Page BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="0,2" Name="HeaderBkg" PackLocation="top,left" PackSize="absolute" ScrollExtent="183,17" Size="183,17" />
+        <Table BackgroundColor="#000000" BackgroundOpacity="0.000" DefaultTextStyle="TrackingFont.Zapf_Tracking" Location="-1,23" MinimumScrollExtent="168,0" Name="Table" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="168,167" SelectionAllowedMultiRow="false" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" Size="168,167" TableModel="TableModel" />
+        <Scrollbar ArrowPressSound="sounds/button" Control="Table" HideIfUnnecessary="true" Location="163,20" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,171" Size="22,171" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+        <Page BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Location="0,-8" Name="TableFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/rectlist.win_plain" ScrollExtent="184,198" Size="184,198" Visible="false" />
+        <DataSourceContainer Name="TableDSContainer">
+            <DataSource label=":30ce89b701ee2ec7:Name" Name="NameDS" type="text" />
+        </DataSourceContainer>
+        <TableModelDefault DataSourceContainer="TableDSContainer" Name="TableModel" />
+    </Page>
+    <Namespace Name="TrackingFont">
+        <TextStyle Algorithm="Simple" FontName="Zapf Calligraphic 801 Bold BT" Language="english" Name="Zapf_Tracking" PointSize="15" PrivateFontPath="UI/Fonts/zcal801b.TTF" ShadowStyle="/ShadowStyles.BlackOutlineNoShadow.Outline1" UseCachedFont="true" />
+    </Namespace>
+    <Button Location="-12,179" Name="OkButton" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style" Visible="false">:30ce89b713a7061a:Ok</Button>
+    <Button Location="96,179" Name="CancelButton" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style" Visible="false">:30ce89b7ae453fbb:Cancel</Button>
+    <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="213,234" Size="213,234">
+        <Button Location="183,4" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":30ce89b72d3f513f:Close" UserMovable="true" Visible="false" />
+        <Page AbsorbsInput="false" Location="23,0" Name="RightGrouper" PackLocation="right,top" ScrollExtent="190,70" Size="190,70" />
+        <Page AbsorbsInput="false" Name="LeftGrouper" ScrollExtent="270,70" Size="270,70" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,-1" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="193,221" Size="193,221" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="13,3" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="189,213" Size="189,213" />
+    </Page>
+</Page>

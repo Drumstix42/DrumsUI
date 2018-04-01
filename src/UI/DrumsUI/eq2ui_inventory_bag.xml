@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="155,152" MaximumSize="2048,2048" MinimumSize="20,20" Name="Bag" OnHoverIn="Handle.visible=true&#xD;&#xA;Close.visible=true" OnHoverOut="Handle.visible=false&#xD;&#xA;Close.visible=false" PackLocation="left,bottom" ScrollExtent="179,394" Size="179,394" UserMovable="true" UserResizable="true" version="2.1" version_note="Replaced volume page continaing ">
+    <Image GetsInput="true" Location="3,3" Name="Handle" OnHoverIn="LocalTooltip=Parent.Name.Text" ScrollExtent="14,14" Size="14,14" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Visible="false" />
+    <Button Location="132,1" MaximumSize="16384,26" Name="BagOptions" PackLocation="right,top" PackSize="fixed,fixed" Style="/CommonElements.SmallPushButton.data.style" Tooltip=":xx:Bag Options" Visible="false" />
+    <Button Location="159,3" Name="Close" OnPress="Parent.WindowFrame.Close.press=true" PackLocation="right,top" ScrollExtent="16,15" Size="16,15" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":f4ce19682d3f513f:Close" UserMovable="true" Visible="false" />
+    <IconBank BackgroundOpacity="1.000" Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconframepadding="0" iconpadding="0" iconsize="42" iconstyle="/IconStyles.examine" Location="4,4" Name="Icons" PackSize="a,a" renderframe="true" renderoutlines="false" ScrollExtent="171,389" Size="171,389" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="false" />
+    <Text Enabled="false" Font="/TextStyles.Large.LargeStyle" MaxLines="1" Name="Name" PackLocation="cfc,top" PackSize="absolute,fixed" ScrollExtent="165,22" Size="165,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9" Tooltip=":f4ce1968dc90d15e_1:Bag" Visible="false">:f4ce1968dc90d15e:Bag</Text>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="179,394" Size="179,394">
+        <Button Location="121,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":f4ce1968ec278586:Window Settings" UserMovable="true" Visible="false" />
+        <Button Location="126,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":f4ce1968574a0c6d:Help" UserMovable="true" Visible="false" />
+        <Button Location="160,3" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":f4ce19682d3f513f:Close" UserMovable="true" Visible="false" />
+        <Page AbsorbsInput="false" Location="9,0" Name="RightGrouper" PackLocation="right,top" ScrollExtent="170,70" Size="170,70" />
+        <Page AbsorbsInput="false" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="195,70" Size="195,70" Visible="false">
+            <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="30,3" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="82,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="65,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">:f4ce1968f1cdb8d8:WindowFrame</Text>
+        </Page>
+        <Page AbsorbsInput="false" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="4,4" Size="4,4" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="4,4" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="171,389" Size="171,389" />
+    </Page>
+</Page>

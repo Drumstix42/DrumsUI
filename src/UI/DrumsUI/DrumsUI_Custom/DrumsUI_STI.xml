@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page eq2usescomwndcontrols="true" Location="353,441" MaximumSize="2000,60" MinimumSize="366,60" Name="DrumsUI_STI" OnHoverIn="Composite.absorbsinput=false" PackLocation="center,bottom" ScrollExtent="370,60" Size="370,60" UserMovable="true" UserResizable="true" UserScrollable="false">
+    <Text DynamicData="/GameData.General.Time" DynamicDataFilter="FFFE" Name="AutoLoad" OnShow="show_window Custom.DrumsUI_STI.Load" OnTextChanged="show_window Custom.DrumsUI_STI.AutoLoad" Visible="false" />
+    <Text DynamicData="/GameData.Self.Name" Name="PlayerName" OnTextChanged="Parent.DoCommand.onshow=(&apos;hide_window Custom.DrumsUI_STI.AutoLoad&apos;)&#xD;&#xA;COND1=(Text==&apos;NoName&apos;)&#xD;&#xA;COND2=(Text==sName)&#xD;&#xA;COND3=(Text==&apos;&apos;)&#xD;&#xA;COND=(COND1 || COND2 || COND3)&#xD;&#xA;Parent.DoCommand.visible=(COND ? false : true)&#xD;&#xA;sName=Text" Visible="false" />
+    <Button Name="Load" OnShow="show_window Custom.DrumsUI_STI&#xD;&#xA;show_window Custom.DrumsUI_STI_Auto&#xD;&#xA;Parent.LoadCheck.OnTextChanged=Parent.LoadCheck.codeToCopy&#xD;&#xA;Visible=false" Visible="false" />
+    <Text codeToCopy="COND1=(Parent.Parent.Name == &apos;_HUD&apos;)&#xD;&#xA;COND2=(Parent.Parent.DrumsUI_STI_Auto.Name == &apos;DrumsUI_STI_Auto&apos;)&#xD;&#xA;COND3=(Parent.Parent.DrumsUI_STI_Auto.Width == 1)&#xD;&#xA;COND=(COND1 &amp;&amp; COND2 &amp;&amp; COND3)&#xD;&#xA;Parent.DoHide.visible=COND ? true : false&#xD;&#xA;Visible=COND ? false : true&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Name == &apos;Custom&apos;)&#xD;&#xA;Visible=COND ? false : true" DynamicData="/GameData.General.Time" Name="LoadCheck" OnHide="OnTextChanged=&apos;&apos;" />
+    <Button Name="DoHide" OnShow="hide_window Custom.DrumsUI_STI&#xD;&#xA;Visible=false" Visible="false" />
+    <Button Name="DoCommand" OnPress=" " OnShow="Parent.DoCommand.press=true&#xD;&#xA;Visible=false" Visible="false" />
+    <ImageStyle Filter="true" Name="InCombat">
+        <ImageFrame Source="images/window_elements_specific.dds" SourceRect="272,99,291,118" />
+    </ImageStyle>
+    <Composite AbsorbsInput="false" Location="5,5" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="366,51" Size="362,51" SpacingType="Fill">
+        <Page AbsorbsInput="false" MinimumSize="122,51" Name="Player" ScrollExtent="122,51" Size="122,51">
+            <Page AbsorbsInput="false" Name="Contents" PackSize="a,a" ScrollExtent="122,51" Size="122,51">
+                <Button BackgroundOpacity="0.000" Location="4,13" Name="ClickTarget" OnPress="target_self" PackLocation="left,top" PackSize="a,f" ScrollExtent="106,16" Size="106,16" Style="/ButtonStyles.invisible" />
+                <Image Color="#FFCC88" Location="110,18" Name="Divider" PackLocation="right,top" Rotation="0.250" ScrollExtent="16,7" Size="16,7" SourceRect="297,319,313,326" SourceResource="images/window_elements_specific.dds" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="5,2" MaximumSize="150,17" MaxLines="1" Name="Title" Opacity="0.300" PackLocation="left,top" ScrollExtent="40,17" Size="40,17" TruncateElipsis="false">S</Text>
+                <Image BackgroundColor="#FFFFFF" DynamicData="/GameData.Self.IsHated" GetsInput="true" Location="4,31" Name="CombatIcon" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" Style="/MainHUD.Player.InCombat" Tooltip=":09e864967307661b:You are being attacked" />
+                <Text AbsorbsInput="false" DynamicData="/GameData.Group.Group_0.HealthPercent" DynamicDataFilter="FBFF" Font="/TextStyles.Small.SmallStyle" Location="66,14" MaximumSize="150,17" MaxLines="1" Name="HP" PackLocation="right,top" ScrollExtent="40,17" ShadowStyle="/ShadowStylesNew.Outline.style" Size="40,17" TextAlignment="Right" TruncateElipsis="false">100%</Text>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="4,12" Name="Bars" PackLocation="left,top" PackSize="a,f" ScrollExtent="106,16" Size="106,16">
+                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="106,16" Size="106,16" />
+                    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="2,1" Name="Health" PackSize="a,a" ScrollExtent="102,8" Size="102,8">
+                        <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Self.Health" DynamicDataFilter="FFFB" Location="0,1" Name="Bar" PackSize="absolute" Progress="1.000" ScrollExtent="102,7" Size="102,7" Style="/progressbarlist.progress_default" />
+                        <Image AbsorbsInput="false" BackgroundColor="#330000" BackgroundOpacity="0.800" Location="0,1" Name="Bkg" PackSize="absolute" ScrollExtent="102,7" Size="102,7" />
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="2,9" Name="Power" PackSize="a,a" ScrollExtent="102,5" Size="102,5">
+                        <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Self.Power" DynamicDataFilter="FFFB" Location="0,1" Name="Bar" PackSize="absolute" Progress="1.000" ScrollExtent="102,6" Size="102,6" Style="/progressbarlist.progress_default" />
+                        <Image AbsorbsInput="false" BackgroundColor="#001640" BackgroundOpacity="0.800" Location="0,1" Name="Bkg" PackSize="absolute" ScrollExtent="102,6" Size="102,6" />
+                    </Page>
+                </Page>
+                <Page AbsorbsInput="false" Location="23,32" Name="CurePage" OnHoverIn="Parent.SendData.press=true&#xD;&#xA;Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" PackLocation="right,top" PackSize="f,f" ScrollExtent="88,16" Size="88,16">
+                    <Button BackgroundOpacity="0.000" Name="1" OnPress="Parent.Parent.Parent.Parent.Parent.Parent.Player.CureButtons.Trauma.press=true" ScrollExtent="16,16" Size="16,16" Style="/ButtonStyles.invisible" />
+                    <Button BackgroundOpacity="0.000" Location="18,0" Name="2" OnPress="Parent.Parent.Parent.Parent.Parent.Parent.Player.CureButtons.Arcane.press=true" ScrollExtent="16,16" Size="16,16" Style="/ButtonStyles.invisible" />
+                    <Button BackgroundOpacity="0.000" Location="36,0" Name="3" OnPress="Parent.Parent.Parent.Parent.Parent.Parent.Player.CureButtons.Noxious.press=true" ScrollExtent="16,16" Size="16,16" Style="/ButtonStyles.invisible" />
+                    <Button BackgroundOpacity="0.000" Location="54,0" Name="4" OnPress="Parent.Parent.Parent.Parent.Parent.Parent.Player.CureButtons.Elemental.press=true" ScrollExtent="16,16" Size="16,16" Style="/ButtonStyles.invisible" />
+                    <Button BackgroundOpacity="0.000" Location="72,0" Name="5" OnPress="Parent.Parent.Parent.Parent.Parent.Parent.Player.CureButtons.Curse.press=true" ScrollExtent="16,16" Size="16,16" Style="/ButtonStyles.invisible" />
+                </Page>
+                <Page AbsorbsInput="false" actiontype="Player" DynamicData="/GameData.Actions.Player" Location="23,32" Name="Effects" PackLocation="right,top" PackSize="f,f" ScrollExtent="88,16" Size="88,16">
+                    <Text BackgroundOpacity="0.200" DynamicData="/GameData.Group.Group_0.Effect1" Font="/TextStyles.Normal.NormalStyle" Location="4,0" Name="Effect1Label" ScrollExtent="9,15" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="9,14" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">1</Text>
+                    <Text BackgroundOpacity="0.200" DynamicData="/GameData.Group.Group_0.Effect2" Font="/TextStyles.Normal.NormalStyle" Location="22,0" Name="Effect2Label" ScrollExtent="9,15" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="9,14" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">1</Text>
+                    <Text BackgroundOpacity="0.200" DynamicData="/GameData.Group.Group_0.Effect3" Font="/TextStyles.Normal.NormalStyle" Location="40,0" Name="Effect3Label" ScrollExtent="9,15" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="9,14" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">1</Text>
+                    <Text BackgroundOpacity="0.200" DynamicData="/GameData.Group.Group_0.Effect4" Font="/TextStyles.Normal.NormalStyle" Location="58,0" Name="Effect4Label" ScrollExtent="9,15" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="9,14" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">1</Text>
+                    <Text BackgroundOpacity="0.200" DynamicData="/GameData.Group.Group_0.Effect5" Font="/TextStyles.Normal.NormalStyle" Location="76,0" Name="Effect5Label" ScrollExtent="9,15" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="9,14" TextAlignment="Right" TextAlignmentVertical="Center" Visible="false">1</Text>
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect1" IconStyle="/MainHUD.GroupMembers.data.Effect1Style" MouseOverColor="#FFFF00" Name="Effect1" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect2" IconStyle="/MainHUD.GroupMembers.data.Effect2Style" Location="18,0" MouseOverColor="#FFFF00" Name="Effect2" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect3" IconStyle="/MainHUD.GroupMembers.data.Effect3Style" Location="36,0" MouseOverColor="#FFFF00" Name="Effect3" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect4" IconStyle="/MainHUD.GroupMembers.data.Effect4Style" Location="54,0" MouseOverColor="#FFFF00" Name="Effect4" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect5" IconStyle="/MainHUD.GroupMembers.data.Effect5Style" Location="72,0" MouseOverColor="#FFFF00" Name="Effect5" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect1" IconStyle="/MainHUD.GroupMembers.data.RedStyle" MouseOverColor="#FFFF00" Name="Effect1Color" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect2" IconStyle="/MainHUD.GroupMembers.data.PurpleStyle" Location="18,0" MouseOverColor="#FFFF00" Name="Effect2Color" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect3" IconStyle="/MainHUD.GroupMembers.data.GreenStyle" Location="36,0" MouseOverColor="#FFFF00" Name="Effect3Color" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect4" IconStyle="/MainHUD.GroupMembers.data.YellowStyle" Location="54,0" MouseOverColor="#FFFF00" Name="Effect4Color" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_0.Effect5" IconStyle="/MainHUD.GroupMembers.data.YellowStyle" Location="72,0" MouseOverColor="#FFFF00" Name="Effect5Color" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" TreatAsButton="true" Visible="false" />
+                    <Page Name="IconBG" ScrollExtent="101,18" Size="101,18">
+                        <Image Name="Icon" Opacity="0.200" ScrollExtent="16,16" Size="16,16" SourceRect="130,2,164,40" SourceResource="/images/icons/icon_as9.dds" />
+                        <Image Location="18,0" Name="Icon" Opacity="0.200" ScrollExtent="16,16" Size="16,16" SourceRect="1,44,40,83" SourceResource="/images/icons/icon_as9.dds" />
+                        <Image Location="36,0" Name="Icon" Opacity="0.200" ScrollExtent="16,16" Size="16,16" SourceRect="171,2,206,40" SourceResource="/images/icons/icon_as9.dds" />
+                        <Image Location="54,0" Name="Icon" Opacity="0.200" ScrollExtent="16,16" Size="16,16" SourceRect="213,1,249,37" SourceResource="/images/icons/icon_as9.dds" />
+                        <Image Location="72,0" Name="Icon" Opacity="0.200" ScrollExtent="16,16" Size="16,16" SourceRect="213,169,253,212" SourceResource="/images/icons/icon_ss22.dds" />
+                    </Page>
+                </Page>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="122,0" MinimumSize="122,51" Name="Target" ScrollExtent="122,51" Size="122,51">
+            <Page AbsorbsInput="false" DynamicData="/GameData.Target.Window" Name="Contents" PackSize="a,a" ScrollExtent="122,51" Size="122,51" Visible="false">
+                <Button BackgroundOpacity="0.000" Location="4,13" Name="ClickTarget" OnPress="assist" PackLocation="left,top" PackSize="a,f" ScrollExtent="106,16" Size="106,16" Style="/ButtonStyles.invisible" />
+                <Image Color="#FFCC88" Location="110,18" Name="Divider" PackLocation="right,top" Rotation="0.250" ScrollExtent="16,7" Size="16,7" SourceRect="297,319,313,326" SourceResource="images/window_elements_specific.dds" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="5,2" MaximumSize="150,17" MaxLines="1" Name="Title" Opacity="0.300" PackLocation="left,top" ScrollExtent="40,17" Size="40,17" TruncateElipsis="false">T</Text>
+                <Text AbsorbsInput="false" DynamicData="/GameData.Target.Health" DynamicDataFilter="FBFF" Font="/TextStyles.Small.SmallStyle" Location="66,15" MaximumSize="150,17" MaxLines="1" Name="HP" PackLocation="right,top" ScrollExtent="40,17" ShadowStyle="/ShadowStylesNew.Outline.style" Size="40,17" TextAlignment="Right" TruncateElipsis="false">100%</Text>
+                <Text AbsorbsInput="false" actiontype="Target" DynamicData="/GameData.Target.Name" Font="/TextStyles.Small.SmallStyle" Location="1,29" Margin="1,1,2,2" MaximumSize="16000,18" MaxLines="1" Name="Name" PackSize="absolute,fixed" ScrollExtent="120,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="120,18" TextAlignment="Center" TruncateElipsis="false">Target Name</Text>
+                <Page BackgroundOpacity="1.000" Location="4,13" Name="Bars" PackLocation="left,top" PackSize="a,f" ScrollExtent="106,16" Size="106,16">
+                    <Page BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="106,16" Size="106,16" />
+                    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="2,1" Name="Health" PackSize="a,a" ScrollExtent="102,8" Size="102,8">
+                        <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Target.Health" DynamicDataFilter="FFFB" Location="0,1" Name="Bar" PackSize="absolute" Progress="1.000" ScrollExtent="102,7" Size="102,7" Style="/progressbarlist.progress_default" />
+                        <Image AbsorbsInput="false" BackgroundColor="#330000" BackgroundOpacity="0.800" Location="0,1" Name="Bkg" PackSize="absolute" ScrollExtent="102,7" Size="102,7" />
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="2,9" Name="Power" PackSize="a,a" ScrollExtent="102,5" Size="102,5">
+                        <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Target.Power" DynamicDataFilter="FFFB" Location="0,1" Name="Bar" PackSize="absolute" Progress="1.000" ScrollExtent="102,6" Size="102,6" Style="/progressbarlist.progress_default" />
+                        <Image AbsorbsInput="false" BackgroundColor="#001640" BackgroundOpacity="0.800" Location="0,1" Name="Bkg" PackSize="absolute" ScrollExtent="102,6" Size="102,6" />
+                    </Page>
+                </Page>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Location="244,0" MinimumSize="122,51" Name="Implied" ScrollExtent="122,51" Size="122,51">
+            <Page AbsorbsInput="false" DynamicData="/GameData.ImpliedTarget.Window" Name="Contents" PackSize="a,a" ScrollExtent="122,51" Size="122,51" Visible="false">
+                <Button BackgroundOpacity="0.000" Location="4,13" Name="ClickTarget" OnPress="assist" PackLocation="left,top" PackSize="a,f" ScrollExtent="106,16" Size="106,16" Style="/ButtonStyles.invisible" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="5,2" MaximumSize="150,17" MaxLines="1" Name="Title" Opacity="0.300" PackLocation="left,top" ScrollExtent="40,17" Size="40,17" TruncateElipsis="false">T</Text>
+                <Text AbsorbsInput="false" DynamicData="/GameData.ImpliedTarget.Health" DynamicDataFilter="FBFF" Font="/TextStyles.Small.SmallStyle" Location="66,15" MaximumSize="150,17" MaxLines="1" Name="HP" PackLocation="right,top" ScrollExtent="40,17" ShadowStyle="/ShadowStylesNew.Outline.style" Size="40,17" TextAlignment="Right" TruncateElipsis="false">100%</Text>
+                <Text AbsorbsInput="false" actiontype="Target" DynamicData="/GameData.ImpliedTarget.Name" Font="/TextStyles.Small.SmallStyle" Location="1,29" Margin="1,1,2,2" MaximumSize="16000,18" MaxLines="1" Name="Name" PackSize="absolute,fixed" ScrollExtent="120,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="120,18" TextAlignment="Center" TruncateElipsis="false">Implied Target Name</Text>
+                <Page BackgroundOpacity="1.000" Location="4,13" Name="Bars" PackLocation="left,top" PackSize="a,f" ScrollExtent="106,16" Size="106,16">
+                    <Page BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="106,16" Size="106,16" />
+                    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="2,1" Name="Health" PackSize="a,a" ScrollExtent="102,8" Size="102,8">
+                        <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.ImpliedTarget.Health" DynamicDataFilter="FFFB" Location="0,1" Name="Bar" PackSize="absolute" Progress="1.000" ScrollExtent="102,7" Size="102,7" Style="/progressbarlist.progress_default" />
+                        <Image AbsorbsInput="false" BackgroundColor="#330000" BackgroundOpacity="0.800" Location="0,1" Name="Bkg" PackSize="absolute" ScrollExtent="102,7" Size="102,7" />
+                    </Page>
+                    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="2,9" Name="Power" PackSize="a,a" ScrollExtent="102,5" Size="102,5">
+                        <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.ImpliedTarget.Power" DynamicDataFilter="FFFB" Location="0,1" Name="Bar" PackSize="absolute" Progress="1.000" ScrollExtent="102,6" Size="102,6" Style="/progressbarlist.progress_default" />
+                        <Image AbsorbsInput="false" BackgroundColor="#001640" BackgroundOpacity="0.800" Location="0,1" Name="Bkg" PackSize="absolute" ScrollExtent="102,6" Size="102,6" />
+                    </Page>
+                </Page>
+            </Page>
+        </Page>
+    </Composite>
+    <Page AbsorbsInput="false" Name="WC_Titlebar" OnHide="Parent.Composite.Player.Contents.Title.visible=false&#xD;&#xA;Parent.Composite.Target.Contents.Title.visible=false&#xD;&#xA;Parent.Composite.Implied.Contents.Title.visible=false" OnShow="Parent.Composite.Player.Contents.Title.visible=true&#xD;&#xA;Parent.Composite.Target.Contents.Title.visible=true&#xD;&#xA;Parent.Composite.Implied.Contents.Title.visible=true" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="370,60" Size="370,60" />
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="WC_Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="370,60" Size="370,60" />
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="WC_Backdrop" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="368,56" Size="368,56" />
+</Page>

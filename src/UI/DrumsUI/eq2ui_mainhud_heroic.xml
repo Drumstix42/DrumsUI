@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page allowcloseontop="false" eq2usescomwndcontrols="true" Location="363,296" Name="Heroic" PackLocation="right,center" ScrollExtent="189,67" Size="189,67" UserMovable="true">
+    <Page allowcloseontop="false" eq2usescomwndcontrols="true" Name="Starter" ScrollExtent="189,68" Size="189,68" Visible="false">
+        <Page AbsorbsInput="false" Location="0,1" Name="Last" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="5,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+            <Image GetsInput="true" Name="back" ScrollExtent="40,40" Size="40,40" Style="backStyle" />
+        </Page>
+        <Page AbsorbsInput="false" Location="39,1" Name="Chain5" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+        </Page>
+        <Page AbsorbsInput="false" Location="76,1" Name="Chain4" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+        </Page>
+        <Page AbsorbsInput="false" Location="113,1" Name="Chain3" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+        </Page>
+        <Page AbsorbsInput="false" Location="150,1" Name="Chain2" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+        </Page>
+        <Page AbsorbsInput="false" Location="191,1" Name="Chain1" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="5,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+        </Page>
+        <Page AbsorbsInput="false" Location="230,1" Name="Chain6" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+        </Page>
+        <ImageStyle Name="backStyle">
+            <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="7,277,57,327" />
+        </ImageStyle>
+    </Page>
+    <Page allowcloseontop="false" eq2usescomwndcontrols="true" Name="Wheel" ScrollExtent="189,68" Size="189,68">
+        <ImageStyle Name="shiftarrowStyle">
+            <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="149,275,169,299" />
+        </ImageStyle>
+        <Page AbsorbsInput="false" Location="0,40" Name="Timer" ScrollExtent="189,152" Size="189,152">
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="3,3" Name="tick0" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="14,3" Name="tick1" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="26,3" Name="tick2" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="37,3" Name="tick3" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="49,3" Name="tick4" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="60,3" Name="tick5" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="72,3" Name="tick6" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="83,3" Name="tick7" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="95,3" Name="tick8" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="106,3" Name="tick9" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="118,3" Name="tick10" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="129,3" Name="tick11" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="141,3" Name="tick12" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="152,3" Name="tick13" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="164,3" Name="tick14" ScrollExtent="11,6" Size="11,6" />
+            <Image AbsorbsInput="false" BackgroundColor="#71A1F7" BackgroundOpacity="1.000" Location="175,3" Name="tick15" ScrollExtent="11,6" Size="11,6" />
+        </Page>
+        <ShadowStyle Name="shadowStyle" />
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,48" Name="Name" ScrollExtent="189,20" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="189,20" TextAlignment="Center" TextAlignmentVertical="Center" />
+        <Image GetsInput="true" Location="6,9" Name="orderImage" ScrollExtent="27,25" Size="27,25" Style="Order0.running" />
+        <Page AbsorbsInput="false" Location="6,6" Name="Order0" ScrollExtent="28,28" Size="28,28">
+            <ImageStyle Name="running">
+                <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="269,337,314,377" />
+            </ImageStyle>
+            <ImageStyle Name="done">
+                <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="320,337,365,377" />
+            </ImageStyle>
+            <ImageStyle Name="fail">
+                <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="372,337,417,377" />
+            </ImageStyle>
+        </Page>
+        <Page AbsorbsInput="false" Location="6,7" Name="Order1" ScrollExtent="28,28" Size="28,28" Visible="false">
+            <ImageStyle Name="running">
+                <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="6,338,51,378" />
+            </ImageStyle>
+            <ImageStyle Name="done">
+                <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="48,338,93,378" />
+            </ImageStyle>
+            <ImageStyle Name="fail">
+                <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="91,338,136,378" />
+            </ImageStyle>
+        </Page>
+        <Page AbsorbsInput="false" Location="6,7" Name="Order2" ScrollExtent="28,28" Size="28,28" Visible="false">
+            <ImageStyle Name="running">
+                <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="135,338,180,378" />
+            </ImageStyle>
+            <ImageStyle Name="done">
+                <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="178,338,223,378" />
+            </ImageStyle>
+            <ImageStyle Name="fail">
+                <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="223,338,268,378" />
+            </ImageStyle>
+        </Page>
+        <Page AbsorbsInput="false" Location="39,1" Name="Criteria1" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="5,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+            <Image GetsInput="true" Name="back" ScrollExtent="40,40" Size="40,40" Style="backNextStyle" />
+        </Page>
+        <Page AbsorbsInput="false" Location="76,1" Name="Criteria6" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+            <Image GetsInput="true" Name="back" ScrollExtent="40,40" Size="40,40" Style="backStyle" />
+        </Page>
+        <Page AbsorbsInput="false" Location="113,1" Name="Criteria5" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+            <Image GetsInput="true" Name="back" ScrollExtent="40,40" Size="40,40" Style="backStyle" />
+        </Page>
+        <Page AbsorbsInput="false" Location="150,1" Name="Criteria4" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+            <Image GetsInput="true" Name="back" ScrollExtent="40,40" Size="40,40" Style="backStyle" />
+        </Page>
+        <Page AbsorbsInput="false" Location="187,1" Name="Criteria3" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+            <Image GetsInput="true" Name="back" ScrollExtent="40,40" Size="40,40" Style="backStyle" />
+        </Page>
+        <Page AbsorbsInput="false" Location="224,1" Name="Criteria2" ScrollExtent="40,40" Size="40,40">
+            <Image AbsorbsInput="false" Location="4,3" Name="icon" ScrollExtent="32,32" Size="32,32" Style="demo1" />
+            <Image GetsInput="true" Name="back" ScrollExtent="40,40" Size="40,40" Style="backStyle" />
+        </Page>
+        <ImageStyle Name="ringStyle">
+            <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="202,13,356,168" />
+        </ImageStyle>
+        <ImageStyle Name="shiftStyle">
+            <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="183,278,233,328" />
+        </ImageStyle>
+        <ImageStyle Name="backStyle">
+            <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="7,277,57,327" />
+        </ImageStyle>
+        <ImageStyle Name="backNextStyle">
+            <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="61,277,111,327" />
+            <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="7,277,57,327" />
+        </ImageStyle>
+        <ImageStyle Name="backDoneStyle">
+            <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="61,277,111,327" />
+        </ImageStyle>
+        <ImageStyle Name="backgroundStyle">
+            <ImageFrame atlas="none" Name="title" Source="images/cmb_whl.dds" SourceRect="0,0,185,180" />
+        </ImageStyle>
+    </Page>
+    <Image GetsInput="true" Name="back" ScrollExtent="42,42" Size="42,42" Style="Wheel.shiftStyle" />
+</Page>

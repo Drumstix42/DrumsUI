@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="408,187" MaximumSize="600,16384" MinimumSize="342,310" Name="Merchant" PackLocation="left,top" ScrollExtent="342,310" Size="342,310" UserMovable="true" UserResizable="true" version="1.2">
+    <Page Location="3,4" Name="DialogPage" ScrollExtent="337,244" Size="337,244" Visible="false">
+        <Composite Location="6,59" Name="Composite" ScrollExtent="321,144" Size="321,144" SpacingType="Fill">
+            <Text AbsorbsInput="false" BackgroundColor="#FF0000" DropToParent="true" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Margin="10,5,10,5" Name="Label" ScrollExtent="321,94" Size="321,94" TextAlignment="Center" TextAlignmentVertical="Center">:13a20c741f7a0d45:Thank you for your purchase!
+The following items have been placed into your inventory.</Text>
+            <Page BackgroundColor="#00FF00" Location="0,94" MaximumSize="16384,50" MinimumSize="0,50" Name="ButtonPage" ScrollExtent="360,50" Size="360,50">
+                <Button Location="120,0" MaximumSize="16384,38" MinimumSize="38,38" Name="OKButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:13a20c7428c926d2:OK</Button>
+                <Button Location="185,0" MaximumSize="16384,38" MinimumSize="38,38" Name="NoButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:13a20c740dd1f342:No</Button>
+                <Button Location="55,0" MaximumSize="16384,38" MinimumSize="38,38" Name="YesButton" ScrollExtent="120,38" Size="120,38" Style="/CommonElements.LargePushButton.data.style">:13a20c74b2558cb6:Yes</Button>
+            </Page>
+        </Composite>
+        <Page AbsorbsInput="false" Location="-8,54" Name="WindowFrame" ScrollExtent="349,165" Size="349,165">
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,0" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="328,153" Size="328,153" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,-20" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="347,185" Size="347,185" />
+        </Page>
+        <Page BackgroundOpacity="0.400" Name="Bkg" ScrollExtent="805,804" Size="805,804" />
+    </Page>
+    <Page Location="1,66" Name="ItemList" PackSize="a,a" ScrollExtent="340,128" Size="340,128">
+        <Button BackgroundOpacity="0.000" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort0" PackSize="absolute,fixed" ScrollExtent="230,25" Size="230,25" Style="/CommonElements.Table.data.sort.style_center_align">Item</Button>
+        <Button BackgroundOpacity="0.000" Location="230,0" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort1" PackLocation="FFF" PackSize="f,f" ScrollExtent="105,25" Size="105,25" Style="/CommonElements.Table.data.sort.style_center_align">Price</Button>
+        <Page BackgroundOpacity="1.000" MaximumSize="16384,25" MinimumSize="0,25" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="340,25" Size="340,25" />
+        <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="true" Location="315,24" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,102" Size="22,102" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+        <Page AbsorbsInput="false" BackgroundColor="#2D251C" Location="6,25" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="327,99" ScrollSize="34,34" Size="327,99">
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="34,0" MaxLines="2" Name="row Item Name" PackSize="absolute" ScrollExtent="134,32" Size="134,32" TextAlignmentVertical="Center">:377c9c4269d2db30:Missing item name</Text>
+            <Text Font="/TextStyles.Normal.NormalStyle" Location="228,0" Margin="2,0,2,0" Name="row Price" PackLocation="right,top" ScrollExtent="80,32" Size="80,32" TextAlignment="Right" TextAlignmentVertical="Center">0</Text>
+            <Image Location="199,3" Name="row SC" ScrollExtent="28,26" Size="28,26" Style="/imagelist.coins.StationCash" />
+            <Image Location="199,3" Name="row PSG" ScrollExtent="28,26" Size="28,26" Style="/imagelist.coins.SevenCash" />
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="165,0" MouseOverColor="#FFFF00" Name="row Icon2" PackLocation="right,top" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+            <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="197,0" MouseOverColor="#FFFF00" Name="row Icon3" PackLocation="right,top" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+            <Image BackgroundColor="#4A404A" BackgroundOpacity="1.000" Name="row Selection" PackSize="absolute" ScrollExtent="327,32" Size="327,32" />
+        </Page>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,20" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="340,109" Size="340,109" />
+    </Page>
+    <Page BackgroundOpacity="1.000" Location="1,191" Name="SelectedItem" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="340,71" Size="340,71">
+        <Button Location="8,8" MaximumSize="16384,32" MinimumSize="32,10" Name="CommandBuySellOtherNumber" PackLocation="Proportional" PackSize="Proportional" ScrollExtent="107,16" Size="107,16" Style="/CommonElements.Table.data.sort.style_center_align">Buy Other #</Button>
+        <Button Location="224,8" MaximumSize="16384,32" MinimumSize="32,10" Name="CommandBuySellOne" PackLocation="Proportional" PackSize="Proportional" ScrollExtent="107,16" Size="107,16" Style="/CommonElements.Table.data.sort.style_center_align">Buy One</Button>
+        <Button Location="116,8" MaximumSize="16384,32" MinimumSize="32,10" Name="CommandBuySell" PackLocation="Proportional" PackSize="Proportional" ScrollExtent="107,16" Size="107,16" Style="/CommonElements.Table.data.sort.style_center_align">Buy</Button>
+        <Button Location="116,8" MaximumSize="16384,32" MinimumSize="32,16" Name="CommandBuySellStack" PackLocation="Proportional" PackSize="Proportional" ScrollExtent="107,16" Size="107,16" Style="/CommonElements.Table.data.sort.style_center_align">Buy Stack (20)</Button>
+        <Page BackgroundOpacity="1.000" Location="8,8" Name="HeaderBkg" PackLocation="top,left" PackSize="absolute" ScrollExtent="324,16" Size="324,16" />
+        <Page BackgroundOpacity="1.000" Location="0,3" MaximumSize="16384,25" MinimumSize="0,25" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="340,25" Size="340,25" />
+        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="240,43" MinimumSize="22,22" Name="NoSaleCheckbox" PackLocation="right" ScrollExtent="94,22" Size="94,22" Style="/CommonElements.Checkbox.data.style">Not for sale</Checkbox>
+        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="12,29" MouseOverColor="#FFFF00" Name="iconSelected" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="54,28" MaxLines="2" Name="lblSelectedNameAndPrice" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="278,37" Size="278,37">Missing item name</Text>
+    </Page>
+    <Page AbsorbsInput="false" BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="4,279" Name="CoinPage" PackLocation="center,bottom" PackSize="fixed,fixed" ScrollExtent="335,32" Size="335,32">
+        <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="13,7" Name="PlatinumCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.PlatinumCoin" />
+        <Text AbsorbsInput="false" actiontype="Coin" cointype="3" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_3" Font="/TextStyles.Normal.NormalStyle" Location="33,7" Margin="0,0,5,0" Name="Platinum" ScrollExtent="45,18" Size="45,18" TextAlignmentVertical="Center" Tooltip="Platinum">999999</Text>
+        <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="72,7" Name="GoldCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.GoldCoin" />
+        <Text AbsorbsInput="false" actiontype="Coin" cointype="2" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_2" Font="/TextStyles.Normal.NormalStyle" Location="92,6" Margin="0,0,5,0" Name="Gold" ScrollExtent="44,20" Size="44,20" TextAlignmentVertical="Center" TextColor="#FFEE70" Tooltip="Gold">99</Text>
+        <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="124,7" Name="SilverCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.SilverCoin" />
+        <Text AbsorbsInput="false" actiontype="Coin" cointype="1" description="Silver" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_1" Font="/TextStyles.Normal.NormalStyle" Location="144,6" Margin="0,0,5,0" Name="Silver" ScrollExtent="42,20" Size="42,20" TextAlignmentVertical="Center" TextColor="#A0A0A0" Tooltip="Silver">99</Text>
+        <Image AbsorbsInput="false" BackgroundColor="#FFFFFF" Location="176,7" Name="CopperCoinIcon" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="18,18" Size="18,18" Stretch="false" Style="/imagelist.coins.CopperCoin" />
+        <Text AbsorbsInput="false" actiontype="Coin" cointype="0" description="Copper" Dragable="true" DragAccepts="icon" DragType="coin" DynamicData="/GameData.Coins.Coin_0" Font="/TextStyles.Normal.NormalStyle" Location="196,6" Margin="0,0,5,0" Name="Copper" ScrollExtent="43,20" Size="43,20" TextAlignmentVertical="Center" TextColor="#EA9129" Tooltip="Copper">99</Text>
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="172,8" Name="StatusLabel" PackSize="absolute,fixed" ScrollExtent="92,16" Size="92,16" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#C7CFC7">Status:</Text>
+        <Text DynamicData="/GameData.Stats.CurrentStatus" Font="/TextStyles.Normal.NormalStyle" Location="270,8" Name="StatusValue" ScrollExtent="72,16" Size="72,16" TextAlignmentVertical="Center">100,000,000</Text>
+    </Page>
+    <Page AbsorbsInput="false" eq2usescomwndcontrols="true" Location="0,36" Name="FilterPage" PackLocation="left,top" PackSize="a,a" ScrollExtent="342,249" Size="342,249">
+        <Button Location="272,0" MaximumSize="16384,32" Name="Clear" OnPress="Parent.FilterText.text=&apos;&apos;&#xD;&#xA;Parent.FilterText.focus=true" PackLocation="right,top" ScrollExtent="62,32" Size="62,32" Style="/CommonElements.PushButton.data.style" Tooltip="Clear search text">Clear</Button>
+        <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="-11,6" Margin="1,0,0,0" Name="Label" PackLocation="left,top" PackSize="f,f" ScrollExtent="57,20" Size="57,20" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#EFEFEF">Search</Text>
+        <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" DragAccepts="icon" IME="true" Location="50,1" MaximumSize="16384,30" MinimumSize="30,30" Name="FilterText" PackLocation="left,top" PackSize="a,f" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="220,30" Size="220,30" Style="/CommonElements.Textfield.data.style" Tooltip=":xx:Enter text to filter results" />
+        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="100,224" MinimumSize="22,22" Name="DoubleClickToSell" PackLocation="CFC,bottom" ScrollExtent="140,22" Size="140,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":xx:Enable selling items by double clicking on them from their location in your bags." Visible="false">:xx:Double Click to Sell</Checkbox>
+        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="124,224" MinimumSize="22,22" Name="ShowEquippedOnly" PackLocation="CFC,bottom" ScrollExtent="160,22" Size="160,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":868e2beb98b3773e:Show only those items which are equipped in non-appearance slots in your reforge list.">:868e2beb9f97b0fe:Show Equipped Only</Checkbox>
+        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="12,224" MinimumSize="22,22" Name="HideUnusable" PackLocation="CFC,bottom" ScrollExtent="108,22" Size="108,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":xx:Hide unusable items.">:xx:Hide Unusable</Checkbox>
+        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="124,224" MinimumSize="22,22" Name="HideGrey" PackLocation="CFC,bottom" ScrollExtent="122,22" Size="122,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":xx:Hide greyed out items.">:xx:Hide Outleveled</Checkbox>
+        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="248,224" MinimumSize="22,22" Name="ClassOnly" PackLocation="CFC,bottom" ScrollExtent="87,22" Size="87,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":xx:Show only items my class can use.">:xx:My Class</Checkbox>
+    </Page>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="342,310" Size="342,310">
+        <DataSource Name="TabSource">
+            <Data Name="Buy" text="Buy" />
+            <Data Name="Sell" text="Sell" />
+            <Data Name="Repair" target="P3" text="Repair" />
+            <Data Name="Reforge" target="SomeWidget" text="Reforge" />
+            <Data Name="Upgrade" target="SomeWidget" text=":868e2beb8724b279:Upgrade" />
+            <Data Name="Restore" target="SomeWidget" text="Restore" />
+            <Data Name="SpellLottery" text="Spell Transcribing" />
+            <Data Name="Buyback" text="Buy Back" />
+        </DataSource>
+        <TabbedPane ActiveTab="0" DataSource="TabSource" Location="4,6" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="300,36" Size="300,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" />
+        <Button Location="289,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip="Help" UserMovable="true" Visible="false" />
+        <Button Location="303,7" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip="Window Settings" UserMovable="true" Visible="false" />
+        <Button Location="321,6" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip="Close" UserMovable="true" />
+        <Page AbsorbsInput="false" Name="LeftGrouper" ScrollExtent="300,70" Size="300,70">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="4,4" MaxLines="1" Name="Title" Opacity="0.000" PackSize="absolute,fixed" ScrollExtent="73,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="73,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">Merchant</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="172,0" Name="RightGrouper" PackLocation="right,top" ScrollExtent="170,70" Size="170,70" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="342,310" Size="342,310" />
+        <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="-10,-22" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="362,62" Size="362,62" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-10,8" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="361,313" Size="361,313" />
+    </Page>
+</Page>

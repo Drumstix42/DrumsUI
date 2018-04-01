@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="DrumsUI_TC_Auto" OnShow="Location=(99999,99999)" ScrollExtent="2,1" Size="2,1" UserResizable="true" Visible="false" />
+<Page Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="DrumsUI_STI_Auto" OnShow="Location=(99999,99999)" ScrollExtent="1,1" Size="1,1" UserResizable="true" Visible="false" />
+<Page Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="DrumsUI_HideNotes" OnShow="Location=(99999,99999)" ScrollExtent="1,1" Size="1,1" UserResizable="true" Visible="false" />
+<Page Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="DrumsUI_TSLayout" OnShow="Location=(99999,99999)" ScrollExtent="2,1" Size="2,1" UserResizable="true" Visible="false" />

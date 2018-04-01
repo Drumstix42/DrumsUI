@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page eq2usescomwndcontrols="true" Location="249,621" MinimumSize="22,22" Name="Beastlord" ScrollExtent="527,58" Size="527,58" UserMovable="true" version="2.0.0">
+    <Image GetsInput="true" Location="1,5" Name="Handle" ScrollExtent="14,14" Size="14,14" SourceRect="122,476,136,490" SourceResource="/images/window_elements_generic.dds" Visible="false" />
+    <IconBank Dragable="true" font="/TextStyles.NormalOutline.NormalOutlineStyle" framecolor="#B5935A" IconFramePadding="0" iconpadding="0" iconstyle="/IconStyles.button" Location="1,5" Name="Icons" PackSize="a,a" renderframe="true" renderoutlines="true" ScrollExtent="436,43" Size="436,43" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" UserMovable="true" UserResizable="true" />
+    <Page Name="Normal" ScrollExtent="523,58" Size="523,58">
+        <Page AbsorbsInput="false" Name="BeastlordBar" ScrollExtent="553,58" Size="553,58">
+            <Image AbsorbsInput="false" Name="BeastlordHotbarLeft" PackLocation="left,bottom" PackSize="absolute,absolute" ScrollExtent="273,58" Size="273,58" Stretch="false" StretchType="ProportionalBound" Style="beastlord_hotbar_left" />
+            <Image AbsorbsInput="false" Location="260,4" Name="BeastlordHotbarRight" PackLocation="left,bottom" PackSize="absolute,absolute" ScrollExtent="263,53" Size="263,53" Stretch="false" StretchType="ProportionalCrop" Style="beastlord_hotbar_right" />
+            <ImageStyle Filter="true" Name="beastlord_hotbar_left">
+                <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="4,97,267,155" />
+            </ImageStyle>
+            <ImageStyle Filter="true" Name="beastlord_hotbar_right">
+                <ImageFrame atlas="none" Name="image" Source="images/beastlord_ui.dds" SourceRect="4,157,267,210" />
+            </ImageStyle>
+        </Page>
+        <IconBank BackgroundOpacity="1.000" Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconstyle="/IconStyles.button" Location="3,9" Name="Exploits" renderframe="true" ScrollExtent="176,44" Size="176,44" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" />
+        <IconBank BackgroundOpacity="1.000" Dragable="true" font="/TextStyles.Normal.NormalStyle" framecolor="#B5935A" iconstyle="/IconStyles.button" Location="261,10" Name="Primals" renderframe="true" ScrollExtent="264,44" Size="264,44" textcolor="#FFFFFF" textmargin="2,-1,2,-2" treatasbutton="true" />
+        <Page Name="Background" ScrollExtent="525,117" Size="525,117" />
+    </Page>
+    <Page Name="WC_Frame" OnHide="Parent.OnHoverIn=&apos; &apos;&#xD;&#xA;Parent.OnHoverOut=&apos; &apos;" OnShow="Parent.OnHoverIn=&apos;Handle.visible=true&apos;&#xD;&#xA;Parent.OnHoverOut=&apos;Handle.visible=false&apos;" PackSize="a,a" ScrollExtent="527,58" Size="527,58" Visible="false" />
+    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Enabled="false" GetsInput="false" Name="WC_Backdrop" PackSize="a,a" ScrollExtent="527,58" Size="527,58" />
+</Page>

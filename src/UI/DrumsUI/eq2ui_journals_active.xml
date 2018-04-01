@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page DynamicData="/GameData.Quest.ActiveWindow" DynamicDataFilter="0001" eq2usescomwndcontrols="true" Location="734,13" MaximumSize="1024,1024" MinimumSize="200,109" Name="ActiveQuest" OnHoverIn="Scroll.visible=true" OnHoverOut="Scroll.visible=false" PackLocation="right,top" ScrollExtent="260,403" ScrollSize="1,20" Size="260,403" UserMovable="true" UserResizable="true" version="2.0.0">
+    <Namespace Name="tierstyles">
+        <ImageStyle Filter="true" Name="tier1style">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="296,313,314,332" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="tier2style">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="296,294,314,313" />
+        </ImageStyle>
+        <ImageStyle Filter="true" Name="tier3style">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="296,273,314,292" />
+        </ImageStyle>
+    </Namespace>
+    <EffectorCycleOpacity Duration="3.000" InitialOpacity="1.000" MaxSpeed="1.200" MinSpeed="1.200" Name="FlashEffector" OpacityOne="0.300" Speed="1.200" />
+    <OpacityEffector InitialOpacity="1.000" Name="FadeOutEffector" Speed="4.000" />
+    <OpacityEffector Name="FadeInEffector" Speed="4.000" TargetOpacity="1.000" />
+    <Page AbsorbsInput="false" Location="6,6" Name="DailyObjectiveTemplate" PackSize="a,f" ScrollExtent="249,102" Size="249,102">
+        <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="249,102" Size="249,102">
+            <Image AbsorbsInput="false" Color="#7F00FF" GetsInput="true" Location="0,1" Name="Tier" Rotation="0.500" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" Tooltip="Click to show/hide details" />
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="19,0" Margin="2,1,0,0" MaxLines="1" MinimumSize="0,21" Name="ObjectiveName" OnHoverIn="TextColor=&apos;#fae7b6&apos;" OnHoverOut="TextColor=&apos;#F0D080&apos;" PackSize="a,f" ScrollExtent="230,21" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="230,21" TextColor="#F0D080" Tooltip="Click icon to show/hide details">Daily: Kill 25 Creatures</Text>
+            <Composite AbsorbsInput="false" Location="22,37" Name="Parts" PackSize="a,f" ScrollExtent="228,22" Size="228,22" SpacingType="Constant" />
+        </Page>
+        <Icon DropToParent="true" IconStyle="/IconStyles.button" Location="0,20" MouseOverColor="#FFFF00" Name="QuestBaubleTemplate" PackLocation="left,top" ScrollExtent="22,22" TreatAsButton="true" Visible="false" />
+    </Page>
+    <Page AbsorbsInput="false" Location="56,43" Name="DailyObjectivePartTemplate" PackSize="a,f" ScrollExtent="228,20" Size="228,20">
+        <Image AbsorbsInput="false" Color="#FFFF00" Name="Tier" Rotation="0.250" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier1style" />
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="18,1" Name="PartText" PackSize="a,f" ScrollExtent="214,17" ShadowStyle="/ShadowStylesNew.Outline.style" Size="214,17">:f670432948cbdaa4:Some sample quest text</Text>
+    </Page>
+    <Page AbsorbsInput="false" Location="6,6" Name="QuestTemplate" OnHoverIn="ActiveCheckbox.visible=true&#xD;&#xA;EQ2i.visible=true&#xD;&#xA;ZAM.visible=true" OnHoverOut="ActiveCheckbox.visible=false&#xD;&#xA;EQ2i.visible=false&#xD;&#xA;ZAM.visible=false" PackSize="a,f" ScrollExtent="249,102" Size="249,102" Visible="false">
+        <Button Location="181,3" Name="EQ2i" OnHideEffector="FadeOutEffector" OnPress="URL=&apos;http://eq2.wikia.com/wiki/Special:Search?search=&apos; ## Parent.Contents.QuestName.localtext&#xD;&#xA;browser URL" OnShowEffector="FadeInEffector" Opacity="0.000" PackLocation="right,top" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search EQ2i" Visible="false" />
+        <Button Location="197,3" Name="ZAM" OnHideEffector="FadeOutEffector" OnPress="URL=&apos;http://eq2.allakhazam.com/search.html?q=&apos; ## Parent.Contents.QuestName.localtext&#xD;&#xA;browser URL" OnShowEffector="FadeInEffector" Opacity="0.000" PackLocation="right,top" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search ZAM" Visible="false" />
+        <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="210,0" MinimumSize="22,22" Name="ActiveCheckbox" OnHideEffector="FadeOutEffector" OnPress="set_quest_active QuestCRC Checked" OnShowEffector="FadeInEffector" Opacity="0.000" PackLocation="right,top" ScrollExtent="22,22" Size="22,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":f67043295ee5fe7d:Toggle visibility in active quest window" Visible="false" />
+        <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="249,102" Size="249,102">
+            <Image Color="#00FF00" Location="0,1" Name="Tier" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" />
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="19,0" Margin="2,1,0,0" MaxLines="1" MinimumSize="0,21" Name="QuestName" PackSize="a,f" ScrollExtent="230,21" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="230,21" TextColor="#F0D080">:f67043296981a7eb:Sample Quest Name</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,22" Margin="3,0,0,0" MaxLines="1" Name="TimerValue" PackLocation="left,fixed" PackSize="absolute,fixed" ScrollExtent="249,17" Size="249,17" TextColor="#FF2B2B">:f670432927b7e0f2:[DEVL]Time Left 01:10:30</Text>
+            <Composite AbsorbsInput="false" Location="22,37" Name="Parts" PackSize="a,f" ScrollExtent="228,22" Size="228,22" SpacingType="Constant" />
+        </Page>
+        <Icon DropToParent="true" IconStyle="/IconStyles.button" Location="0,20" MouseOverColor="#FFFF00" Name="QuestBaubleTemplate" PackLocation="left,top" ScrollExtent="22,22" TreatAsButton="true" Visible="false" />
+    </Page>
+    <Page AbsorbsInput="false" Location="28,43" Name="QuestPartTemplate" PackSize="a,f" ScrollExtent="228,20" Size="228,20" Visible="false">
+        <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Name="Bullet" ScrollExtent="8,17" Size="8,17">:f670432968224c07:-</Text>
+        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,0" Name="PartText" PackSize="a,f" ScrollExtent="214,17" ShadowStyle="/ShadowStylesNew.Outline.style" Size="214,17">:f670432948cbdaa4:Some sample quest text</Text>
+    </Page>
+    <Scrollbar ArrowPressSound="sounds/button" Control="QuestList" HideIfUnnecessary="true" Location="235,5" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" OnHideEffector="FadeOutEffector" OnShowEffector="FadeInEffector" Opacity="0.000" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,394" Size="22,394" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+    <Composite AbsorbsInput="false" Location="6,6" Name="QuestList" PackSize="a,a" ScrollExtent="249,392" ScrollSize="1,20" Size="249,392" SpacingType="Constant" />
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="1,1" ScrollExtent="260,403" Size="260,403">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="260,403" Size="260,403" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="257,400" Size="257,400" />
+    </Page>
+</Page>

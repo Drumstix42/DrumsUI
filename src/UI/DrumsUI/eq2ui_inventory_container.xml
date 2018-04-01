@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2opensound="ui_window_inventory_open" eq2usescomwndcontrols="true" Location="218,117" MaximumSize="1000,1000" MinimumSize="365,215" Name="Container" PackLocation="center,top" ScrollExtent="365,350" Size="365,350" UserMovable="true" UserResizable="true" version="1.0.0">
+    <Button Location="345,4" Name="Close" OnPress="Parent.WindowFrame.Close.press=true" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":a5aaee5a2d3f513f:Close" UserMovable="true" />
+    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="169,2" MaxLines="1" Name="Label" PackSize="a,f" ScrollExtent="178,28" Size="178,28" TextAlignment="Center" TextAlignmentVertical="Center">:a5aaee5ab260fc92:Harvest Supply Depot</Text>
+    <TabbedPane ActiveTab="0" DataSource="TabSource" Location="2,2" Name="TabPane" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="360,36" Size="360,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="TabPages" />
+    <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="-9,-23" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="385,59" Size="385,59" />
+    <DataSource Name="TabSource">
+        <Data Name="Items" Target="Items" text=":xx:Items" />
+        <Data Name="Permissions" Target="Permissions" text=":xx:Permissions" />
+    </DataSource>
+    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="246,321" MinimumSize="22,22" Name="HideGrey" PackLocation="bottom,right" ScrollExtent="107,22" Size="107,22" Style="/CommonElements.Checkbox.data.style">:a5aaee5a1131957a:Hide unusable</Checkbox>
+    <Page Location="2,31" Name="TabPages" PackSize="a,a" ScrollExtent="362,318" Size="362,318">
+        <Page Location="1,0" Name="Items" PackSize="a,a" ScrollExtent="505,480" Size="505,480">
+            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" DragAccepts="icon" IME="true" Location="206,2" MaximumSize="16384,30" MinimumSize="30,30" Name="FilterText" PackLocation="left,top" PackSize="a,f" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="155,30" Size="155,30" Style="/CommonElements.Textfield.data.style" Tooltip=":868e2bebf41e547e:Enter text to filter results" />
+            <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="167,9" Margin="1,0,0,0" Name="SearchText" PackLocation="left,top" ScrollExtent="76,19" Size="76,19" TextColor="#EFEFEF">:868e2beb4ca3216e:Search</Text>
+            <Page Location="8,2" MaximumSize="16384,32" MinimumSize="150,32" Name="Capacity" PackLocation="left,top" ScrollExtent="150,32" Size="150,32">
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/SpecialElements.SkillProgressBar.data.frame.rect" ScrollExtent="150,32" Size="150,32" />
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,7" Name="CapacityText" PackSize="a,a" ScrollExtent="148,18" Size="148,18" TextAlignment="Center" UserMovable="true">:a5aaee5acb2b1767:55%</Text>
+                <Progressbar BackgroundOpacity="1.000" Color="#EF8450" Name="CapacityProgressbar" PackSize="a,a" Progress="0.500" ScrollExtent="150,32" Size="150,32" Style="/SpecialElements.SkillProgressBar.data.style" Tooltip=":a5aaee5a488288b3:The capacity of this container." />
+                <Page BackgroundOpacity="1.000" Name="Bkg" PackSize="a,a" RStyleDefault="/SpecialElements.SkillProgressBar.data.bkg.rect" ScrollExtent="150,32" Size="150,32" />
+            </Page>
+            <Button BackgroundOpacity="0.000" Location="45,30" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort1" PackLocation="left,top" PackSize="a,f" ScrollExtent="55,25" Size="55,25" Style="/CommonElements.Table.data.sort.style_left_align">:a5aaee5a01ee2ec7:Name</Button>
+            <Button BackgroundOpacity="0.000" Location="274,30" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort2" PackLocation="right,top" PackSize="f,f" ScrollExtent="62,25" Size="62,25" Style="/CommonElements.Table.data.sort.style_center_align">:a5aaee5aa4d41ce8:Level</Button>
+            <Button BackgroundOpacity="0.000" Location="12,30" MaximumSize="16384,25" MinimumSize="0,25" Name="Sort3" PackLocation="left,top" PackSize="f,f" ScrollExtent="28,25" Size="28,25" Style="/CommonElements.Table.data.sort.style_left_align">:a5aaee5adcd947d8:Qty.</Button>
+            <Page BackgroundOpacity="1.000" Location="0,30" MaximumSize="16384,25" MinimumSize="0,25" Name="HeaderFrame" PackLocation="top,left" PackSize="absolute" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="365,25" Size="365,25" />
+            <Composite Location="8,56" Name="Items" Orientation="Horizontal" PackSize="a,a" ScrollExtent="351,202" Size="351,202" SpacingType="Fill">
+                <Page AbsorbsInput="false" DropToParent="true" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="329,202" ScrollSize="32,32" Size="329,202">
+                    <Icon BackgroundTint="#000000" DropToParent="true" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="40,40" Size="40,40" TreatAsButton="true" />
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="42,0" MaxLines="2" Name="row Item Name" PackSize="absolute,fixed" ScrollExtent="217,40" ShadowStyle="/ShadowStylesNew.Drop.style" Size="217,40" TextAlignmentVertical="Center">:a5aaee5a225610e3:table entry</Text>
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="261,0" MaxLines="2" Name="row Level" PackLocation="right,top" PackSize="f,f" ScrollExtent="68,40" ShadowStyle="/ShadowStylesNew.Drop.style" Size="68,40" TextAlignment="Center" TextAlignmentVertical="Center">:a5aaee5a651533ec:level</Text>
+                    <Image AbsorbsInput="false" BackgroundColor="#4A404A" BackgroundOpacity="1.000" DropToParent="true" Name="row Selection" PackSize="absolute,fixed" ScrollExtent="328,40" Size="328,40" />
+                </Page>
+                <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="false" Location="329,-2" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,204" Size="22,204" Style="/CommonElements.ScrollbarVertical.data.style" />
+            </Composite>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="1,52" Name="ScrollFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="365,209" Size="365,209" />
+            <Button Location="232,257" Name="CommandRemoveItem" PackLocation="right,bottom" PackSize="fixed,fixed" ScrollExtent="128,30" Size="128,30" Style="/CommonElements.PushButton.data.style" Tooltip=":a5aaee5aa1ef2642:Remove the item from the container">:a5aaee5aafae30e6:Remove Item</Button>
+            <Button Location="232,257" Name="CommandRemoveQuantity" PackLocation="right,bottom" PackSize="fixed,fixed" ScrollExtent="128,30" Size="128,30" Style="/CommonElements.PushButton.data.style" Tooltip=":a5aaee5aa1ad2ae5:Open up the quantity window to specify how many to remove.">:a5aaee5ab55b7f88:Remove Quantity</Button>
+            <Button Location="232,257" Name="CommandRemoveStack" PackLocation="right,bottom" PackSize="fixed,fixed" ScrollExtent="128,30" Size="128,30" Style="/CommonElements.PushButton.data.style" Tooltip=":a5aaee5a5311f768:Remove a stack from the container">:a5aaee5a207c5bdc:Remove Stack</Button>
+            <Button Location="232,257" Name="CommandRemoveOne" PackLocation="right,bottom" PackSize="fixed,fixed" ScrollExtent="128,30" Size="128,30" Style="/CommonElements.PushButton.data.style" Tooltip=":a5aaee5a7fa1a0e8:Remove one of the selected items.&#xD;&#xA;Hold shift to select a quantity to remove.&#xD;&#xA;Or hold control to remove the stack.">:a5aaee5a108b2cad:Remove One</Button>
+            <Dropdownbox BackgroundOpacity="1.000" DataSource="/CommonElements.Dropdown.DropdownDataSource" Location="0,285" MaximumSize="16384,32" MinimumSize="50,32" Name="TierSelector" PackLocation="left,bottom" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="219,32" Size="219,32" Style="/CommonElements.Dropdown.data.style" />
+            <Button Location="1,257" Name="CommandDepositAll" PackLocation="left,bottom" PackSize="fixed,fixed" ScrollExtent="128,30" Size="128,30" Style="/CommonElements.PushButton.data.style" Tooltip=":xx:Clicking this will deposit all eligible components from your bag into the container">:xx:Deposit All</Button>
+            <DataSource Name="TierDS">
+                <Data Name="All" text=":xx:All" />
+            </DataSource>
+        </Page>
+        <Page Enabled="false" Name="Permissions" PackSize="a,a" ScrollExtent="506,464" Size="506,464" Visible="false">
+            <Text Font="/TextStyles.Large.LargeStyle" Location="26,26" Name="DepositText" PackLocation="left,top" PackSize="f,f" ScrollExtent="121,50" Size="121,50">:xx:Deposit</Text>
+            <Text Font="/TextStyles.Large.LargeStyle" Location="26,90" Name="ConsumptionText" PackLocation="left,top" PackSize="f,f" ScrollExtent="210,50" Size="210,50">:xx:Consumption/Crafting</Text>
+            <Text Font="/TextStyles.Large.LargeStyle" Location="26,159" Name="WithdrawText" PackLocation="left,top" PackSize="f,f" ScrollExtent="121,50" Size="121,50">:xx:Withdraw</Text>
+            <DataSource Name="AccessDS">
+                <Data Name="Trustee" text=":xx:Trustee" />
+                <Data Name="Friend" text=":xx:Friend" />
+                <Data Name="Visitor" text=":xx:Visitor" />
+            </DataSource>
+            <Dropdownbox BackgroundOpacity="1.000" DataSource="AccessDS" Location="26,46" MaximumSize="16384,32" MinimumSize="50,32" Name="DepositSelection" PackLocation="left,top" PackSize="fixed,fixed" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="190,32" Size="190,32" Style="/CommonElements.Dropdown.data.style" />
+            <Dropdownbox BackgroundOpacity="1.000" DataSource="AccessDS" Location="26,112" MaximumSize="16384,32" MinimumSize="50,32" Name="ConsumptionSelection" PackLocation="left,top" PackSize="fixed,fixed" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="190,32" Size="190,32" Style="/CommonElements.Dropdown.data.style" />
+            <Dropdownbox BackgroundOpacity="1.000" DataSource="AccessDS" Location="26,181" MaximumSize="16384,32" MinimumSize="50,32" Name="WithdrawSelection" PackLocation="left,top" PackSize="fixed,fixed" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="190,32" Size="190,32" Style="/CommonElements.Dropdown.data.style" />
+            <Button Location="136,225" MaximumSize="16384,32" MinimumSize="32,32" Name="Confirm" ScrollExtent="128,32" Size="128,32" Style="/CommonElements.PushButton.data.style">:xx:Confirm</Button>
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="-1,35" Name="BckgrdFrame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/CommonElements.DataGrouper.data.data_frame.rect" ScrollExtent="501,454" Size="501,454" Visible="false" />
+    <Page AbsorbsInput="false" Location="-12,-2" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="389,366" Size="389,366">
+        <Button Location="341,5" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":a5aaee5aec278586:Window Settings" UserMovable="true" Visible="false" />
+        <Button Location="336,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip=":a5aaee5a574a0c6d:Help" UserMovable="true" Visible="false" />
+        <Button Location="357,5" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":a5aaee5a2d3f513f:Close" UserMovable="true" />
+        <Page AbsorbsInput="false" Name="LeftGrouper" ScrollExtent="331,70" Size="331,70">
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="27,4" MaxLines="1" Name="Title" PackSize="absolute,fixed" ScrollExtent="201,20" ShadowStyle="/ShadowStylesNew.Outline.style" Size="201,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080" Visible="false">:a5aaee5abaac9147:Container</Text>
+        </Page>
+        <Page AbsorbsInput="false" Location="219,0" Name="RightGrouper" PackLocation="right,top" ScrollExtent="170,70" Size="170,70" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="10,-1" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="369,355" Size="369,355" />
+        <Page BackgroundOpacity="1.000" Location="1,-22" Name="Bkg" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="388,394" Size="388,394" />
+    </Page>
+</Page>

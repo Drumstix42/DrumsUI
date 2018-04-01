@@ -1,0 +1,3 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="40,40" MinimumSize="1,1" Name="Effects_IconSize" Size="24,40" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="40,40" MinimumSize="1,1" Name="Detrimental_IconSize" Size="28,40" UserResizable="true"/>

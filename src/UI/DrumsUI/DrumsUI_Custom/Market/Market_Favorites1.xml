@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+		<DataSource Name="FavSource1">
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="          Tradeskill" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == Rare Looted Drops  ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="A Bloody Prime Drakota Eye" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-A Bloody Prime Drakota Eye" Tier="6" />
+			<Data ItemEffect=" " ItemName="Bone Golem Shards" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Bone Golem Shards" Tier="5" />
+			<Data ItemEffect=" " ItemName="Prime Bone Golem Shards" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Prime Bone Golem Shards" Tier="6" />
+			<Data ItemEffect=" " ItemName="Prime Dragon Hide" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Prime Dragon Hide" Tier="6" />
+			<Data ItemEffect=" " ItemName="Prime Drake Fang" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Prime Drake Fang" Tier="6" />
+			<Data ItemEffect=" " ItemName="Prime Maligonian Horns" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Prime Maligonian Horns" Tier="6" />
+			<Data ItemEffect=" " ItemName="Prime Skyshrine Golem Core" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Prime Skyshrine Golem Core" Tier="6" />
+			<Data ItemEffect=" " ItemName="Prime Wurm Tongue" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Prime Wurm Tongue" Tier="6" />
+			<Data ItemEffect=" " ItemName="Prime Wyvern Stinger" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Prime Wyvern Stinger" Tier="6" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == TIER 10 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Tungsten Ore" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Tungsten Ore" Tier="3" />
+			<Data ItemEffect=" " ItemName="Black Star Sapphire" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Black Star Sapphire" Tier="3" />
+			<Data ItemEffect=" " ItemName="Osmium Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Osmium Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Banyan Root" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Banyan Root" Tier="3" />
+			<Data ItemEffect=" " ItemName="Bubinga Lumber" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Bubinga Lumber" Tier="3" />
+			<Data ItemEffect=" " ItemName="Metallic Reptile Hide" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Metallic Reptile Hide" Tier="3" />
+			<Data ItemEffect=" " ItemName="Effulgent Material" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Effulgent Material" Tier="3" />
+			<Data ItemEffect=" " ItemName="Effulgent Dust" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Ethereal Dust" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == TIER 9 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Brellium Ore" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Brellium Ore" Tier="3" />
+			<Data ItemEffect=" " ItemName="Ulteran Diamond" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Ulteran Diamond" Tier="3" />
+			<Data ItemEffect=" " ItemName="Kaborite Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Kaborite Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Toxnettle Root" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Toxnettle Root" Tier="3" />
+			<Data ItemEffect=" " ItemName="Eucalyptus Lumber" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Eucalyptus Lumber" Tier="3" />
+			<Data ItemEffect=" " ItemName="Spotted Pelt" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Spotted Pelt" Tier="3" />
+			<Data ItemEffect=" " ItemName="Ethereal Material" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Ethereal Material" Tier="3" />
+			<Data ItemEffect=" " ItemName="Ethereal Dust" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Ethereal Dust" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == TIER 8 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Incarnadine cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Incarnadine Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Silicate loam" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Silicate Loam" Tier="3" />
+			<Data ItemEffect=" " ItemName="Rough fire emerald" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Rough Fire Emerald" Tier="3" />
+			<Data ItemEffect=" " ItemName="Tynnonium cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Tynnonium Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Mantrap root" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Mantrap Root" Tier="3" />
+			<Data ItemEffect=" " ItemName="Mahogany lumber" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Mahogany Lumber" Tier="3" />
+			<Data ItemEffect=" " ItemName="Hidebound pelt" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Hidebound Pelt" Tier="3" />
+			<Data ItemEffect=" " ItemName="Smoldering Material" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Smoldering Material" Tier="3" />
+			<Data ItemEffect=" " ItemName="Smoldering Dust" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Smoldering Dust" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == TIER 7 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Xegonite Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Xegonite Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Spongy Loam" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Spongy Loam" Tier="3" />
+			<Data ItemEffect=" " ItemName="Rough Moonstone" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Rough Moonstone" Tier="3" />
+			<Data ItemEffect=" " ItemName="Acrylia Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Acrylia Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Nimbus Root" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Nimbus Root" Tier="3" />
+			<Data ItemEffect=" " ItemName="Lumbered Ebony" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Lumbered Ebony" Tier="3" />
+			<Data ItemEffect=" " ItemName="Dragonhide Leather Pelt" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Dragonhide Leather Pelt" Tier="3" />
+			<Data ItemEffect=" " ItemName="Scintillating Material" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Scintillating Material" Tier="3" />
+			<Data ItemEffect=" " ItemName="Scintillating Dust" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Scintillating Dust" Tier="3" />
+			<Data ItemEffect=" " ItemName="Scintillating Flower" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Scintillating Flower" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == TIER 6 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Cobalt Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Cobalt Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Alkali Loam -alkaline" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Alkali Loam" Tier="3" />
+			<Data ItemEffect=" " ItemName="Rough Pearl" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Rough Pearl" Tier="3" />
+			<Data ItemEffect=" " ItemName="Vanadium Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Vanadium Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Saguaro Root" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Saguaro Root" Tier="3" />
+			<Data ItemEffect=" " ItemName="Severed Ironwood" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Severed Ironwood" Tier="3" />
+			<Data ItemEffect=" " ItemName="Scaled Leather Pelt " ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Scaled Leather Pelt" Tier="3" />
+			<Data ItemEffect=" " ItemName="Lambent Material" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Lambent Material" Tier="3" />
+			<Data ItemEffect=" " ItemName="Lambent Dust" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Lambent Dust" Tier="3" />
+			<Data ItemEffect=" " ItemName="Lambent Flower" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Lambent Flower" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == TIER 5 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Ebon Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Ebon Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Fused Loam" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Fused Loam" Tier="3" />
+			<Data ItemEffect=" " ItemName="Rough Ruby" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Rough Ruby" Tier="3" />
+			<Data ItemEffect=" " ItemName="Rhodium Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Rhodium Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Figwart Root" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Figwart Root" Tier="3" />
+			<Data ItemEffect=" " ItemName="Severed Cedar" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Severed Cedar" Tier="3" />
+			<Data ItemEffect=" " ItemName="Augmented Leather Pelt " ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Augmented Leather Pelt" Tier="3" />
+			<Data ItemEffect=" " ItemName="Luminous Material" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Luminous Material" Tier="3" />
+			<Data ItemEffect=" " ItemName="Luminous Dust" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Luminous Dust" Tier="3" />
+			<Data ItemEffect=" " ItemName="Luminous Flower" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Luminous Flower" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="      == TIER 4 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Feysteel Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Feysteel Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Ductile Loam" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Ductile Loam" Tier="3" />
+			<Data ItemEffect=" " ItemName="Rough Opal -opaline" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Rough Opal" Tier="3" />
+			<Data ItemEffect=" " ItemName="Ruthenium Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Ruthenium Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Oak Root" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Oak Root" Tier="3" />
+			<Data ItemEffect=" " ItemName="Severed Oak" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Severed Oak" Tier="3" />
+			<Data ItemEffect=" " ItemName="Engraved Leather Pelt" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Engraved Leather Pelt" Tier="3" />
+			<Data ItemEffect=" " ItemName="Glimmering Material" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Glimmering Material" Tier="3" />
+			<Data ItemEffect=" " ItemName="Glimmering Dust" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Glimmering Dust" Tier="3" />
+			<Data ItemEffect=" " ItemName="Glimmering Flower" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Glimmering Flower" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == TIER 3 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Steel Cluster -feysteel" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Steel Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Malleable Loam" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Malleable Loam" Tier="3" />
+			<Data ItemEffect=" " ItemName="Rough Jasper" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Rough Jasper" Tier="3" />
+			<Data ItemEffect=" " ItemName="Palladium Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Palladium Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Dandelion Fiber" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Dandelion Fiber" Tier="3" />
+			<Data ItemEffect=" " ItemName="Severed Fir" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Severed Fir" Tier="3" />
+			<Data ItemEffect=" " ItemName="Cuirboilli Leather Pelt" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Cuirboilli Leather Pelt" Tier="3" />
+			<Data ItemEffect=" " ItemName="Sparkling Material" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Sparkling Material" Tier="3" />
+			<Data ItemEffect=" " ItemName="Sparkling Dust" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Sparkling Dust" Tier="3" />
+			<Data ItemEffect=" " ItemName="Sparkling Flower" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Sparkling Flower" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == TIER 2 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Blackened Iron Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Blackened Iron Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Alkaline Loam" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Alkaline Loam" Tier="3" />
+			<Data ItemEffect=" " ItemName="Rough Coral" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Rough Coral" Tier="3" />
+			<Data ItemEffect=" " ItemName="Silver Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Silver Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Sisal Root" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Sisal Root" Tier="3" />
+			<Data ItemEffect=" " ItemName="Severed Bone" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Severed Bone" Tier="3" />
+			<Data ItemEffect=" " ItemName="Cured Leather Pelt" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Cured Leather Pelt" Tier="3" />
+			<Data ItemEffect=" " ItemName="Glowing Material" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Glowing Material" Tier="3" />
+			<Data ItemEffect=" " ItemName="Glowing Flower" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Glowing Flower" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == TIER 1 RARES ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Bronze Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Bronze Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Solidified Loam" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Solidified Loam" Tier="3" />
+			<Data ItemEffect=" " ItemName="Rough Lapis Lazuli" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Rough Lapis Lazuli" Tier="3" />
+			<Data ItemEffect=" " ItemName="Copper Cluster" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Copper Cluster" Tier="3" />
+			<Data ItemEffect=" " ItemName="Yarrow" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Yarrow" Tier="3" />
+			<Data ItemEffect=" " ItemName="Severed Alder" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Severed Alder" Tier="3" />
+			<Data ItemEffect=" " ItemName="Waxed Leather Pelt" ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Waxed Leather Pelt" Tier="3" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Text="     == Ry'Gorr Gems ==" Tier="0"/>
+			<Data ItemEffect=" " ItemName="Black Marble Gem" ItemEffect=" " ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Black Marble Gem" Tier="5"/>
+			<Data ItemEffect=" " ItemName="Citrine Gem" ItemEffect=" " ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Citrine Gem" Tier="5"/>
+			<Data ItemEffect=" " ItemName="Diamond Gem" ItemEffect=" " ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Diamond Gem" Tier="5"/>
+			<Data ItemEffect=" " ItemName="Emerald Gem" ItemEffect=" " ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Emerald Gem" Tier="5"/>
+			<Data ItemEffect=" " ItemName="Jaundice Gem" ItemEffect=" " ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Jaundice Gem" Tier="5"/>
+			<Data ItemEffect=" " ItemName="Lava Ruby Gem" ItemEffect=" " ItemType="24" MaxLvl="0" MinLvl="0" SellerName=" " Text="-Lava Ruby Gem" Tier="5"/>
+			<Data ItemName="..." ItemEffect=" " ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0"/>
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="== HARVESTING TOOLS ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Fishing Pole" ItemType="11" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="-Fishing Poles" Tier="0" />
+			<Data ItemEffect=" " ItemName="Pick" ItemType="11" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="-Picks" Tier="0" />
+			<Data ItemEffect=" " ItemName="Saw" ItemType="11" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="-Saws" Tier="0" />
+			<Data ItemEffect=" " ItemName="Shovel" ItemType="11" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="-Shovels" Tier="0" />
+			<Data ItemEffect=" " ItemName="Trap" ItemType="11" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="-Traps" Tier="0" />
+			<Data ItemEffect=" " ItemName="Pickaxe" ItemType="11" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="-Pickaxes" Tier="0" />
+			<Data ItemEffect=" " ItemName="Shears" ItemType="11" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="-Shears" Tier="0" />
+			<Data ItemEffect=" " ItemName="Watersafe Net" ItemType="11" MaxLvl="100" MinLvl="0" SellerName=" " Slot="2" Text="-Nets" Tier="0" />
+			<Data ItemEffect=" " ItemName="Compact Sumac Harvesting Kit" ItemType="11" MaxLvl="80" MinLvl="0" SellerName=" " Slot="2" Text="-Sumac Harvest Kit (80)" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="==    Alchemist    ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Reinforced Gnomeproof Beaker" ItemType="34" MaxLvl="20" MinLvl="20" SellerName=" " Slot="2" Text="-Gnomeproof Beaker (20)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Gnomish Gas Mask" ItemType="34" MaxLvl="40" MinLvl="40" SellerName=" " Slot="2" Text="-Gnomish Gas Mask (40)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Never-ending Bag of The Good Stuff" ItemType="34" MaxLvl="60" MinLvl="60" SellerName=" " Slot="2" Text="-Never-ending Bag (60)" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="==    Armorer    ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Automated Rounding Hammer" ItemType="34" MaxLvl="20" MinLvl="20" SellerName=" " Slot="2" Text="-Rounding Hammer (20)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Gnomish Toughened Ring Press" ItemType="34" MaxLvl="40" MinLvl="40" SellerName=" " Slot="2" Text="-Toughened Ring Press (40)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Qeynos Classified Information of Bulkward" ItemType="34" MaxLvl="60" MinLvl="60" SellerName=" " Slot="2" Text="-Information of Bulkward (60)" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="==    Carpenter    ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Feng -shui Environmental Reader" ItemType="34" MaxLvl="20" MinLvl="20" SellerName=" " Slot="2" Text="-Environmental Reader (20)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Gnomish Level" ItemType="34" MaxLvl="40" MinLvl="40" SellerName=" " Slot="2" Text="-Gnomish Level (40)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Woodelf Eye for the Troll Guy" ItemType="34" MaxLvl="60" MinLvl="60" SellerName=" " Slot="2" Text="-Woodelf Eye (60)" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="==    Jeweler    ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Gnomish Ring Press" ItemType="34" MaxLvl="20" MinLvl="20" SellerName=" " Slot="2" Text="-Gnomish Ring Press (20)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Gnomerific Magnifying Device" ItemType="34" MaxLvl="40" MinLvl="40" SellerName=" " Slot="2" Text="-Magnifying Device (40)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Enigma of Tunare" ItemType="34" MaxLvl="60" MinLvl="60" SellerName=" " Slot="2" Text="-Enigma of Tunare (60)" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="==    Provisioner    ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Izzitedibilforpepl Probe" ItemType="34" MaxLvl="20" MinLvl="20" SellerName=" " Slot="2" Text="-Izzitedibilforpepl Probe (20)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Gnomish Thermometer" ItemType="34" MaxLvl="40" MinLvl="40" SellerName=" " Slot="2" Text="-Gnomish Thermometer (40)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Screewoggins&apos; Bag of Spices" ItemType="34" MaxLvl="60" MinLvl="60" SellerName=" " Slot="2" Text="-Bag of Spices (60)" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="==    Sage    ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Gnomish Self-Inking Quill" ItemType="34" MaxLvl="20" MinLvl="20" SellerName=" " Slot="2" Text="-Self-Inking Quill (20)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Gnomish Quick Erasealler" ItemType="34" MaxLvl="40" MinLvl="40" SellerName=" " Slot="2" Text="-Quick Erasealler (40)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Eye of Agamatoo" ItemType="34" MaxLvl="60" MinLvl="60" SellerName=" " Slot="2" Text="-Eye of Agamatoo (60)" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="==    Tailor    ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Mechanical Threaded Needle" ItemType="34" MaxLvl="20" MinLvl="20" SellerName=" " Slot="2" Text="-Threaded Needle (20)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Gnomeproof Thumb Cap" ItemType="34" MaxLvl="40" MinLvl="40" SellerName=" " Slot="2" Text="-Thumb Cap (40)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Guide Roots The Fabric of Life" ItemType="34" MaxLvl="60" MinLvl="60" SellerName=" " Slot="2" Text="-Guide: The Fabric of Life (60)" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="34" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="==    Weaponsmith    ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Automated Finishing Hammer" ItemType="34" MaxLvl="20" MinLvl="20" SellerName=" " Slot="2" Text="-Finishing Hammer (20)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Automated Honing Stone" ItemType="34" MaxLvl="40" MinLvl="40" SellerName=" " Slot="2" Text="-Honing Stone (40)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Freeport Classified Information of Armament" ItemType="34" MaxLvl="60" MinLvl="60" SellerName=" " Slot="2" Text="-Freeport Classified Information (60)" Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+			<Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="==    Woodworker    ==" Tier="0" />
+			<Data ItemEffect=" " ItemName="Automated Finishing Saw" ItemType="34" MaxLvl="20" MinLvl="20" SellerName=" " Slot="2" Text="-Finishing Saw (20)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Automated Gnomish Plane" ItemType="34" MaxLvl="40" MinLvl="40" SellerName=" " Slot="2" Text="-Gnomish Plane (40)" Tier="0" />
+			<Data ItemEffect=" " ItemName="Measure Twicer" ItemType="34" MaxLvl="60" MinLvl="60" SellerName=" " Slot="2" Text="-Measure Twicer (60)" Tier="0" />
+		</DataSource>

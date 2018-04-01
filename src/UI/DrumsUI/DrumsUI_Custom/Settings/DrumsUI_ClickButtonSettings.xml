@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_IC" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_SC" Size="1,1" UserResizable="true"/>
+
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_TCS" Size="2,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_TP" Size="2,1" UserResizable="true"/>
+
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_ACS" Size="2,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_AP" Size="2,1" UserResizable="true"/>
+
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_NCS" Size="2,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_NP" Size="2,1" UserResizable="true"/>
+
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_ECS" Size="2,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_EP" Size="2,1" UserResizable="true"/>
+
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_CB_CCS" Size="2,1" UserResizable="true"/>
+
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_LayoutFull" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_LayoutHP" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Player_LayoutPP" Size="1,1" UserResizable="true"/>
+
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_IC" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_ST" Size="2,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_EP" Size="2,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_SC" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_HB" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_HS" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_SP" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_CL" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_BL" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_SS" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="Party_CB_SB" Size="1,1" UserResizable="true"/>

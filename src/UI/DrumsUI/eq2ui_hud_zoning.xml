@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" alwaysonbottom="true" BackgroundOpacity="1.000" Name="Zoning" OnHideEffector="FadeOutEffector" OnShowEffector="FadeInEffector" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768" version="1.1">
+    <Composite AbsorbsInput="false" Alignment="Center" Location="240,148" Name="TipPage" PackLocation="ffc,ffc" PackSize="fixed,fixed" ScrollExtent="520,97" Size="520,95" Spacing="1" SpacingType="Constant" tipdelayms="20000">
+        <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Margin="1,-3,1,0" MaxLines="1" Name="TipLabelText" OnShowEffector="FadeInEffector" PackSize="absolute" ScrollExtent="520,21" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="520,21" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#F0D080">:05265a2f807cf9d6:Did You Know...</Text>
+        <Text Font="/TextStyles.Normal.NormalStyle" Location="0,22" MaxLines="4" Name="TipText" PackSize="absolute" ScrollExtent="520,75" Size="520,75" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EACE">:05265a2f08a3a07e:[DEVL]Commission crafting can be used to make a tradeskilled item for someone else while they still hold all the resources.  This method can be used to craft no-trade items, or valuable items they may not wish to trade.  To initiate commission crafting, select the recipe in your book while standing near the appropriate crafting station, then target the customer instead of the crafting station before clicking Create. </Text>
+    </Composite>
+    <OpacityEffector InitialOpacity="1.000" Name="FadeInEffector" SetOnEffect="true" Speed="1.600" TargetOpacity="1.000" />
+    <RectangleStyle Center="textonly_button_dummy_image" CenterStretchH="false" East="textonly_button_dummy_image" Name="textonly_button_dummy_image" North="textonly_button_dummy_image" South="textonly_button_dummy_image" West="textonly_button_dummy_image" />
+    <Button BackgroundOpacity="0.000" Location="247,296" Name="Disconnect" PackLocation="ffc,ffc" PackSize="fixed,fixed" ScrollExtent="88,28" Size="88,28" Style="/ButtonStyles.single_pixel">Exit</Button>
+    <Page AbsorbsInput="false" Location="289,233" Name="StatusPage" PackLocation="ffc,ffc" PackSize="fixed,fixed" ScrollExtent="427,162" Size="427,162">
+        <Page DynamicData="/GameData.General.Downloading" Location="430,39" Name="DownloadingPage" OnHideEffector="FadeOutEffector" OnShow="Opacity = 1.0" PackLocation="right,top" ScrollExtent="65,65" Size="65,65" Tooltip=":05265a2f786e54aa:Downloading Assets..." Visible="false">
+            <Text DynamicData="/GameData.General.Downloading" Font="/TextStyles.Normal.NormalStyle" Location="0,20" Margin="1,1,1,1" MaxLines="1" Name="downloading_text" PackLocation="right,top" PackSize="a,f" ScrollExtent="65,22" Size="65,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F2EACE">:05265a2f9d8228d0:0 KB</Text>
+            <Image Name="downloading" PackSize="a,a" ScrollExtent="65,65" Size="65,65" StretchType="ProportionalBound" Style="downloading_effect" />
+            <OpacityEffector InitialOpacity="1.000" Name="FadeOutEffector" Speed="8.000" />
+            <ImageStyle Name="downloading_effect">
+                <ImageFrame atlas="none" Name="download01" Source="images/babydragon_animated.dds" SourceRect="0,0,128,128" />
+                <ImageFrame atlas="none" Name="download02" Source="images/babydragon_animated.dds" SourceRect="128,0,256,128" />
+                <ImageFrame atlas="none" Name="download03" Source="images/babydragon_animated.dds" SourceRect="256,0,384,128" />
+                <ImageFrame atlas="none" Name="download04" Source="images/babydragon_animated.dds" SourceRect="384,0,512,128" />
+                <ImageFrame atlas="none" Name="download05" Source="images/babydragon_animated.dds" SourceRect="0,128,128,256" />
+                <ImageFrame atlas="none" Name="download06" Source="images/babydragon_animated.dds" SourceRect="128,128,256,256" />
+                <ImageFrame atlas="none" Name="download07" Source="images/babydragon_animated.dds" SourceRect="256,128,384,256" />
+                <ImageFrame atlas="none" Name="download08" Source="images/babydragon_animated.dds" SourceRect="384,128,512,256" />
+                <ImageFrame atlas="none" Name="download09" Source="images/babydragon_animated.dds" SourceRect="0,256,128,384" />
+                <ImageFrame atlas="none" Name="download10" Source="images/babydragon_animated.dds" SourceRect="128,256,256,384" />
+                <ImageFrame atlas="none" Name="download11" Source="images/babydragon_animated.dds" SourceRect="256,256,384,384" />
+                <ImageFrame atlas="none" Name="download12" Source="images/babydragon_animated.dds" SourceRect="384,256,512,384" />
+                <ImageFrame atlas="none" Name="download13" Source="images/babydragon_animated.dds" SourceRect="0,384,128,512" />
+            </ImageStyle>
+        </Page>
+        <Text Font="/Fonts.FontZapf24" Location="59,-32" Margin="1,-3,1,0" MaxLines="2" Name="ZoneNameText" ScrollExtent="310,96" ShadowStyle="/ShadowStyles.Outline1" Size="310,96" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#F2EACE">:53483270bfe3f223:The Wailing Caves</Text>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="7,39" Name="header" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="415,30" Size="415,30" />
+        <Text Font="/TextStyles.Normal.NormalStyle" Location="46,84" Margin="1,1,1,1" MaxLines="1" Name="StatusText" PackSize="a,f" ScrollExtent="282,22" Size="282,22" TextColor="#F2EACE">:5348327049bc481a:Loading zone resources</Text>
+        <Text Font="/TextStyles.Normal.NormalStyle" Location="322,84" Margin="1,1,1,1" MaxLines="1" Name="PercentText" PackLocation="right,top" ScrollExtent="61,22" Size="61,22" TextAlignment="Right" TextColor="#F2EACE">:534832702605b803:100%</Text>
+        <Progressbar BackgroundColor="#000000" Location="48,74" Name="Progress" Progress="0.500" ScrollExtent="333,6" Size="333,6" Style="progress_style" />
+        <ImageStyle Name="separator_dot_image">
+            <ImageFrame Name="image" Source="images/window_elements_specific.dds" SourceRect="2,125,17,139" />
+        </ImageStyle>
+        <Image Location="341,71" Name="Dot" ScrollExtent="15,14" Size="15,14" Style="separator_dot_image" />
+        <Image Location="33,71" Name="Dot" ScrollExtent="15,14" Size="15,14" Style="separator_dot_image" />
+        <ImageStyle Name="progress_fill">
+            <ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="221,483,379,489" />
+        </ImageStyle>
+        <ProgressbarStyle Bar.Background="progress_fill" Name="progress_style" />
+        <Image Location="47,73" Name="ProgressBackground" ScrollExtent="335,8" Size="335,8" SourceRect="219,491,379,497" SourceResource="/images/window_elements_generic.dds" />
+        <Page BackgroundOpacity="1.000" Location="44,70" Name="ProgressFrame" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="341,14" Size="341,14" />
+    </Page>
+    <OpacityEffector Name="FadeOutEffector" Speed="1.600" />
+    <Page AbsorbsInput="false" Name="FramePage" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-8,90" Name="frame" PackLocation="left,proportional" PackSize="proportional,proportional" RStyleDefault="/FrameStyles.win_gold_simple" ScrollExtent="1068,588" Size="1068,588" />
+        <Text Font="/Fonts.FontZapf24" Location="694,599" MaxLines="1" Name="ZoneNameText" PackLocation="fff,fpf" ScrollExtent="270,56" Size="270,56" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#F2EACE" Visible="false">The Wailing Caves</Text>
+        <Text Font="/Fonts.FontZapf24" Location="695,600" MaxLines="1" Name="ZoneNameShadowText" PackLocation="fff,fpf" ScrollExtent="270,56" Size="270,56" TextAlignment="Center" TextAlignmentVertical="Bottom" TextColor="#000000" Visible="false">The Wailing Caves</Text>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="641,633" Name="header" PackLocation="fff,fpf" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="375,30" Size="375,30" Visible="false" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,673" Name="black_bottom" PackLocation="fixed,proportional" PackSize="proportional,proportional" RStyleDefault="/FrameStyles.background_black" ScrollExtent="1024,100" Size="1024,100" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="black_top" PackLocation="top,left" PackSize="proportional,proportional" RStyleDefault="/FrameStyles.background_black" ScrollExtent="1024,92" Size="1024,92" />
+        <Image Name="RandomScreen" OnShowEffector="FadeInEffector" PackLocation="top,left" PackSize="proportional,proportional" ScrollExtent="1024,768" Size="1024,768" Visible="false" />
+    </Page>
+    <Page AbsorbsInput="false" Name="SlideshowPage" PackLocation="top,left" PackSize="absolute,absolute" ScrollExtent="1024,768" Size="1024,768">
+        <Button IsDefaultButton="true" Location="509,701" Name="NextSlide" PackLocation="proportional,proportional" ScrollExtent="84,30" Size="84,30" Style="/ButtonStyles.wizard_next" />
+        <Button IsCancelButton="true" Location="415,701" Name="PreviousSlide" PackLocation="proportional,proportional" ScrollExtent="86,30" Size="86,30" Style="/ButtonStyles.wizard_back" />
+        <Button BackgroundOpacity="0.000" Location="911,703" Name="Skip" PackLocation="proportional,proportional" ScrollExtent="88,28" Size="88,28" Style="dull_textonly_button18">End</Button>
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-8,90" Name="frame" PackLocation="left,proportional" PackSize="proportional,proportional" RStyleDefault="/FrameStyles.win_gold_simple" ScrollExtent="1068,588" Size="1068,588" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="black_top" PackLocation="top,left" PackSize="proportional,proportional" RStyleDefault="/FrameStyles.background_black" ScrollExtent="1024,92" Size="1024,92" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,673" Name="black_bottom" PackLocation="fixed,proportional" PackSize="proportional,proportional" RStyleDefault="/FrameStyles.background_black" ScrollExtent="1024,100" Size="1024,100" />
+        <Image Location="0,90" Name="TopImage" PackLocation="left,proportional" PackSize="proportional,proportional" ScrollExtent="1024,588" Size="1024,588" SourceRect="0,0,100,100" />
+        <Image Location="0,90" Name="BottomImage" PackLocation="left,proportional" PackSize="proportional,proportional" ScrollExtent="1024,588" Size="1024,588" />
+    </Page>
+</Page>

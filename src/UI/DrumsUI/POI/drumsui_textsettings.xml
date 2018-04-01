@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="POI">
+    <Page Name="DrumsUI">
+        <Icon Name="TraumaSelfSpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer MYSELF Cure" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="TraumaSelfSpell" />
+        <Icon Name="ArcaneSelfSpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer MYSELF Cure&#xA;useabilityonplayer MYSELF Cure Arcane" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="ArcaneSelfSpell" />
+        <Icon Name="NoxiousSelfSpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer MYSELF Cure&#xA;useabilityonplayer MYSELF Cure Noxious" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="NoxiousSelfSpell" />
+        <Icon Name="ElementalSelfSpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer MYSELF Cure&#xA;useabilityonplayer MYSELF Cure Elemental" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="ElementalSelfSpell" />
+        <Icon Name="CurseSelfSpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer MYSELF Cure Curse&#xA;raid Curing curse on MYSELF &#xA;gsay Curing curse on MYSELF" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="CurseSelfSpell" />
+        <Icon Name="TraumaSelfPot" PathFindLocation="0.00 20000.00 0.00" PoiDescription="use_itemvdl 855760996" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="TraumaSelfPot" />
+        <Icon Name="ArcaneSelfPot" PathFindLocation="0.00 20000.00 0.00" PoiDescription="use_itemvdl 1372020673" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="ArcaneSelfPot" />
+        <Icon Name="NoxiousSelfPot" PathFindLocation="0.00 20000.00 0.00" PoiDescription="use_itemvdl -250251480" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="NoxiousSelfPot" />
+        <Icon Name="ElementalSelfPot" PathFindLocation="0.00 20000.00 0.00" PoiDescription="use_itemvdl 2105175164" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="ElementalSelfPot" />
+        <Icon Name="TraumaPartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED Cure" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="TraumaPartySpell" />
+        <Icon Name="ArcanePartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED Cure" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="ArcanePartySpell" />
+        <Icon Name="NoxiousPartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED Cure" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="NoxiousPartySpell" />
+        <Icon Name="ElementalPartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED Cure" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="ElementalPartySpell" />
+        <Icon Name="CursePartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED Cure Curse" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="CursePartySpell" />
+        <Icon Name="Click1PartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED ability name here" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Click1PartySpell" />
+        <Icon Name="Click2PartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED ability name here" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Click2PartySpell" />
+        <Icon Name="Click3PartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED ability name here" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Click3PartySpell" />
+        <Icon Name="Click4PartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED ability name here" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Click4PartySpell" />
+        <Icon Name="Click5PartySpell" PathFindLocation="0.00 20000.00 0.00" PoiDescription="useabilityonplayer SELECTED ability name here" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Click5PartySpell" />
+    </Page>
+</Page>

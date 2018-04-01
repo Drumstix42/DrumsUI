@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page OnShow="visible=false" AbsorbsInput="false" Activated="true" eq2usescomwndcontrols="true" Location="1,2" MaximumSize="4,4" MinimumSize="1,1" Name="DrumsUI_XPSettings" Size="3,4" UserResizable="true"/>

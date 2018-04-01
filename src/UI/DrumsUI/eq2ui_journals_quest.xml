@@ -1,0 +1,583 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Activated="true" eq2opensound="ui_open_quest_book" eq2usescomwndcontrols="true" Location="106,108" MinimumSize="650,230" Name="JournalsQuest" ScrollExtent="650,443" Size="650,443" UserMovable="true" UserResizable="true" version="2.0">
+    <DataSource Name="TabSource">
+        <Data Name="Quests" target="Quests" text=":a2c3b63f60cda7fd:Quests" />
+        <Data Name="Collection" target="Collection" text=":0e1f81bb4cef991d:Collections" />
+        <Data Name="Achievements" target="Achievements" text=":a2c3b63f36ec5af9:Achievements" />
+        <Data Name="DailyObjectives" target="DailyObjectives" text=":a2c3b63f5b14b568:Daily Objectives" />
+        <Data Name="MissionTimers" target="MissionTimers" text=":x:Mission Timers" />
+    </DataSource>
+    <TabbedPane ActiveTab="0" DataSource="TabSource" Location="3,7" Name="TabPane" PackLocation="left,top" PackSize="f,fi" ScrollExtent="583,36" Size="583,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="TabPages" />
+    <Page Location="2,36" Name="TabPages" PackLocation="left,top" PackSize="absolute,absolute" RStyleMouseOver=" " RStyleMouseOverActivated=" " RStyleMouseOverSelected=" " RStyleSelected=" " ScrollExtent="646,404" Size="646,404">
+        <Page BackgroundColor="#554736" Name="Quests" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="646,404" Size="646,404">
+            <DataSource Name="TabSource">
+                <Data Name="Active" target="Active" text=":0e1f81bbb34d06cb:Active" />
+                <Data Name="Storylines" target="Storylines" text=":a2c3b63f342b6c8c:Storylines" />
+                <Data Name="Completed" target="Completed" text=":0e1f81bb47f62132:Completed" />
+                <Data Name="Group" target="Group" text=":0e1f81bb53fe943e:Group" />
+            </DataSource>
+            <TabbedPane ActiveTab="0" DataSource="TabSource" Location="6,370" Name="QuestTabPane" PackLocation="left,bottom" PackSize="f,f" ScrollExtent="366,27" Size="366,27" Style="/WindowElements.WindowFrame.data.lower_tab_data.tabbed_pane_style" TargetPage="TabPages" />
+            <Page Name="TabPages" PackSize="absolute,absolute" ScrollExtent="646,370" Size="646,370">
+                <Page Name="Active" OnHoverIn="Buttons.visible=true" OnHoverOut="Buttons.visible=false" PackSize="absolute,absolute" ScrollExtent="646,370" Size="646,370">
+                    <Page Location="599,6" Name="Buttons" PackLocation="right,top" ScrollExtent="15,32" Size="15,32" Visible="false">
+                        <Button Name="EQ2i" OnPress="URL=&apos;http://eq2.wikia.com/wiki/Special:Search?search=&apos; ## Parent.Parent.After.QuestDetails.Name.localtext&#xD;&#xA;browser URL" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search EQ2i" />
+                        <Button Location="0,15" Name="ZAM" OnPress="URL=&apos;http://eq2.allakhazam.com/search.html?q=&apos; ## Parent.Parent.After.QuestDetails.Name.localtext&#xD;&#xA;browser URL" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search ZAM" />
+                    </Page>
+                    <Page MinimumSize="280,120" Name="Before" PackSize="f,a" ScrollExtent="280,369" Size="280,369">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" MaxLines="1" Name="LimitText" PackSize="absolute,fixed" ScrollExtent="280,18" Size="280,18" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true">:0e1f81bb5ed53933:Your journal is overflowing. 55 too many quests.</Text>
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="4,24" MinimumSize="22,22" Name="ShowAllCheckbox" ScrollExtent="85,22" Size="85,22" Style="/CommonElements.CollapseCheckbox.data.normal_style">:0e1f81bbfcaac8c2:All</Checkbox>
+                        <Dropdownbox BackgroundOpacity="1.000" Location="84,17" MaximumSize="16384,32" MinimumSize="50,32" Name="dropdownSort" PackLocation="right,top" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="195,32" Size="195,32" Style="/CommonElements.Dropdown.data.style" />
+                        <Page BackgroundOpacity="1.000" Location="0,46" Name="QuestList" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="280,300" Size="280,300">
+                            <Composite Location="7,6" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="267,289" Size="267,289" SpacingType="Fill">
+                                <TreeView BackgroundColor="#000000" BackgroundOpacity="0.000" DataSourceContainer="QuestListDS" MinimumScrollExtent="267,150" Name="TreeView" PackSize="absolute,absolute" ScrollExtent="267,289" SelectedRow="1" SelectedRowCount="1" SelectionAllowedMultiRow="false" Size="267,289" Style="/CommonElements.TreeView.data.style" ToggleChecks="true" />
+                                <Scrollbar ArrowPressSound="sounds/button" Control="TreeView" HideIfUnnecessary="true" Location="245,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,289" Size="22,289" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            </Composite>
+                            <DataSourceContainer Name="QuestListDS">
+                                <DataSourceContainer expand="true" Name="Zone 1" showCheck="false" text=":0e1f81bb4e67a6d7:[DEVL]Befallen">
+                                    <DataSourceContainer Check="false" Name="Quest 3" showcheck="true" text=":0e1f81bb0ee2b082:[DEVL]Quest For The Golden Weasel" />
+                                </DataSourceContainer>
+                                <DataSourceContainer Check="false" expand="true" Name="Zone 2" showCheck="false" text=":0e1f81bb636b76d6:[DEVL]Cazic Thule">
+                                    <DataSourceContainer Check="true" Name="Quest 1" showcheck="true" text=":0e1f81bb3f08f5c0:[DEVL]Finding the Llama Vortex" />
+                                </DataSourceContainer>
+                                <DataSourceContainer Check="false" expand="true" Name="Zone 3" showCheck="false" text=":0e1f81bbd95eed0a:[DEVL]Deathfist Citadel">
+                                    <DataSourceContainer Check="true" Name="Quest 1" showcheck="true" text=":0e1f81bb0f90ce11:[DEVL]Some Random Quest" />
+                                </DataSourceContainer>
+                            </DataSourceContainer>
+                        </Page>
+                        <Button Location="109,343" MaximumSize="16384,26" MinimumSize="26,26" Name="ShareButton" PackLocation="right,bottom" ScrollExtent="85,26" Size="85,26" Style="/CommonElements.SmallPushButton.data.style">:0e1f81bbd1384da1:Share</Button>
+                        <Button Location="193,343" MaximumSize="16384,26" MinimumSize="26,26" Name="HideButton" PackLocation="right,bottom" ScrollExtent="85,26" Size="85,26" Style="/CommonElements.SmallPushButton.data.style">:0e1f81bbfb549bea:Hide</Button>
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="1,345" MinimumSize="22,22" Name="ShowHiddenCheckbox" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="108,22" Size="108,22" Style="/CommonElements.Checkbox.data.style">:0e1f81bbcc877d5b:Hidden Quests</Checkbox>
+                    </Page>
+                    <Splitter ControlAfter="After" ControlBefore="Before" Location="276,0" MaximumSize="13,16384" MinimumSize="13,100" Name="ActiveSplitter" PackSize="f,a" ScrollExtent="13,369" Size="13,369" Style="/CommonElements.SplitterVertical.data.style" />
+                    <Page Location="286,0" MinimumSize="340,120" Name="After" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="360,369" Size="360,369">
+                        <Page BackgroundOpacity="0.475" eq2usescomwndcontrols="true" Location="6,5" MinimumSize="40,40" Name="QuestDetails" PackSize="absolute,absolute" ScrollExtent="324,336" ScrollSize="40,40" Size="324,336">
+                            <Text Font="/TextStyles.Large.LargeStyle" Location="8,1" Name="Name" PackSize="absolute,fixed" ScrollExtent="316,22" Size="316,22">:0e1f81bb28b52b8a:[DEVL]Quest</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,24" Name="Level" PackSize="a,f" ScrollExtent="316,18" Size="316,18">:0e1f81bbfa55770e:[DEVL]Current zone: Antonica</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,24" Name="Category" PackSize="a,f" ScrollExtent="316,18" Size="316,18">:0e1f81bb969823a1:[DEVL]Category: Quests of Pwnage</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,24" Name="CurrentZone" PackSize="a,f" ScrollExtent="316,18" Size="316,18">:0e1f81bbfa55770e_1:[DEVL]Current zone: Antonica</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,39" Name="Timestamp" PackSize="a,f" ScrollExtent="316,18" Size="316,18">:0e1f81bbee3fe319:[DEVL]Received on 9/12/2004 11:32PM</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,39" Name="MissionGroup" PackSize="a,f" ScrollExtent="316,18" Size="316,18" />
+                            <Text BackgroundColor="#555555" Font="/TextStyles.Normal.NormalStyle" Location="8,56" Name="Status" PackSize="a,f" ScrollExtent="316,17" Size="316,17" TextAlignment="Center" TextColor="#FF0000">:0e1f81bb0bc65332:[DEVL]Time Left 01:10:30</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,24" Name="ExpirationTime" PackSize="a,f" ScrollExtent="316,18" Size="316,18">:a2c3b63f969823a1:[DEVL]Category: Quests of Pwnage</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="8,82" Name="Body" ScrollExtent="295,50" Size="295,50">:0e1f81bbe8ca05ee:[DEVL]Details</Text>
+                            <TreeView BackgroundColor="#000000" BackgroundOpacity="0.000" DataSourceContainer="QuestDetailsDS" Enabled="false" Location="0,135" MinimumScrollExtent="303,90" Name="TreeView" ScrollExtent="303,105" SelectionAllowedMultiRow="false" Size="303,105" Style="/CommonElements.TreeView.data.checklist_style" UserResizable="true" />
+                            <DataSourceContainer Name="QuestDetailsDS">
+                                <DataSourceContainer check="true" expand="true" Name="Step 1" text=":0e1f81bbddd16de3:[DEVL]I found the Invisible Tome." />
+                                <DataSourceContainer check="true" expand="true" Name="Step 2" text=":0e1f81bbe68126ba:[DEVL]I defeated the Invincible Giant." />
+                                <DataSourceContainer check="true" expand="true" Name="Step 3" text=":0e1f81bb51b182df:[DEVL]I crossed Mt. Uncrossable." />
+                            </DataSourceContainer>
+                            <Page Location="3,102" Name="RewardPack" PackSize="a,fixed" ScrollExtent="319,271" Size="319,271">
+                                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="38,2" Name="RewardTitle" ScrollExtent="240,24" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="240,24" TextAlignment="Center" TextColor="#FBF1D9">:0e1f81bbb682889a:Reward</Text>
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="40,113" Name="ExperienceText" ScrollExtent="257,20" Size="257,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#D39614" UserMovable="true" UserResizable="true">:0e1f81bb22662384:Experience: 1.0% at level 15</Text>
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="40,113" Name="CustomRewardText" ScrollExtent="257,20" Size="257,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:0e1f81bbdade17b9:Unlocked Kitchen</Text>
+                                <Page AbsorbsInput="false" Activated="true" Location="32,88" Name="CoinPage" PackLocation="left,top" ScrollExtent="251,18" Size="251,18">
+                                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,2" Name="MinimumText" ScrollExtent="62,20" Size="62,20" TextAlignment="Right" UserMovable="true" UserResizable="true">:0e1f81bb2a34b091:At least</Text>
+                                    <Icon ActionData="coin 7" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" MouseOverColor="#FFFF00" Name="CoinPlatinum" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                                    <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="21,0" Margin="0,0,5,0" Name="Platinum" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center">:0e1f81bb29a34c65:9999</Text>
+                                    <Icon ActionData="coin 6" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" Location="62,0" MouseOverColor="#FFFF00" Name="CoinGold" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                                    <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="83,0" Margin="0,0,5,0" Name="Gold" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#FFEE70">:0e1f81bb29a34c65_1:9999</Text>
+                                    <Icon ActionData="coin 5" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" Location="124,0" MouseOverColor="#FFFF00" Name="CoinSilver" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                                    <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="145,0" Margin="0,0,5,0" Name="Silver" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#A0A0A0">:0e1f81bb29a34c65_2:9999</Text>
+                                    <Icon ActionData="coin 4" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" Location="186,0" MouseOverColor="#FFFF00" Name="CoinCopper" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                                    <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="207,0" Margin="0,0,5,0" Name="Copper" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#EA9129">:0e1f81bb29a34c65_3:9999</Text>
+                                </Page>
+                                <Scrollbar ArrowPressSound="sounds/button" Control="GrantedRewardPage.ScrollPage" Location="254,33" Name="GrantedRewardScroll" ScrollExtent="22,57" Size="22,57" Style="/CommonElements.ScrollbarVertical.data.style" />
+                                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,34" Name="GrantedRewardPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="238,44" Size="238,44">
+                                    <Page AbsorbsInput="false" Location="1,1" Name="ScrollPage" PackSize="a,a" ScrollExtent="235,43" Size="235,43">
+                                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="188,42" Size="188,42" TextAlignmentVertical="Center">:0e1f81bb69d2db30:Missing item name</Text>
+                                    </Page>
+                                </Page>
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="39,145" Name="StatusText" ScrollExtent="259,20" Size="259,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true" />
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="39,133" Name="FactionText" ScrollExtent="259,20" Size="259,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:0e1f81bbe52f3809:The Freeport Militia +20</Text>
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="31,113" Name="SelectionText" ScrollExtent="244,20" Size="244,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:0e1f81bb6ca14420:Select one of the following:</Text>
+                                <Scrollbar ArrowPressSound="sounds/button" Control="SelectedRewardPage.ScrollPage" Location="254,159" Name="SelectedRewardScroll" ScrollExtent="22,67" Size="22,67" Style="/CommonElements.ScrollbarVertical.data.style" />
+                                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,160" Name="SelectedRewardPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="239,47" Size="239,47">
+                                    <Page AbsorbsInput="false" Location="3,2" Name="ScrollPage" PackSize="a,a" ScrollExtent="234,42" Size="234,42">
+                                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="187,42" Size="187,42" TextAlignmentVertical="Center">:0e1f81bb69d2db30_1:Missing item name</Text>
+                                        <Image BackgroundColor="#4A404A" BackgroundOpacity="1.000" Name="row Selection" PackSize="a,f" ScrollExtent="234,42" Size="234,42" />
+                                    </Page>
+                                </Page>
+                                <Page BackgroundOpacity="1.000" Name="InteriorGrouper" PackSize="1,1" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="319,271" Size="319,271" Visible="false">
+                                    <Page BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.frame.rect" ScrollExtent="319,271" Size="319,271" />
+                                </Page>
+                            </Page>
+                        </Page>
+                        <Page BackgroundOpacity="1.000" Name="QuestDetailsFrame" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="360,346" Size="360,346">
+                            <Scrollbar ArrowPressSound="sounds/button" Control="QuestDetails" HideIfUnnecessary="true" Location="329,9" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,329" Size="22,329" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                        </Page>
+                        <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="2,345" MinimumSize="22,22" Name="ShowHelperCheckbox" OnPress="togglequesthelper" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="157,22" Size="157,22" Style="/CommonElements.Checkbox.data.style">:0e1f81bb4f10ceac:Quest Helper</Checkbox>
+                        <Button Enabled="false" Location="158,343" MaximumSize="16384,26" MinimumSize="26,26" Name="DeleteButton" PackLocation="right,bottom" ScrollExtent="100,26" Size="100,26" Style="/CommonElements.SmallPushButton.data.style">:0e1f81bbc241864e:Delete</Button>
+                        <Button Location="258,343" MaximumSize="16384,26" MinimumSize="26,26" Name="WaypointButton" PackLocation="right,bottom" ScrollExtent="100,26" Size="100,26" Style="/CommonElements.SmallPushButton.data.style">:0e1f81bbb555c528:Waypoint</Button>
+                    </Page>
+                </Page>
+                <Page BackgroundColor="#554736" Enabled="false" Name="Storylines" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="646,370" Size="646,370" Visible="false">
+                    <Page MinimumSize="300,120" Name="Before" PackSize="f,a" ScrollExtent="320,369" Size="320,369">
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="5,346" MinimumSize="22,22" Name="HideCompleted" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="317,22" Size="317,22" Style="/CommonElements.Checkbox.data.style">:a2c3b63fdb128838:Hide Completed Storylines</Checkbox>
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="1,1" MinimumSize="22,22" Name="ShowAllCheckbox" ScrollExtent="165,22" Size="165,22" Style="/CommonElements.CollapseCheckbox.data.normal_style">:a2c3b63ffcaac8c2:All</Checkbox>
+                        <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="0,20" Name="QuestList" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="320,326" Size="320,326">
+                            <TreeViewStyle CellHeight="20" CellPadding="0,0" DefaultTextShadowStyle="/ShadowStylesNew.Drop.style" DefaultTextStyle="/TextStyles.Normal.NormalStyle" DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" GridColor="#FFFFFF" ImageStyleChecked="/CommonElements.TreeView.data.checked" ImageStyleCollapsed="/CommonElements.TreeView.data.collapsed" ImageStyleExpanded="/CommonElements.TreeView.data.expanded" ImageStyleUnchecked="/CommonElements.TreeView.data.unchecked" Indentation="20" Name="style" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" SelectionTextShadowStyle="/ShadowStylesNew.Drop.style" />
+                            <DataSourceContainer Name="QuestListDS">
+                                <DataSourceContainer expand="true" Name="Storyline" showcheck="false" text=":a2c3b63f9f4b06f1:[DEVL]Storyline">
+                                    <DataSourceContainer expand="true" Name="Chapter1" showcheck="false" text=":a2c3b63f927f8a7e:[DEVL]Chapter 1" />
+                                    <DataSourceContainer expand="true" Name="Chapter2" showcheck="false" text=":a2c3b63f0b76dbc4:[DEVL]Chapter 2" />
+                                </DataSourceContainer>
+                                <DataSourceContainer expand="true" Name="Storyline" showcheck="false" text=":a2c3b63f9f4b06f1_1:[DEVL]Storyline">
+                                    <DataSourceContainer expand="true" Name="Chapter1" showcheck="false" text=":a2c3b63f927f8a7e_1:[DEVL]Chapter 1" />
+                                    <DataSourceContainer expand="true" Name="Chapter2" showcheck="false" text=":a2c3b63f0b76dbc4_1:[DEVL]Chapter 2" />
+                                </DataSourceContainer>
+                            </DataSourceContainer>
+                            <Composite Location="10,10" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="300,308" Size="300,308" SpacingType="Fill">
+                                <TreeView BackgroundColor="#000000" BackgroundOpacity="0.000" DataSourceContainer="QuestListDS" MinimumScrollExtent="300,0" Name="TreeView" PackSize="absolute,absolute" ScrollExtent="300,308" SelectionAllowedMultiRow="false" ShowChecks="false" Size="300,308" Style="style" />
+                                <Scrollbar ArrowPressSound="sounds/button" Control="TreeView" HideIfUnnecessary="true" Location="278,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,308" Size="22,308" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            </Composite>
+                        </Page>
+                    </Page>
+                    <Splitter ControlAfter="After" ControlBefore="Before" Location="320,0" MaximumSize="13,16384" MinimumSize="13,100" Name="StorylineSplitter" PackSize="f,a" ScrollExtent="13,369" Size="13,369" Style="/CommonElements.SplitterVertical.data.style" />
+                    <Page Location="333,0" MinimumSize="300,120" Name="After" PackSize="absolute,absolute" ScrollExtent="313,369" Size="313,369">
+                        <Namespace Name="iconstyles">
+                            <ImageStyle Name="Inactive">
+                                <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="0,84,42,126" />
+                            </ImageStyle>
+                            <ImageStyle Name="Disabled">
+                                <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="42,0,84,42" />
+                            </ImageStyle>
+                            <ImageStyle Name="Active">
+                                <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="84,126,126,168" />
+                            </ImageStyle>
+                            <ImageStyle Name="Completed">
+                                <ImageFrame Name="image" Source="images/icons/icon_ms1.dds" SourceRect="126,126,168,168" />
+                            </ImageStyle>
+                        </Namespace>
+                        <Composite Location="8,8" Name="Summary" PackSize="a,a" ScrollExtent="275,355" Size="275,355" SpacingType="Constant">
+                            <Text Font="/TextStyles.Large.LargeStyle" Margin="2,0,0,0" MinimumSize="0,24" Name="SummaryTitle" PackSize="a,f" ScrollExtent="275,24" Size="275,24" TextColor="#EBDEAA">:a2c3b63f4bb7cd52:[DEVL] Storyline/Chapter Title</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="0,24" Margin="5,0,0,10" Name="SummaryText" PackSize="a,f" ScrollExtent="275,70" Size="275,70">:a2c3b63f2720279f:[DEVL]This is sample storyline summary text. This is sample storyline summary text. This is sample storyline summary text. This is sample storyline summary text.</Text>
+                            <Page Location="8,94" Name="QuestTemplate" PackSize="a,f" ScrollExtent="275,103" Size="275,103">
+                                <Image GetsInput="true" Location="7,5" Name="Icon" ScrollExtent="42,42" Size="42,42" Stretch="false" Style="iconstyles.Completed" />
+                                <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="6,4" Name="IconFrame" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="44,44" Size="44,44" />
+                                <Text Font="/TextStyles.Large.LargeStyle" Location="56,3" Margin="2,0,0,0" MaxLines="2" MinimumSize="0,24" Name="QuestTitle" PackSize="a,f" ScrollExtent="219,36" Size="219,36">[DEVL]This is a sample quest title.</Text>
+                                <Text Font="/TextStyles.Normal.NormalStyle" Location="56,42" Margin="4,0,0,10" Name="QuestText" PackSize="a,f" ScrollExtent="219,60" Size="219,60">[DEVL]This is sample quest text. This is sample quest text. This is sample quest text. This is sample quest text.</Text>
+                            </Page>
+                        </Composite>
+                        <Scrollbar ArrowPressSound="sounds/button" Control="Summary" HideIfUnnecessary="false" Location="283,8" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,355" Size="22,355" Style="/CommonElements.ScrollbarVertical.data.style" />
+                        <Page BackgroundOpacity="1.000" Name="Frame" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="313,369" Size="313,369" />
+                    </Page>
+                </Page>
+                <Page BackgroundColor="#554736" Enabled="false" Name="Completed" OnHoverIn="Buttons.visible=true" OnHoverOut="Buttons.visible=false" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="646,370" Size="646,370" Visible="false">
+                    <Page Location="599,6" Name="Buttons" PackLocation="right,top" ScrollExtent="15,32" Size="15,32" Visible="false">
+                        <Button Name="EQ2i" OnPress="URL=&apos;http://eq2.wikia.com/wiki/Special:Search?search=&apos; ## Parent.Parent.After.Composite.QuestDetails.Name.localtext&#xD;&#xA;browser URL" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search EQ2i" />
+                        <Button Location="0,15" Name="ZAM" OnPress="URL=&apos;http://eq2.allakhazam.com/search.html?q=&apos; ## Parent.Parent.After.Composite.QuestDetails.Name.localtext&#xD;&#xA;browser URL" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search ZAM" />
+                    </Page>
+                    <Page MinimumSize="280,120" Name="Before" PackSize="f,a" ScrollExtent="280,369" Size="280,369">
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="91,2" MaxLines="1" Name="CompletedText" PackSize="absolute,fixed" ScrollExtent="211,24" Size="182,24" TextAlignment="Right" UserMovable="true">:0e1f81bb72060bf2:[DEVL] You have completed 15 quests.</Text>
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="1,1" MinimumSize="22,22" Name="ShowAllCheckbox" ScrollExtent="86,22" Size="86,22" Style="/CommonElements.CollapseCheckbox.data.normal_style">:0e1f81bbfcaac8c2_1:All</Checkbox>
+                        <Page BackgroundOpacity="1.000" Location="0,18" Name="QuestList" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="280,328" Size="280,328">
+                            <DataSourceContainer Name="QuestListDS">
+                                <DataSourceContainer expand="true" Name="Zone 1" text=":0e1f81bbd0a99dbc:Befallen">
+                                    <DataSourceContainer Name="Quest 1" showcheck="false" text=":0e1f81bb310b0a02:[DEVL]Gopher Task" />
+                                    <DataSourceContainer Name="Quest 2" showcheck="false" text=":0e1f81bbcf2dd8ec:Um, Can I Have A Wussy One Instead?" />
+                                    <DataSourceContainer Name="Quest 3" showcheck="false" text=":0e1f81bb7d1d559f:Quest For The Golden Weasel" />
+                                </DataSourceContainer>
+                                <DataSourceContainer expand="true" Name="Zone 2" text=":0e1f81bb67875206:Cazic Thule">
+                                    <DataSourceContainer Name="Quest 1" showcheck="false" text=":0e1f81bbb24f0da6:Some Random Quest" />
+                                </DataSourceContainer>
+                                <DataSourceContainer expand="true" Name="Zone 3" text=":0e1f81bb64812ebd:Deathfist Citadel">
+                                    <DataSourceContainer Name="Quest 1" showcheck="false" text=":0e1f81bbb24f0da6_1:Some Random Quest" />
+                                </DataSourceContainer>
+                            </DataSourceContainer>
+                            <Composite Location="7,6" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="267,317" Size="267,317" SpacingType="Fill">
+                                <TreeView BackgroundColor="#000000" BackgroundOpacity="0.000" DataSourceContainer="QuestListDS" MinimumScrollExtent="267,0" Name="TreeView" PackSize="absolute,absolute" ScrollExtent="267,317" SelectionAllowedMultiRow="false" ShowChecks="false" Size="267,317" Style="/CommonElements.TreeView.data.style" />
+                                <Scrollbar ArrowPressSound="sounds/button" Control="TreeView" HideIfUnnecessary="true" Location="245,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,317" Size="22,317" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            </Composite>
+                        </Page>
+                        <Checkbox Activated="true" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Checked="true" Location="1,345" MinimumSize="22,22" Name="ShowRepeatableCheckbox" PackLocation="left,bottom" ScrollExtent="194,22" Size="194,22" Style="/CommonElements.Checkbox.data.style">:0e1f81bb7d56be37:Only show repeatable quests</Checkbox>
+                        <Button Location="193,343" MaximumSize="16384,26" MinimumSize="26,26" Name="ShareButton" PackLocation="right,bottom" ScrollExtent="85,26" Size="85,26" Style="/CommonElements.SmallPushButton.data.style">:0e1f81bbd1384da1_1:Share</Button>
+                    </Page>
+                    <Splitter ControlAfter="After" ControlBefore="Before" Location="276,0" MaximumSize="13,16384" MinimumSize="13,100" Name="CompletedSplitter" PackSize="f,a" ScrollExtent="13,369" Size="13,369" Style="/CommonElements.SplitterVertical.data.style" />
+                    <Page Location="286,0" MinimumSize="300,120" Name="After" PackSize="absolute,absolute" ScrollExtent="360,369" Size="360,369">
+                        <Composite Location="8,8" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="344,354" Size="344,354" SpacingType="Fill">
+                            <Page BackgroundOpacity="0.475" eq2usescomwndcontrols="true" Location="0,-2" MinimumSize="40,40" Name="QuestDetails" PackSize="absolute,absolute" ScrollExtent="344,358" ScrollSize="40,40" Size="344,358">
+                                <Text Font="/TextStyles.Large.LargeStyle" Location="8,6" Name="Name" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="334,22" Size="334,22">:0e1f81bbcf2dd8ec_1:Um, Can I Have A Wussy One Instead?</Text>
+                                <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,24" Name="Level" ScrollExtent="316,18" Size="316,18">:0e1f81bbfa55770e_2:[DEVL]Current zone: Antonica</Text>
+                                <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,29" Name="Timestamp" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="334,18" Size="334,18">:0e1f81bb9b30bd60:Completed on 9/12/2004 11:33PM Repeatable</Text>
+                                <Text BackgroundColor="#555555" Font="/TextStyles.Normal.NormalStyle" Location="8,53" Name="Body" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="334,165" Size="334,165">:0e1f81bb9c48c4ef:[DEVL]I completed the seemingly impossible tasks given to me by High Chieftain Brass. I overcame all odds, persevered where all others failed. My success shone through the darkest fog of doubt. I am a beacon of virtue, a pillar of solidarity and may all others crumble with insecurity within my wake. I am a rock. I am an island. I am an army of one. Fear me.</Text>
+                            </Page>
+                            <Scrollbar ArrowPressSound="sounds/button" Control="QuestDetails" HideIfUnnecessary="true" Location="322,0" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,354" Size="22,354" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                        </Composite>
+                        <Page BackgroundOpacity="1.000" Name="QuestDetailsFrame" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="360,369" Size="360,369" />
+                    </Page>
+                </Page>
+                <Page BackgroundColor="#554736" Enabled="false" Name="Group" OnHoverIn="Buttons.visible=true" OnHoverOut="Buttons.visible=false" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="646,370" Size="646,370" Visible="false">
+                    <Page Location="599,6" Name="Buttons" PackLocation="right,top" ScrollExtent="15,32" Size="15,32" Visible="false">
+                        <Button Name="EQ2i" OnPress="URL=&apos;http://eq2.wikia.com/wiki/Special:Search?search=&apos; ## Parent.Parent.After.QuestDetails.Name.localtext&#xD;&#xA;browser URL" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search EQ2i" />
+                        <Button Location="0,15" Name="ZAM" OnPress="URL=&apos;http://eq2.allakhazam.com/search.html?q=&apos; ## Parent.Parent.After.QuestDetails.Name.localtext&#xD;&#xA;browser URL" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search ZAM" />
+                    </Page>
+                    <Page MinimumSize="280,120" Name="Before" PackSize="f,a" ScrollExtent="280,369" Size="280,369">
+                        <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,7" MinimumSize="22,22" Name="ShowAllCheckbox" ScrollExtent="79,22" Size="79,22" Style="/CommonElements.CollapseCheckbox.data.normal_style">:0e1f81bbfcaac8c2_2:All</Checkbox>
+                        <Dropdownbox BackgroundOpacity="1.000" Location="78,0" MaximumSize="16384,32" MinimumSize="50,32" Name="dropdownSort" PackLocation="right,top" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="200,32" Size="200,32" Style="/CommonElements.Dropdown.data.style" />
+                        <Page BackgroundOpacity="1.000" Location="0,28" Name="QuestList" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="280,341" Size="280,341">
+                            <Scrollbar ArrowPressSound="sounds/button" Control="TreeView" HideIfUnnecessary="true" Location="248,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,323" Size="22,323" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                            <TreeView BackgroundColor="#000000" BackgroundOpacity="0.000" DataSourceContainer="QuestListDS" Location="6,6" MinimumScrollExtent="242,0" Name="TreeView" PackSize="absolute,absolute" ScrollExtent="242,330" SelectionAllowedMultiRow="false" ShowChecks="false" Size="242,330" Style="/CommonElements.TreeView.data.style" />
+                            <DataSourceContainer Name="QuestListDS">
+                                <DataSourceContainer expand="true" Name="Zone 1" text=":0e1f81bb4e67a6d7_1:[DEVL]Befallen">
+                                    <DataSourceContainer Name="Quest 3" showcheck="false" text=":0e1f81bb0ee2b082_1:[DEVL]Quest For The Golden Weasel" />
+                                </DataSourceContainer>
+                                <DataSourceContainer expand="true" Name="Zone 2" text=":0e1f81bb636b76d6_1:[DEVL]Cazic Thule">
+                                    <DataSourceContainer Name="Quest 1" showcheck="false" text=":0e1f81bb0f90ce11_1:[DEVL]Some Random Quest" />
+                                </DataSourceContainer>
+                                <DataSourceContainer expand="true" Name="Zone 3" text=":0e1f81bbd95eed0a_1:[DEVL]Deathfist Citadel">
+                                    <DataSourceContainer Name="Quest 1" showcheck="false" text=":0e1f81bb0f90ce11_2:[DEVL]Some Random Quest" />
+                                </DataSourceContainer>
+                            </DataSourceContainer>
+                        </Page>
+                    </Page>
+                    <Splitter ControlAfter="After" ControlBefore="Before" Location="276,0" MaximumSize="13,16384" MinimumSize="13,100" Name="GroupSplitter" PackSize="f,a" ScrollExtent="13,369" Size="13,369" Style="/CommonElements.SplitterVertical.data.style" />
+                    <Page Location="286,0" MinimumSize="300,120" Name="After" PackSize="absolute,absolute" ScrollExtent="360,369" Size="360,369">
+                        <Page BackgroundOpacity="0.475" eq2usescomwndcontrols="true" Location="6,5" MinimumSize="40,40" Name="QuestDetails" PackSize="absolute,absolute" ScrollExtent="324,359" ScrollSize="40,40" Size="324,359">
+                            <Text Font="/TextStyles.Large.LargeStyle" Location="8,1" Name="Name" PackSize="absolute,fixed" ScrollExtent="297,22" Size="297,22">:a2c3b63f28b52b8a_1:[DEVL]Quest</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,24" Name="Level" ScrollExtent="297,18" Size="297,18">:a2c3b63ffa55770e_2:[DEVL]Current zone: Antonica</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,24" Name="Category" ScrollExtent="297,18" Size="297,18">:a2c3b63f969823a1_2:[DEVL]Category: Quests of Pwnage</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,24" Name="CurrentZone" ScrollExtent="297,18" Size="297,18">:a2c3b63ffa55770e_3:[DEVL]Current zone: Antonica</Text>
+                            <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="8,39" Name="Timestamp" ScrollExtent="297,18" Size="297,18">:a2c3b63fee3fe319_1:[DEVL]Received on 9/12/2004 11:32PM</Text>
+                            <Text BackgroundColor="#555555" Font="/TextStyles.Normal.NormalStyle" Location="8,56" Name="Status" ScrollExtent="297,17" Size="297,17" TextAlignment="Center" TextColor="#FF0000">:a2c3b63f27b7e0f2_1:[DEVL]Time Left 01:10:30</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="8,82" Name="Body" ScrollExtent="297,50" Size="297,50">:a2c3b63fe8ca05ee_1:[DEVL]Details</Text>
+                            <TreeView BackgroundColor="#000000" BackgroundOpacity="0.000" DataSourceContainer="QuestDetailsDS" Enabled="false" Location="0,135" MinimumScrollExtent="305,0" Name="TreeView" ScrollExtent="305,105" SelectionAllowedMultiRow="false" Size="305,105" Style="/CommonElements.TreeView.data.checklist_style" UserResizable="true" />
+                            <DataSourceContainer Name="QuestDetailsDS">
+                                <DataSourceContainer check="true" expand="true" Name="Step 1" text=":a2c3b63fddd16de3_1:[DEVL]I found the Invisible Tome." />
+                                <DataSourceContainer check="true" expand="true" Name="Step 2" text=":a2c3b63fe68126ba_1:[DEVL]I defeated the Invincible Giant." />
+                                <DataSourceContainer check="true" expand="true" Name="Step 3" text=":a2c3b63f51b182df:[DEVL]I crossed Mt. Uncrossable." />
+                            </DataSourceContainer>
+                            <Page Location="3,102" Name="RewardPack" PackSize="a,fixed" ScrollExtent="300,298" Size="300,298">
+                                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="38,2" Name="RewardTitle" ScrollExtent="240,24" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="240,24" TextAlignment="Center" TextColor="#FBF1D9">:a2c3b63fb682889a_1:Reward</Text>
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="40,113" Name="ExperienceText" ScrollExtent="257,20" Size="257,20" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#D39614" UserMovable="true" UserResizable="true">:a2c3b63f22662384_1:Experience: 1.0% at level 15</Text>
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="40,113" Name="CustomRewardText" ScrollExtent="257,20" Size="257,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:a2c3b63fdade17b9_1:Unlocked Kitchen</Text>
+                                <Page AbsorbsInput="false" Activated="true" Location="32,88" Name="CoinPage" PackLocation="left,top" ScrollExtent="251,18" Size="251,18">
+                                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,2" Name="MinimumText" ScrollExtent="62,20" Size="62,20" TextAlignment="Right" UserMovable="true" UserResizable="true">:a2c3b63f2a34b091_1:At least</Text>
+                                    <Icon ActionData="coin 7" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" MouseOverColor="#FFFF00" Name="CoinPlatinum" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                                    <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="21,0" Margin="0,0,5,0" Name="Platinum" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center">:a2c3b63f29a34c65_4:9999</Text>
+                                    <Icon ActionData="coin 6" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" Location="62,0" MouseOverColor="#FFFF00" Name="CoinGold" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                                    <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="83,0" Margin="0,0,5,0" Name="Gold" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#FFEE70">:a2c3b63f29a34c65_5:9999</Text>
+                                    <Icon ActionData="coin 5" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" Location="124,0" MouseOverColor="#FFFF00" Name="CoinSilver" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                                    <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="145,0" Margin="0,0,5,0" Name="Silver" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#A0A0A0">:a2c3b63f29a34c65_6:9999</Text>
+                                    <Icon ActionData="coin 4" BackgroundTint="#000000" Dragable="true" Enabled="false" IconStyle="/IconStyles.coin" Location="186,0" MouseOverColor="#FFFF00" Name="CoinCopper" ScrollExtent="18,18" Size="18,18" TreatAsButton="true" />
+                                    <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="207,0" Margin="0,0,5,0" Name="Copper" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#EA9129">:a2c3b63f29a34c65_7:9999</Text>
+                                </Page>
+                                <Scrollbar ArrowPressSound="sounds/button" Control="GrantedRewardPage.ScrollPage" Location="254,33" Name="GrantedRewardScroll" ScrollExtent="22,57" Size="22,57" Style="/CommonElements.ScrollbarVertical.data.style" />
+                                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,34" Name="GrantedRewardPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="238,44" Size="238,44">
+                                    <Page AbsorbsInput="false" Location="1,1" Name="ScrollPage" PackSize="a,a" ScrollExtent="235,43" Size="235,43">
+                                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="188,42" Size="188,42" TextAlignmentVertical="Center">:a2c3b63f69d2db30_2:Missing item name</Text>
+                                    </Page>
+                                </Page>
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="39,145" Name="StatusText" ScrollExtent="259,20" Size="259,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true" />
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="39,133" Name="FactionText" ScrollExtent="259,20" Size="259,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:a2c3b63fe52f3809_1:The Freeport Militia +20</Text>
+                                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="31,113" Name="SelectionText" ScrollExtent="244,20" Size="244,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true">:a2c3b63f6ca14420_1:Select one of the following:</Text>
+                                <Scrollbar ArrowPressSound="sounds/button" Control="SelectedRewardPage.ScrollPage" Location="254,159" Name="SelectedRewardScroll" ScrollExtent="22,67" Size="22,67" Style="/CommonElements.ScrollbarVertical.data.style" />
+                                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,160" Name="SelectedRewardPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="239,47" Size="239,47">
+                                    <Page AbsorbsInput="false" Location="3,2" Name="ScrollPage" PackSize="a,a" ScrollExtent="234,42" Size="234,42">
+                                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="187,42" Size="187,42" TextAlignmentVertical="Center">:a2c3b63f69d2db30_3:Missing item name</Text>
+                                        <Image BackgroundColor="#4A404A" BackgroundOpacity="1.000" Name="row Selection" PackSize="a,f" ScrollExtent="234,42" Size="234,42" />
+                                    </Page>
+                                </Page>
+                                <Page BackgroundOpacity="1.000" Name="InteriorGrouper" PackSize="1,1" RStyleDefault="/WindowElements.InteriorGrouper.data.default_bkg.rect" ScrollExtent="300,298" Size="300,298" Visible="false">
+                                    <Page BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.InteriorGrouper.data.frame.rect" ScrollExtent="300,298" Size="300,298" />
+                                </Page>
+                            </Page>
+                        </Page>
+                        <Page BackgroundOpacity="1.000" Name="QuestDetailsFrame" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="360,369" Size="360,369">
+                            <Scrollbar ArrowPressSound="sounds/button" Control="QuestDetails" HideIfUnnecessary="true" Location="328,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,349" Size="22,349" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                        </Page>
+                    </Page>
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="-16,364" Name="LowerTabBkg" PackLocation="left,bottom" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.lower_tab_bkg.rect" ScrollExtent="678,59" Size="678,59" />
+        </Page>
+        <Page BackgroundColor="#554736" Enabled="false" Name="Collection" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="646,404" Size="646,404" Visible="false">
+            <Page AbsorbsInput="false" Location="9,1" Name="AllPage" PackLocation="left,top" PackSize="absolute,fixed" ScrollExtent="629,24" Size="629,24">
+                <Text AbsorbsInput="false" DynamicData="/GameData.Quest.CollectionCompleted" Font="/TextStyles.Normal.NormalStyle" MaxLines="1" Name="CompletedText" PackLocation="left,top" ScrollExtent="280,24" Size="280,24" TextAlignmentVertical="Center" UserMovable="true">:0e1f81bbdc88af15:[DEVL]Total collections completed:  100</Text>
+                <Text AbsorbsInput="false" DynamicData="/GameData.Quest.CollectionProgress" Font="/TextStyles.Normal.NormalStyle" Location="349,0" MaxLines="1" Name="ProgressText" PackLocation="right,top" ScrollExtent="280,24" Size="280,24" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true">:0e1f81bbdc88af15_1:[DEVL]Total collections discovered:  100</Text>
+            </Page>
+            <Page AbsorbsInput="false" Location="4,370" Name="FilterPage" PackLocation="left,bottom" PackSize="absolute,fixed" ScrollExtent="635,32" Size="635,32">
+                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="150,5" MinimumSize="22,22" Name="AutoAdd" PackLocation="left,top" PackSize="a,f" ScrollExtent="130,22" Size="130,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":a2c3b63f614a9395:Display the collection window when a new collection item is looted.">:a2c3b63fcb636041:Open on Loot</Checkbox>
+                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="0,5" MinimumSize="22,22" Name="HideCompleted" PackLocation="left,top" PackSize="a,f" ScrollExtent="130,22" Size="130,22" Style="/CommonElements.Checkbox.data.style">:0e1f81bb66a5edb7:Hide Completed</Checkbox>
+                <Icon BackgroundTint="#000000" Dragable="true" DropToParent="true" IconStyle="/IconStyles.button" Location="329,0" MaximumSize="32,32" MinimumSize="32,32" MouseOverColor="#FFFF00" Name="FilterItem" PackLocation="right,top" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" />
+                <Button Location="299,5" MaximumSize="16384,32" MinimumSize="32,32" Name="ShowAllButton" PackLocation="right,top" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style" Visible="false">:0e1f81bb175b1670:Show All</Button>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="258,4" MaxLines="1" Name="FilterText" PackLocation="right,top" PackSize="fixed,fixed" ScrollExtent="62,24" Size="62,24" TextAlignment="Right" TextAlignmentVertical="Center" UserMovable="true">:0e1f81bb473558da:Filter:</Text>
+                <Dropdownbox BackgroundOpacity="1.000" Location="365,0" MaximumSize="16384,32" MinimumSize="50,32" Name="dropdownSort" PackLocation="right,top" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="272,32" Size="272,32" Style="/CommonElements.Dropdown.data.style" />
+            </Page>
+            <Icon BackgroundTint="#000000" Dragable="true" DropToParent="true" IconStyle="/IconStyles.button" Location="5,5" MaximumSize="32,32" MinimumSize="32,32" MouseOverColor="#FFFF00" Name="ItemIconTemplate" Opacity="0.500" ScrollExtent="32,32" Size="32,32" TreatAsButton="true" Visible="false" />
+            <Page BackgroundColor="#00FF00" DropToParent="true" Location="3,32" Margin="10,20,20,10" Name="CollectionTemplate" PackSize="absolute,fixed" ScrollExtent="613,97" Size="613,97">
+                <Button Location="180,44" Name="EQ2i" OnPress="URL=&apos;http://eq2.wikia.com/wiki/Special:Search?search=&apos; ## Parent.Name.Text&#xD;&#xA;browser URL" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search EQ2i" />
+                <Button Location="195,44" Name="ZAM" OnPress="URL=&apos;http://eq2.allakhazam.com/search.html?q=&apos; ## Parent.Name.Text&#xD;&#xA;browser URL" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" Tooltip="Search ZAM" />
+                <Button Location="533,29" MaximumSize="16384,32" MinimumSize="32,32" Name="AddButton" PackLocation="right,top" ScrollExtent="80,32" Size="80,32" Style="/CommonElements.PushButton.data.style">:0e1f81bb3aa8caf8:Add</Button>
+                <Text Color="#C0C0C0" Font="/TextStyles.Normal.NormalStyle" Location="10,27" Margin="2,0,0,0" Name="Category" PackSize="a,f" ScrollExtent="606,18" Size="606,18">:a2c3b63f8565f55c:Category:</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,8" Margin="2,0,0,0" MaxLines="1" Name="Name" PackSize="absolute,fixed" ScrollExtent="599,22" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="599,22" TextColor="#FBF1D9">:0e1f81bb28b52b8a_1:[DEVL]Quest</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="10,43" Margin="2,0,0,0" MaxLines="1" Name="Status" PackLocation="left,top" ScrollExtent="257,18" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="257,18" TextColor="#F0D080">:0e1f81bb0f5d0d4e:Level: 44</Text>
+                <VolumePage CellPadding="5,5" DropToParent="true" Location="5,61" MinimumScrollExtent="5,5" Name="Items" PackSize="absolute,fixed" ScrollExtent="609,46" Size="609,46" />
+            </Page>
+            <Page BackgroundOpacity="1.000" DragAccepts="icon" DropToParent="true" Location="0,233" Name="CategoryTemplate" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="316,170" Size="316,170" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="10,10" Name="Name" ScrollExtent="195,22" Size="195,22">:0e1f81bb9e0bbf03:[DEVL]Category</Text>
+                <Composite DragAccepts="icon" Location="10,33" Name="Composite" ScrollExtent="295,128" Size="295,128" Spacing="5" SpacingType="Constant" />
+            </Page>
+            <Page BackgroundOpacity="0.675" DragAccepts="icon" DragType="icon" Location="8,24" Name="CollectionFrame" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="631,340" Size="631,340">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="15,119" Name="NoMatchText" PackLocation="left,center" PackSize="absolute,fixed" ScrollExtent="601,82" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="601,82" TextAlignment="Center" TextColor="#FBF1D9">:0e1f81bbb25d7fe1:No Matches</Text>
+                <Composite DragAccepts="icon" DragType="icon" Name="CollectionComposite" PackSize="absolute,absolute" RStyleDisabled="tile" ScrollExtent="609,340" ScrollSize="1,83" Size="609,340" Spacing="5" SpacingType="Constant" />
+                <Scrollbar ArrowPressSound="sounds/button" Control="CollectionComposite" HideIfUnnecessary="true" Location="609,0" MaximumSize="22,16384" MinimumSize="22,80" Name="CollectionScroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,340" Size="22,340" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+            </Page>
+        </Page>
+        <Page BackgroundColor="#554736" Enabled="false" Name="Achievements" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="646,404" Size="646,404" Visible="false">
+            <Page BackgroundOpacity="1.000" MinimumSize="160,0" Name="CategoryPage" PackSize="f,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="182,373" Size="182,373">
+                <Page BackgroundColor="#112244" BackgroundOpacity="1.000" Location="10,10" Name="CategoryTemplate" OnActivate="BackgroundColor = #4A4040" OnDeactivate="BackgroundColor = #112244" PackSize="a,f" ScrollExtent="162,24" Size="162,24">
+                    <Text Font="/TextStyles.Large.LargeStyle" Margin="4,0,0,0" Name="Name" PackSize="a,a" ScrollExtent="162,24" Size="162,24" TextAlignmentVertical="Center" TextColor="#FFDD00">:a2c3b63ffe6bf029:General</Text>
+                </Page>
+                <Page BackgroundColor="#141422" BackgroundOpacity="1.000" Location="10,35" Name="SubcategoryTemplate" OnActivate="BackgroundColor = #4A4040" OnDeactivate="BackgroundColor = #141422" PackSize="a,f" ScrollExtent="162,24" Size="162,24">
+                    <Text Font="/TextStyles.Normal.NormalStyle" Margin="12,0,0,0" Name="Name" PackSize="a,a" ScrollExtent="162,24" Size="162,24" TextAlignmentVertical="Center" TextColor="#F0F0F0">:a2c3b63ffe6bf029_1:General</Text>
+                </Page>
+                <Composite Location="10,10" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="162,354" ScrollSize="1,24" Size="162,354" SpacingType="Fill">
+                    <Page Name="CategoryList" PackSize="a,a" ScrollExtent="162,354" ScrollSize="1,20" Size="162,354" />
+                    <Scrollbar ArrowPressSound="sounds/button" Control="CategoryList" HideIfUnnecessary="true" Location="140,0" MaximumSize="22,16384" MinimumSize="22,80" Name="Scrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,354" Size="22,354" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                </Composite>
+            </Page>
+            <Splitter ControlAfter="ContentPage" ControlBefore="CategoryPage" Location="178,0" MaximumSize="13,16384" MinimumSize="13,100" Name="AchievementsSplitter" PackSize="f,a" ScrollExtent="13,377" Size="13,377" Style="/CommonElements.SplitterVertical.data.style" />
+            <Page Location="188,0" MinimumSize="400,0" Name="ContentPage" PackSize="a,a" ScrollExtent="458,373" Size="458,373">
+                <Page Name="StatsPage" PackSize="a,f" ScrollExtent="458,32" Size="458,32">
+                    <Page Location="6,2" MaximumSize="16384,32" MinimumSize="60,32" Name="ProgressPage" PackLocation="left,top" PackSize="a,f" ScrollExtent="280,32" Size="280,32" Tooltip=":a2c3b63f29cc95a1:Number of achievements completed.">
+                        <Text Font="/TextStyles.Normal.NormalStyle" Margin="10,0,0,0" Name="Label" PackSize="a,f" ScrollExtent="280,32" Size="280,32" TextAlignmentVertical="Center" TextColor="#F3E9D7">:a2c3b63f05b4054e:Achievements Completed</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Margin="0,0,10,0" Name="Text" PackSize="a,f" ScrollExtent="280,32" Size="280,32" TextAlignment="Right" TextAlignmentVertical="Center" TextColor="#F3E9D7">:a2c3b63f90584f0c:283 / 350</Text>
+                        <Page BackgroundOpacity="1.000" Name="Frame" PackSize="absolute,fixed" RStyleDefault="/SpecialElements.SkillProgressBar.data.frame.rect" ScrollExtent="280,32" Size="280,32" />
+                        <Progressbar BackgroundOpacity="1.000" Color="#00E030" Name="Progress" PackSize="absolute,fixed" Progress="0.800" ScrollExtent="280,32" Size="280,32" Style="/SpecialElements.SkillProgressBar.data.style" />
+                        <Page BackgroundOpacity="1.000" Name="Bkg" PackSize="absolute,fixed" RStyleDefault="/SpecialElements.SkillProgressBar.data.bkg.rect" ScrollExtent="280,32" Size="280,32" />
+                    </Page>
+                    <Page Location="290,2" Name="PointsPage" PackLocation="right,top" PackSize="f,f" ScrollExtent="165,32" Size="165,32" Tooltip=":a2c3b63f0916fe90:Total points earned.">
+                        <Text DynamicData="/GameData.Self.AchievementPoints" Font="/TextStyles.Large.LargeStyle" Name="Points" PackSize="a,f" ScrollExtent="165,28" Size="165,28" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FFF000">:a2c3b63f0b60197c:[DEVL]23,650</Text>
+                        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="TitleDecoration" PackSize="a,f" RStyleDefault="/FrameStyles.title_gold_deco2" ScrollExtent="165,30" Size="165,30" />
+                    </Page>
+                </Page>
+                <Page Location="0,28" Name="SummaryPage" PackSize="a,a" ScrollExtent="458,345" Size="458,345" Visible="false">
+                    <Page BackgroundOpacity="1.000" Location="0,4" Name="CategoryProgress" PackLocation="left,top" PackSize="a,f" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="458,174" Size="458,174">
+                        <Page MaximumSize="232,44" MinimumSize="232,44" Name="ProgressTemplate" ScrollExtent="232,44" Size="232,44" Visible="false">
+                            <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="232,16" Size="232,16" TextAlignmentVertical="Center" TextColor="#D0D0D0">:a2c3b63f84402a2e:General:</Text>
+                            <Page Location="0,14" Name="Progress" PackSize="absolute,fixed" ScrollExtent="232,16" Size="232,16">
+                                <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="232,16" Size="232,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c:54,680 / 100,000</Text>
+                                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="226,10" Size="226,10" Style="progress_style" />
+                                <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="226,10" Size="226,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="232,16" Size="232,16" />
+                            </Page>
+                        </Page>
+                        <VolumePage CellCount="2,4" CellCountFixed="2,4" CellPadding="8,8" CellSelectable="false" CellSize="210,30" heightexpanded="76" Location="7,6" MinimumScrollExtent="444,160" Name="ListVolume" PackSize="a,f" ScrollExtent="444,160" Size="444,160">
+                            <Page Location="8,8" MaximumSize="228,30" MinimumSize="228,30" Name="ProgressTemplate" ScrollExtent="228,30" Size="228,30">
+                                <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignmentVertical="Center" TextColor="#D0D0D0">:a2c3b63f84402a2e_1:General:</Text>
+                                <Page Location="0,14" Name="Progress" PackSize="absolute,fixed" ScrollExtent="228,16" Size="228,16">
+                                    <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c_1:54,680 / 100,000</Text>
+                                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="222,10" Size="222,10" Style="progress_style" />
+                                    <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="222,10" Size="222,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="228,16" Size="228,16" />
+                                </Page>
+                            </Page>
+                            <Page Location="226,8" MaximumSize="228,30" MinimumSize="228,30" Name="ProgressTemplate" ScrollExtent="228,30" Size="228,30">
+                                <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignmentVertical="Center" TextColor="#D0D0D0">:a2c3b63f84402a2e_2:General:</Text>
+                                <Page Location="0,14" Name="Progress" PackSize="absolute,fixed" ScrollExtent="228,16" Size="228,16">
+                                    <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c_2:54,680 / 100,000</Text>
+                                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="222,10" Size="222,10" Style="progress_style" />
+                                    <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="222,10" Size="222,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="228,16" Size="228,16" />
+                                </Page>
+                            </Page>
+                            <Page Location="8,46" MaximumSize="228,30" MinimumSize="228,30" Name="ProgressTemplate" ScrollExtent="228,30" Size="228,30">
+                                <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignmentVertical="Center" TextColor="#D0D0D0">:a2c3b63f84402a2e_3:General:</Text>
+                                <Page Location="0,14" Name="Progress" PackSize="absolute,fixed" ScrollExtent="228,16" Size="228,16">
+                                    <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c_3:54,680 / 100,000</Text>
+                                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="222,10" Size="222,10" Style="progress_style" />
+                                    <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="222,10" Size="222,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="228,16" Size="228,16" />
+                                </Page>
+                            </Page>
+                            <Page Location="226,46" MaximumSize="228,30" MinimumSize="228,30" Name="ProgressTemplate" ScrollExtent="228,30" Size="228,30">
+                                <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignmentVertical="Center" TextColor="#D0D0D0">:a2c3b63f84402a2e_4:General:</Text>
+                                <Page Location="0,14" Name="Progress" PackSize="absolute,fixed" ScrollExtent="228,16" Size="228,16">
+                                    <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c_4:54,680 / 100,000</Text>
+                                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="222,10" Size="222,10" Style="progress_style" />
+                                    <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="222,10" Size="222,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="228,16" Size="228,16" />
+                                </Page>
+                            </Page>
+                            <Page Location="8,84" MaximumSize="228,30" MinimumSize="228,30" Name="ProgressTemplate" ScrollExtent="228,30" Size="228,30">
+                                <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignmentVertical="Center" TextColor="#D0D0D0">:a2c3b63f84402a2e_5:General:</Text>
+                                <Page Location="0,14" Name="Progress" PackSize="absolute,fixed" ScrollExtent="228,16" Size="228,16">
+                                    <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c_5:54,680 / 100,000</Text>
+                                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="222,10" Size="222,10" Style="progress_style" />
+                                    <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="222,10" Size="222,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="228,16" Size="228,16" />
+                                </Page>
+                            </Page>
+                            <Page Location="226,84" MaximumSize="228,30" MinimumSize="228,30" Name="ProgressTemplate" ScrollExtent="228,30" Size="228,30">
+                                <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignmentVertical="Center" TextColor="#D0D0D0">:a2c3b63f84402a2e_6:General:</Text>
+                                <Page Location="0,14" Name="Progress" PackSize="absolute,fixed" ScrollExtent="228,16" Size="228,16">
+                                    <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c_6:54,680 / 100,000</Text>
+                                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="222,10" Size="222,10" Style="progress_style" />
+                                    <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="222,10" Size="222,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="228,16" Size="228,16" />
+                                </Page>
+                            </Page>
+                            <Page Location="8,122" MaximumSize="228,30" MinimumSize="228,30" Name="ProgressTemplate" ScrollExtent="228,30" Size="228,30">
+                                <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignmentVertical="Center" TextColor="#D0D0D0">:a2c3b63f84402a2e_7:General:</Text>
+                                <Page Location="0,14" Name="Progress" PackSize="absolute,fixed" ScrollExtent="228,16" Size="228,16">
+                                    <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c_7:54,680 / 100,000</Text>
+                                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="222,10" Size="222,10" Style="progress_style" />
+                                    <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="222,10" Size="222,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="228,16" Size="228,16" />
+                                </Page>
+                            </Page>
+                            <Page Location="226,122" MaximumSize="228,30" MinimumSize="228,30" Name="ProgressTemplate" ScrollExtent="228,30" Size="228,30">
+                                <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignmentVertical="Center" TextColor="#D0D0D0">:a2c3b63f84402a2e_8:General:</Text>
+                                <Page Location="0,14" Name="Progress" PackSize="absolute,fixed" ScrollExtent="228,16" Size="228,16">
+                                    <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="228,16" Size="228,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c_8:54,680 / 100,000</Text>
+                                    <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="222,10" Size="222,10" Style="progress_style" />
+                                    <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="222,10" Size="222,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                                    <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="228,16" Size="228,16" />
+                                </Page>
+                            </Page>
+                        </VolumePage>
+                    </Page>
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="0,182" Margin="10,0,0,0" Name="Label" PackLocation="left,top" PackSize="a,f" ScrollExtent="446,22" Size="446,22" TextAlignmentVertical="Center" TextColor="#F3E9D7">:a2c3b63f9a8ddaed:Recent Achievements:</Text>
+                    <Page BackgroundOpacity="1.000" Location="0,202" Name="Recent" PackLocation="left,top" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="458,143" Size="458,143">
+                        <Page AbsorbsInput="false" BackgroundColor="#2D251C" Location="14,10" Name="ScrollPage" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="412,124" ScrollSize="20,20" Size="412,124">
+                            <Text Font="/TextStyles.Normal.NormalStyle" MaxLines="2" Name="row Name" PackLocation="left,top" PackSize="a,f" ScrollExtent="293,20" Size="293,20" TextAlignmentVertical="Center">:a2c3b63f65e3cbfd:[DEVL]Achievement Name</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="292,0" Margin="2,0,2,0" Name="row Points" PackLocation="right,top" PackSize="f,f" ScrollExtent="40,20" Size="40,20" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63f2ec82e91:15</Text>
+                            <Text Font="/TextStyles.Normal.NormalStyle" Location="332,0" Margin="2,0,2,0" Name="row Date" PackLocation="right,top" PackSize="f,f" ScrollExtent="80,20" Size="80,20" TextAlignment="Right" TextAlignmentVertical="Center">:a2c3b63f1be7a54f:08/01/2009</Text>
+                        </Page>
+                        <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" HideIfUnnecessary="false" Location="427,10" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,124" Size="22,124" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    </Page>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="0,29" Name="AchievementsPage" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="458,344" Size="458,344">
+                    <Page Location="10,10" Name="TitlePage" PackSize="a,f" ScrollExtent="414,68" Size="414,68">
+                        <Page Name="IconPage" ScrollExtent="68,68" Size="68,68">
+                            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="39,42" Name="Points" ScrollExtent="28,21" ShadowStyle="/ShadowStylesNew.HeavyDrop.style" Size="28,21" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#FBF1D9">:a2c3b63f3ace1f1a_1:50</Text>
+                            <Image AbsorbsInput="false" GetsInput="true" Location="37,40" Name="textback" ScrollExtent="28,26" Size="28,26" Style="pointstyle" />
+                            <Icon IconRect="168,0,210,42" IconResource="images/icons/icon_ss11.dds" Location="13,11" Name="Icon" ScrollExtent="42,42" Size="42,42" />
+                            <Image AbsorbsInput="false" GetsInput="true" Location="6,6" Name="iconbkg" ScrollExtent="56,55" Size="56,55" Stretch="false" Style="iconstyle" />
+                        </Page>
+                        <Text Font="/TextStyles.Large.LargeStyle" Location="71,6" Name="Name" PackSize="a,f" ScrollExtent="339,20" Size="339,20" TextColor="#FFDD00">:a2c3b63fe48822d4_1:[DEVL]It&apos;s Only a Flesh Wound</Text>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="71,28" MaxLines="2" Name="Description" PackSize="a,f" ScrollExtent="339,32" Size="339,32">:a2c3b63f78f8d078:[DEVL]Take 10,000 or more points of damage from falling.</Text>
+                    </Page>
+                    <Page Location="10,78" Name="ProgressPage" PackSize="a,f" ScrollExtent="414,20" Size="414,20">
+                        <Page Location="71,0" Name="Progress" PackSize="absolute,fixed" ScrollExtent="337,16" Size="337,16">
+                            <Text Font="/TextStyles.Small.SmallStyle" MaxLines="2" Name="Text" PackSize="a,f" ScrollExtent="337,16" Size="337,16" TextAlignment="Center" TextAlignmentVertical="Center">:a2c3b63fd3a0f67c_9:54,680 / 100,000</Text>
+                            <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#009900" Location="3,3" Name="Bar" PackSize="absolute,fixed" Progress="0.500" ScrollExtent="331,10" Size="331,10" Style="progress_style" />
+                            <Image AbsorbsInput="false" Location="3,3" Name="Bkg" PackSize="absolute,fixed" ScrollExtent="331,10" Size="331,10" SourceRect="220,472,380,478" SourceResource="/images/window_elements_generic.dds" />
+                            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="top,left" PackSize="absolute,fixed" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="337,16" Size="337,16" />
+                        </Page>
+                    </Page>
+                    <Page Location="10,98" Name="ListPage" PackSize="a,f" ScrollExtent="414,16" Size="414,16">
+                        <VolumePage CellCount="1,2" CellPadding="0,0" CellSelectable="false" CellSize="180,12" heightexpanded="76" Location="72,0" MinimumScrollExtent="180,24" Name="ListVolume" PackSize="a,f" ScrollExtent="337,24" Size="337,12">
+                            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" MaximumSize="180,12" MinimumSize="180,12" ScrollExtent="180,12" Size="180,12" TextColor="#C0C0C0">:a2c3b63f6a0e1739_2:- Antonican Basin</Text>
+                            <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="0,12" MaximumSize="180,12" MinimumSize="180,12" ScrollExtent="180,12" Size="180,12" TextColor="#00C000">:a2c3b63fad31fd55:- Bridgeway Isle</Text>
+                        </VolumePage>
+                    </Page>
+                    <Page Location="10,138" Name="RewardPage" PackSize="a,f" ScrollExtent="414,18" Size="414,18">
+                        <Text Font="/TextStyles.Normal.NormalStyle" MaxLines="2" Name="RewardText" OnTextTagSelected="examine_item SelectedTextTag" PackSize="a,f" ScrollExtent="414,18" Size="414,18" TextAlignment="Center" TextColor="#F0D080">Prefix Title: Hunter of Zombies</Text>
+                    </Page>
+                    <Page Location="10,156" Name="CompletedPage" PackSize="a,f" ScrollExtent="414,18" Size="414,18">
+                        <Text Font="/TextStyles.Normal.NormalStyle" MaxLines="2" Name="DateCompleted" PackSize="a,f" ScrollExtent="414,18" Size="414,18" TextAlignment="Center">:a2c3b63f5a1d2d32:Completed on 3/15/09</Text>
+                    </Page>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Small.SmallStyle" Location="16,358" MaximumSize="165,16" MaxLines="1" MinimumSize="165,16" Name="TextTemplate" ScrollExtent="165,16" Size="165,16" TextColor="#C0C0C0">:a2c3b63f6a0e1739:- Antonican Basin</Text>
+                    <Composite Location="10,10" Name="Composite" PackSize="a,a" ScrollExtent="414,325" ScrollSize="1,24" Size="414,325" SpacingType="Constant">
+                        <Page BackgroundColor="#EDC976" Name="Template" OnActivate="BackgroundOpacity = 1&#xD;&#xA;Height = MedalCompleted ? HeightExpandedCompleted : HeightExpanded" OnDeactivate="BackgroundOpacity = 0&#xD;&#xA;Height = HeightCollapsed" PackSize="a,f" ScrollExtent="414,167" Size="414,167">
+                            <Page BackgroundColor="#202540" BackgroundColorComplete="#202540" BackgroundColorIncomplete="#141422" BackgroundOpacity="1.000" Location="1,1" Name="Bkg" PackSize="a,a" ScrollExtent="412,165" Size="412,165" />
+                        </Page>
+                    </Composite>
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Composite" HideIfUnnecessary="false" Location="426,10" MaximumSize="22,16384" MinimumSize="22,80" Name="Scrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,324" Size="22,324" Style="/CommonElements.ScrollbarVertical.data.style" />
+                </Page>
+            </Page>
+            <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="3,376" MinimumSize="22,22" Name="HideCompleted" PackLocation="left,bottom" PackSize="a,f" ScrollExtent="293,22" Size="293,22" Style="/CommonElements.Checkbox.data.style">:a2c3b63f1122f81d:Hide Completed Achievements</Checkbox>
+            <Dropdownbox BackgroundOpacity="1.000" DataSource="SortDS" Location="361,370" MaximumSize="16384,32" MinimumSize="50,32" Name="SortDropdown" PackLocation="right,bottom" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="281,32" Size="281,32" Style="/CommonElements.Dropdown.data.style" />
+            <ImageStyle Name="pointstyle">
+                <ImageFrame Source="images/medals_sheet.dds" SourceRect="168,0,204,33" />
+            </ImageStyle>
+            <ImageStyle Name="iconstyle">
+                <ImageFrame Source="images/medals_sheet.dds" SourceRect="0,0,56,55" />
+            </ImageStyle>
+            <ProgressbarStyle Bar.Background="progress_fill" Name="progress_style" />
+            <ImageStyle Name="progress_fill">
+                <ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="220,483,378,489" />
+            </ImageStyle>
+            <DataSource Name="AchievementsDS" />
+            <DataSource Name="SortDS">
+                <Data text=":a2c3b63f260a0836:Sort by Completed" />
+                <Data text=":a2c3b63f84f6565d:Sort by Name" />
+                <Data text=":a2c3b63f0a996a66:Sort by Points" />
+            </DataSource>
+        </Page>
+        <Page Name="DailyObjectives" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="647,404" Size="647,404" Visible="false">
+            <Page MinimumSize="598,31" Name="TitleDecoration" PackSize="a,a" ScrollExtent="646,31" Size="646,31">
+                <Text Color="#FFFFAF" Font="/TextStyles.Large.LargeStyle" Location="-78,4" Margin="2,0,0,0" MinimumSize="0,24" Name="TitleText" PackSize="a,a" ScrollExtent="802,24" Size="802,24" TextAlignment="Center">Complete any 2 of the following Objectives</Text>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="1,19" MinimumSize="300,0" Name="ContentPage" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="645,299" Size="645,299">
+                <Page Location="1,0" Name="HeaderPage" PackSize="a,f" ScrollExtent="644,74" Size="644,74">
+                    <Text Font="/TextStyles.Normal.NormalStyle" Location="22,34" MaxLines="3" Name="Explanation" PackSize="a,f" ScrollExtent="605,51" Size="605,51">:a2c3b63fb86fdf09:Here is room for an explanation of the objective category and whatever else the designers what to put here.</Text>
+                    <Text Color="#FFAF0F" Font="/TextStyles.Large.LargeStyle" Location="8,9" Margin="2,0,0,0" MinimumSize="0,24" Name="TimeLeft" PackSize="a,f" ScrollExtent="629,24" Size="629,24" TextAlignment="Center">Time Remaining:   22:14</Text>
+                </Page>
+                <Page BackgroundOpacity="1.000" Location="6,6" Name="ObjectivesPage" PackSize="a,a" RStyleDefault="/CommonElements.CorneredGrouper.data.rect" ScrollExtent="633,288" Size="633,288">
+                    <Scrollbar ArrowPressSound="sounds/button" Control="Composite" HideIfUnnecessary="true" Location="609,67" MaximumSize="22,16384" MinimumSize="22,55" Name="Scrollbar" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,220" Size="22,220" Style="/CommonElements.ScrollbarVertical.data.style" />
+                    <Page Location="10,71" Name="TitlePage" PackSize="a,f" ScrollExtent="621,68" Size="621,68">
+                        <Page Name="IconPage" ScrollExtent="68,68" Size="68,68">
+                            <Icon IconRect="168,0,210,42" IconResource="images/icons/icon_ss11.dds" Location="13,11" Name="Icon" ScrollExtent="42,42" Size="42,42" />
+                            <Image AbsorbsInput="false" GetsInput="true" Location="6,6" Name="iconbkg" ScrollExtent="56,55" Size="56,55" Stretch="false" Style="iconstyle" />
+                        </Page>
+                        <Text Font="/TextStyles.Normal.NormalStyle" Location="71,11" MaxLines="2" Name="Task" PackSize="a,f" ScrollExtent="393,47" Size="393,47" TextAlignmentVertical="Center">:a2c3b63f349e54ff:Slay 20 Creatures: 0/20</Text>
+                        <Text Color="#00FF00" Font="/TextStyles.Normal.NormalStyle" Location="361,11" MaxLines="2" Name="Complete" PackSize="a,f" ScrollExtent="234,47" Size="234,47" TextAlignment="Center" TextAlignmentVertical="Center">Complete</Text>
+                    </Page>
+                    <Composite Location="3,68" Name="Composite" PackSize="a,a" ScrollExtent="627,220" ScrollSize="1,24" Size="627,218" SpacingType="Constant">
+                        <Page BackgroundColor="#EDC976" Name="Template" OnActivate="BackgroundOpacity = 1&#xD;&#xA;Height = MedalCompleted ? HeightExpandedCompleted : HeightExpanded" OnDeactivate="BackgroundOpacity = 0&#xD;&#xA;Height = HeightCollapsed" PackSize="a,f" ScrollExtent="627,220" Size="627,220">
+                            <Page BackgroundColor="/ColorStyles.window_background_light" BackgroundColorComplete="/ColorStyles.window_background_light" BackgroundColorIncomplete="/ColorStyles.window_background_dark" BackgroundOpacity="1.000" Location="1,1" Name="Bkg" PackSize="a,a" ScrollExtent="625,218" Size="625,218" />
+                        </Page>
+                    </Composite>
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" Location="165,311" Name="RewardDecoration" PackLocation="center,bottom" ScrollExtent="316,31" Size="316,31">
+                <Text Color="#FFFFAF" Font="/TextStyles.Large.LargeStyle" Location="-78,5" Margin="2,0,0,0" MinimumSize="0,24" Name="RewardText" PackSize="a,f" ScrollExtent="472,24" Size="472,24" TextAlignment="Center">Completion Reward</Text>
+            </Page>
+            <Page BackgroundOpacity="1.000" Location="192,331" MinimumSize="160,0" Name="RewardPage" PackLocation="center,bottom" PackSize="f,f" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="262,71" Size="262,71">
+                <Page Location="21,7" Name="Reward" OnActivate="SelectionHighlight.Visible = true" OnDeactivate="SelectionHighlight.Visible = false" OnHoverIn="Bkg.BackgroundTint = #DDDDDD" OnHoverOut="Bkg.BackgroundTint = #AAAAAA" ScrollExtent="221,76" Size="221,76">
+                    <Icon BackgroundTint="#000000" IconStyle="/IconStyles.button" Location="9,8" MouseOverColor="#FFFF00" Name="Icon" PackLocation="left,top" ScrollExtent="42,42" Size="42,42" />
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="58,3" Name="Name" PackSize="a,f" ScrollExtent="153,52" Size="153,52" TextAlignmentVertical="Center">:a2c3b63f5af37426:[DEVL] Item With a Very Very Very Very Very Very Long Name</Text>
+                    <Page BackgroundColor="#FFFF00" BackgroundOpacity="0.675" Location="4,3" Name="SelectionHighlight" PackSize="a,a" ScrollExtent="212,70" Size="212,70" Visible="false" />
+                </Page>
+            </Page>
+            <ImageStyle Name="pointstyle">
+                <ImageFrame Source="images/medals_sheet.dds" SourceRect="168,0,204,33" />
+            </ImageStyle>
+            <ImageStyle Name="iconstyle">
+                <ImageFrame Source="images/medals_sheet.dds" SourceRect="0,55,56,110" />
+            </ImageStyle>
+            <ProgressbarStyle Bar.Background="Achievements.progress_fill" Name="progress_style" />
+            <ImageStyle Name="progress_fill">
+                <ImageFrame Name="progress_fill" Source="images/window_elements_generic.dds" SourceRect="220,483,378,489" />
+            </ImageStyle>
+        </Page>
+        <Page Name="MissionTimers" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="647,404" Size="647,404" Visible="false">
+            <Text Font="/TextStyles.Large.LargeStyle" Location="29,7" MaxLines="1" Name="MissionGroupName" PackSize="absolute,fixed" ScrollExtent="135,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="135,22" TextAlignmentVertical="Center">:x:Mission</Text>
+            <Text Font="/TextStyles.Large.LargeStyle" Location="360,7" Name="TimeUntilReset" PackLocation="right" ScrollExtent="170,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,22" TextAlignmentVertical="Center">:x:Reset Time</Text>
+            <Text Font="/TextStyles.Large.LargeStyle" Location="525,7" Name="Completed" PackLocation="right" ScrollExtent="170,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,22" TextAlignmentVertical="Center">:x:Completed</Text>
+            <Page BackgroundOpacity="1.000" DragAccepts="icon" DragType="icon" Location="6,27" Name="MissionTimersTable" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="634,370" Size="634,370">
+                <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" DropToParent="true" HideIfUnnecessary="true" Location="604,8" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,350" Size="22,350" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Page AbsorbsInput="false" BackgroundColor="#2D251C" DropToParent="true" Location="13,11" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="634,340" ScrollSize="33,33" Size="634,340">
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="10,0" Name="row Mission Name" PackSize="a,f" ScrollExtent="284,31" ShrinkFontToFit="true" Size="284,31" TextAlignmentVertical="Center">:x:[DEVL]Mission Name</Text>
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="344,0" Name="row Remaining Time" PackLocation="right,top" PackSize="f,f" ScrollExtent="200,31" ShrinkFontToFit="true" Size="200,31" TextAlignmentVertical="Center">:x:3 hours 15 minutes</Text>
+                    <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="519,0" Name="row Completed" PackLocation="right,top" PackSize="f,f" ScrollExtent="50,31" ShrinkFontToFit="true" Size="50,31" TextAlignment="Center" TextAlignmentVertical="Center">:x:No</Text>
+                </Page>
+            </Page>
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" Location="-2,0" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="654,444" Size="654,444">
+        <Button Location="616,6" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":0e1f81bbec278586:Window Settings" UserMovable="true" />
+        <Button Location="632,6" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":0e1f81bb2d3f513f:Close" UserMovable="true" />
+        <Page AbsorbsInput="false" Name="LeftGrouper" />
+        <Page AbsorbsInput="false" Name="RightGrouper" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="654,444" Size="654,444" />
+        <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="-9,-23" Name="UpperTabBkg" PackLocation="left,top" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="673,64" Size="673,64" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-9,10" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="671,447" Size="671,447" />
+    </Page>
+</Page>

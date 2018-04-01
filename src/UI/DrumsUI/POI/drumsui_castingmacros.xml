@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="POI">
+    <Page Name="DrumsUI_Example">
+        <Icon Name="1" PathFindLocation="0.00 20000.00 0.00" PoiDescription="My Spell Name" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="1" />
+        <Icon Name="1_Macro" PathFindLocation="0.00 20000.00 0.00" PoiDescription="gsay Using MYSPELL" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="1_Macro" />
+    </Page>
+</Page>

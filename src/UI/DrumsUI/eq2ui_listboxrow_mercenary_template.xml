@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="Template" PackSize="absolute, fixed" ScrollExtent="300,56" Size="300,56">
+    <Image Location="5,17" Name="Lock" ScrollExtent="17,21" Size="17,21" Style="$lock$" />
+    <Image Location="230,6" Name="TypeIcon" ScrollExtent="42,42" Size="42,42" Style="/SpecialElements.MercTypes.$Icon$" />
+    <Text Font="/TextStyles.Large.LargeStyle" Location="30,0" Name="MercName" PackSize="a,f" ScrollExtent="240,18" Size="240,18" TextAlignment="Center" TextColor="#EFDFAA">$mercname$</Text>
+    <Text Font="/TextStyles.Normal.NormalStyle" Location="0,18" Name="Purpose" PackSize="a,f" ScrollExtent="300,18" Size="300,18" TextAlignment="Center" TextColor="#EFEFEF">$purpose$</Text>
+    <Text Font="/TextStyles.Normal.NormalStyle" Location="0,36" Name="CostText" PackSize="a,f" ScrollExtent="300,18" Size="300,18" TextAlignment="Center" TextColor="#EFDFAA">$costtext$</Text>
+    <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="30,10" Name="AvailableText" PackSize="a,f" ScrollExtent="240,36" Size="240,36" TextAlignment="Center" TextColor="#00FF00">$avail$</Text>
+    <Text Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="10,10" Name="UnlockText" PackSize="a,f" ScrollExtent="280,36" Size="280,36" TextAlignment="Center" TextColor="#FF0000">$unlocktext$</Text>
+</Page>

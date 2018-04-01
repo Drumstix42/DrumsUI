@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="convtext_template" ScrollExtent="1024,26" Size="1024,26" Visible="false">
+<Image GetsInput="true" Location="4,-1" Size="18,18" Stretch="false" Style="rankstyles.rank$Rank$style" Color="$Color$"/>
+<Text Font="/TextStyles.Normal.NormalStyle" LocalText="$text$" Location="30,0" Name="TextLine" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0002/0001" ScrollExtent="1024,24" Size="1024,24" TextColor="#EBDEAA">$text$</Text>
+<Text Font="/TextStyles.Normal.NormalStyle" LocalText="$Count$" Location="200,0" Name="TextLine" PackLocation="left,top" PackLocationProp="0000/0001,0000/0001" PackSize="absolute,absolute" PackSizeProp="0000/0001,0002/0001" ScrollExtent="1024,24" Size="1024,24" TextColor="#EBDEAA">$Count$</Text>
+</Page>

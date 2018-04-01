@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="POI">
+    <Page Name="ItemNotes">
+        <Icon Name="Spring-Loaded Gnomish Stilts" PathFindLocation="0.00 20000.00 0.00" PoiDescription="Tinkerer-crafted using a 60 skill recipe from Apprentice Blueprints 0.006" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Spring-Loaded Gnomish Stilts" />
+        <Icon Name="Bogstrutter Walking Stick" PathFindLocation="0.00 20000.00 0.00" PoiDescription="Reward from the quest &quot;Bogstrutter&apos;s Field Guide to the Moors of Ykesha&quot; in Moors of Ykesha" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Bogstrutter Walking Stick" />
+        <Icon Name="Shroud of Fate" PathFindLocation="0.00 20000.00 0.00" PoiDescription="Part of 6 year veteran reward pack, from the Fate Accessory bag" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Shroud of Fate" />
+        <Icon Name="Manastone" PathFindLocation="0.00 20000.00 0.00" PoiDescription="Reward from the heritage quest &quot;Stiletto&apos;s Orders Intercepted&quot;" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Manastone" />
+        <Icon Name="Fishbone Earring" PathFindLocation="0.00 20000.00 0.00" PoiDescription="Reward from the heritage quest &quot;Hadden&apos;s Earring&quot;" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="Fishbone Earring" />
+    </Page>
+</Page>

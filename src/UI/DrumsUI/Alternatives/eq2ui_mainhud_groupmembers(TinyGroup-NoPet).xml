@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page eq2usescomwndcontrols="true" Location="762,211" MaximumSize="1024,130" MinimumSize="170,30" Name="GroupMembers" OnHoverIn="CancelSpellcast.visible=true" OnHoverOut="CancelSpellcast.visible=false" PackLocation="left,top" ScrollExtent="170,130" Size="170,130" UserMovable="true" UserResizable="true" version="1.1">
+    <Namespace Name="data">
+        <Namespace Name="unchecked_disabled">
+            <ImageStyle Name="center">
+                <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="241,343,263,365" />
+            </ImageStyle>
+            <RectangleStyle Center="center" Name="rect" />
+        </Namespace>
+        <CheckboxStyle DisabledTextShadowStyle="/ShadowStylesNew.Drop.style" DisabledTextStyle="/TextStyles.Normal.NormalStyle" Name="style" NormalTextShadowStyle="/ShadowStylesNew.Drop.style" NormalTextStyle="/TextStyles.Normal.NormalStyle" RStyleActivated="checked.rect" RStyleDefault="unchecked.rect" RStyleDisabled="unchecked_disabled.rect" RStyleDisabledActivated="checked_disabled.rect" RStyleMouseOver=" " TextOffset="24,3" />
+        <Namespace Name="checked">
+            <ImageStyle Name="center">
+                <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="241,265,263,287" />
+            </ImageStyle>
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+        </Namespace>
+        <Namespace Name="checked_disabled">
+            <ImageStyle Name="center">
+                <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="241,291,263,313" />
+            </ImageStyle>
+            <RectangleStyle Center="center" Name="rect" />
+        </Namespace>
+        <Namespace Name="unchecked">
+            <ImageStyle Name="center">
+                <ImageFrame Name="image" Source="images/commonelements.dds" SourceRect="241,317,263,339" />
+            </ImageStyle>
+            <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+        </Namespace>
+    </Namespace>
+    <Checkbox BackgroundOpacity="1.000" COND="false" Location="155,-1" MaximumSize="18,18" MinimumSize="16,16" Name="CancelSpellcast" Opacity="0.750" PackLocation="left,top" ScrollExtent="16,16" Size="16,16" Style="data.style" Tooltip="Interrupt spell casting to cure" Visible="false" />
+    <Button BackgroundOpacity="0.000" Name="DoCommand" OnPress="cancel_spellcast" OnShow="Parent.DoCommand.press=true&#xD;&#xA;Visible=false" Style="/ButtonStyles.invisible" Visible="false" />
+    <Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="1,2" Name="GroupMember1" PackLocation="left,top" ScrollExtent="172,25" Size="172,25">
+        <Page BackgroundColor="#00FF00" Location="3,2" Name="MemberInfoPage" PackLocation="left,top" ScrollExtent="164,23" Size="164,23">
+            <Page AbsorbsInput="false" ClickThrough="False" Location="8,11" Name="CureButtons" ScrollExtent="154,10" Size="154,10">
+                <Button BackgroundOpacity="0.000" Name="Trauma" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Trauma" />
+                <Button BackgroundOpacity="0.000" Location="10,0" Name="Arcane" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Arcane" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Arcane" />
+                <Button BackgroundOpacity="0.000" Location="122,0" Name="Noxious" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Noxious" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Noxious" />
+                <Button BackgroundOpacity="0.000" Location="132,0" Name="Elemental" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Elemental" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Elemental" />
+                <Button BackgroundOpacity="0.000" Location="142,0" Name="Curse" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure Curse" ScrollExtent="10,10" Size="10,10" SpellName="Cure Curse" Style="/ButtonStyles.invisible" Tooltip="Curse" />
+            </Page>
+            <Page AbsorbsInput="false" Location="8,11" Name="Effects" PackLocation="cfc,top" ScrollExtent="154,10" Size="154,10">
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_1.Effect1" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect1" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_1.Effect2" IconStyle="/IconStyles.effect" Location="10,0" MouseOverColor="#FFFF00" Name="Effect2" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_1.Effect3" IconStyle="/IconStyles.effect" Location="122,0" MouseOverColor="#FFFF00" Name="Effect3" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_1.Effect4" IconStyle="/IconStyles.effect" Location="132,0" MouseOverColor="#FFFF00" Name="Effect4" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_1.Effect5" IconStyle="/IconStyles.effect" Location="142,0" MouseOverColor="#FFFF00" Name="Effect5" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+            </Page>
+            <Page Name="MemberInfo" ScrollExtent="164,35" Size="164,35">
+                <Icon DynamicData="/GameData.Group.Group_1.Speaking" IconRect="124,204,135,215" IconResource="/images/widgets01.dds" Location="28,0" Name="Speaking" OnPress="vivox_adjust_volume Parent.Name.Text" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Progressbar AbsorbsInput="false" Location="40,15" Name="ManaBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Mana" />
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="40,-3" Name="Name" PackLocation="top,left" ScrollExtent="122,16" ShadowStyle="/ShadowStyles.Outline1" Size="122,16" TextAlignmentVertical="Center">GroupMember</Text>
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FF0000" Location="40,11" Name="HealthBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Health" />
+                <Image Location="-1,10" Name="Bar1" ScrollExtent="161,10" Size="161,10" Style="ArcaneBars" />
+                <Text Font="/Fonts.FontZapf15" Location="-6,-2" Name="F2" ScrollExtent="20,20" ShadowStyle="/ShadowStyles.Outline1" Size="20,20" TextAlignment="Right">F2</Text>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="4,0" Name="LFGPage" PackLocation="left,top" ScrollExtent="30,20" Size="30,20" Visible="false">
+            <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Name="LFG" ScrollExtent="15,10" Size="15,10" Style="/CheckboxStyles.LFG.style" TextColor="#EBDEAA" Tooltip="Toggle Looking For Group (LFG)" />
+            <Button BackgroundColor="#FFFFFF" Location="15,0" Name="Find" ScrollExtent="15,10" Size="15,10" Style="/ButtonStyles.find.style" Tooltip="Search for players that are LFG">Find</Button>
+        </Page>
+    </Page>
+    <Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="1,27" Name="GroupMember2" PackLocation="left,top" ScrollExtent="172,25" Size="172,25">
+        <Page BackgroundColor="#00FF00" Location="3,2" Name="MemberInfoPage" PackLocation="left,top" ScrollExtent="164,23" Size="164,23">
+            <Page AbsorbsInput="false" ClickThrough="False" Location="8,11" Name="CureButtons" ScrollExtent="154,10" Size="154,10">
+                <Button BackgroundOpacity="0.000" Name="Trauma" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Trauma" />
+                <Button BackgroundOpacity="0.000" Location="10,0" Name="Arcane" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Arcane" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Arcane" />
+                <Button BackgroundOpacity="0.000" Location="122,0" Name="Noxious" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Noxious" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Noxious" />
+                <Button BackgroundOpacity="0.000" Location="132,0" Name="Elemental" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Elemental" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Elemental" />
+                <Button BackgroundOpacity="0.000" Location="142,0" Name="Curse" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure Curse" ScrollExtent="10,10" Size="10,10" SpellName="Cure Curse" Style="/ButtonStyles.invisible" Tooltip="Curse" />
+            </Page>
+            <Page AbsorbsInput="false" Location="8,11" Name="Effects" PackLocation="cfc,top" ScrollExtent="154,10" Size="154,10">
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_2.Effect1" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect1" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_2.Effect2" IconStyle="/IconStyles.effect" Location="10,0" MouseOverColor="#FFFF00" Name="Effect2" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_2.Effect3" IconStyle="/IconStyles.effect" Location="122,0" MouseOverColor="#FFFF00" Name="Effect3" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_2.Effect4" IconStyle="/IconStyles.effect" Location="132,0" MouseOverColor="#FFFF00" Name="Effect4" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_2.Effect5" IconStyle="/IconStyles.effect" Location="142,0" MouseOverColor="#FFFF00" Name="Effect5" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+            </Page>
+            <Page Name="MemberInfo" ScrollExtent="164,35" Size="164,35">
+                <Icon DynamicData="/GameData.Group.Group_2.Speaking" IconRect="124,204,135,215" IconResource="/images/widgets01.dds" Location="28,0" Name="Speaking" OnPress="vivox_adjust_volume Parent.Name.Text" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Progressbar AbsorbsInput="false" Location="40,15" Name="ManaBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Mana" />
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="40,-3" Name="Name" PackLocation="top,left" ScrollExtent="122,16" ShadowStyle="/ShadowStyles.Outline1" Size="122,16" TextAlignmentVertical="Center">GroupMember</Text>
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FF0000" Location="40,11" Name="HealthBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Health" />
+                <Image Location="-1,10" Name="Bar1" ScrollExtent="161,10" Size="161,10" Style="ArcaneBars" />
+                <Text Font="/Fonts.FontZapf15" Location="-6,-2" Name="F3" ScrollExtent="20,20" ShadowStyle="/ShadowStyles.Outline1" Size="20,20" TextAlignment="Right">F3</Text>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="4,0" Name="LFGPage" PackLocation="left,top" ScrollExtent="30,20" Size="30,20" Visible="false">
+            <Button BackgroundColor="#FFFFFF" Name="Find" ScrollExtent="15,10" Size="15,10" Style="/ButtonStyles.find.style" Tooltip="Search for players that are LFG">Find</Button>
+        </Page>
+    </Page>
+    <Page BackgroundColor="#00FF00" Location="1,52" Name="GroupMember3" PackLocation="left,top" ScrollExtent="172,25" Size="172,25">
+        <Page BackgroundColor="#00FF00" Location="3,2" Name="MemberInfoPage" PackLocation="left,top" ScrollExtent="164,23" Size="164,23">
+            <Page AbsorbsInput="false" ClickThrough="False" Location="8,11" Name="CureButtons" ScrollExtent="154,10" Size="154,10">
+                <Button BackgroundOpacity="0.000" Name="Trauma" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Trauma" />
+                <Button BackgroundOpacity="0.000" Location="10,0" Name="Arcane" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Arcane" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Arcane" />
+                <Button BackgroundOpacity="0.000" Location="122,0" Name="Noxious" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Noxious" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Noxious" />
+                <Button BackgroundOpacity="0.000" Location="132,0" Name="Elemental" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Elemental" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Elemental" />
+                <Button BackgroundOpacity="0.000" Location="142,0" Name="Curse" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure Curse" ScrollExtent="10,10" Size="10,10" SpellName="Cure Curse" Style="/ButtonStyles.invisible" Tooltip="Curse" />
+            </Page>
+            <Page AbsorbsInput="false" Location="8,11" Name="Effects" PackLocation="cfc,top" ScrollExtent="154,10" Size="154,10">
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_3.Effect1" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect1" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_3.Effect2" IconStyle="/IconStyles.effect" Location="10,0" MouseOverColor="#FFFF00" Name="Effect2" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_3.Effect3" IconStyle="/IconStyles.effect" Location="122,0" MouseOverColor="#FFFF00" Name="Effect3" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_3.Effect4" IconStyle="/IconStyles.effect" Location="132,0" MouseOverColor="#FFFF00" Name="Effect4" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_3.Effect5" IconStyle="/IconStyles.effect" Location="142,0" MouseOverColor="#FFFF00" Name="Effect5" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+            </Page>
+            <Page Name="MemberInfo" ScrollExtent="164,35" Size="164,35">
+                <Icon DynamicData="/GameData.Group.Group_3.Speaking" IconRect="124,204,135,215" IconResource="/images/widgets01.dds" Location="28,0" Name="Speaking" OnPress="vivox_adjust_volume Parent.Name.Text" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Progressbar AbsorbsInput="false" Location="40,15" Name="ManaBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Mana" />
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="40,-3" Name="Name" PackLocation="top,left" ScrollExtent="122,16" ShadowStyle="/ShadowStyles.Outline1" Size="122,16" TextAlignmentVertical="Center">GroupMember</Text>
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FF0000" Location="40,11" Name="HealthBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Health" />
+                <Image Location="-1,10" Name="Bar1" ScrollExtent="161,10" Size="161,10" Style="ArcaneBars" />
+                <Text Font="/Fonts.FontZapf15" Location="-6,-2" Name="F4" ScrollExtent="20,20" ShadowStyle="/ShadowStyles.Outline1" Size="20,20" TextAlignment="Right">F4</Text>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="4,0" Name="LFGPage" PackLocation="left,top" ScrollExtent="30,20" Size="30,20" Visible="false">
+            <Button BackgroundColor="#FFFFFF" Name="Find" ScrollExtent="15,10" Size="15,10" Style="/ButtonStyles.find.style" Tooltip="Search for players that are LFG">Find</Button>
+        </Page>
+    </Page>
+    <Page BackgroundColor="#00FF00" Location="1,77" Name="GroupMember4" PackLocation="left,top" ScrollExtent="172,25" Size="172,25">
+        <Page BackgroundColor="#00FF00" Location="3,2" Name="MemberInfoPage" PackLocation="left,top" ScrollExtent="164,23" Size="164,23">
+            <Page AbsorbsInput="false" ClickThrough="False" Location="8,11" Name="CureButtons" ScrollExtent="154,10" Size="154,10">
+                <Button BackgroundOpacity="0.000" Name="Trauma" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Trauma" />
+                <Button BackgroundOpacity="0.000" Location="10,0" Name="Arcane" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Arcane" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Arcane" />
+                <Button BackgroundOpacity="0.000" Location="122,0" Name="Noxious" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Noxious" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Noxious" />
+                <Button BackgroundOpacity="0.000" Location="132,0" Name="Elemental" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Elemental" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Elemental" />
+                <Button BackgroundOpacity="0.000" Location="142,0" Name="Curse" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure Curse" ScrollExtent="10,10" Size="10,10" SpellName="Cure Curse" Style="/ButtonStyles.invisible" Tooltip="Curse" />
+            </Page>
+            <Page AbsorbsInput="false" Location="8,11" Name="Effects" PackLocation="cfc,top" ScrollExtent="154,10" Size="154,10">
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_4.Effect1" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect1" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_4.Effect2" IconStyle="/IconStyles.effect" Location="10,0" MouseOverColor="#FFFF00" Name="Effect2" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_4.Effect3" IconStyle="/IconStyles.effect" Location="122,0" MouseOverColor="#FFFF00" Name="Effect3" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_4.Effect4" IconStyle="/IconStyles.effect" Location="132,0" MouseOverColor="#FFFF00" Name="Effect4" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_4.Effect5" IconStyle="/IconStyles.effect" Location="142,0" MouseOverColor="#FFFF00" Name="Effect5" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+            </Page>
+            <Page Name="MemberInfo" ScrollExtent="164,35" Size="164,35">
+                <Icon DynamicData="/GameData.Group.Group_4.Speak" IconRect="124,204,135,215" IconResource="/images/widgets01.dds" Location="28,0" Name="Speaking" OnPress="vivox_adjust_volume Parent.Name.Text" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Progressbar AbsorbsInput="false" Location="40,15" Name="ManaBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Mana" />
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="40,-3" Name="Name" PackLocation="top,left" ScrollExtent="122,16" ShadowStyle="/ShadowStyles.Outline1" Size="122,16" TextAlignmentVertical="Center">GroupMember</Text>
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FF0000" Location="40,11" Name="HealthBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Health" />
+                <Image Location="-1,10" Name="Bar1" ScrollExtent="161,10" Size="161,10" Style="ArcaneBars" />
+                <Text Font="/Fonts.FontZapf15" Location="-6,-2" Name="F5" ScrollExtent="20,20" ShadowStyle="/ShadowStyles.Outline1" Size="20,20" TextAlignment="Right">F5</Text>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="4,0" Name="LFGPage" PackLocation="left,top" ScrollExtent="30,20" Size="30,20" Visible="false">
+            <Button BackgroundColor="#FFFFFF" Name="Find" ScrollExtent="15,10" Size="15,10" Style="/ButtonStyles.find.style" Tooltip="Search for players that are LFG">Find</Button>
+        </Page>
+    </Page>
+    <Page BackgroundColor="#00FF00" Location="1,102" Name="GroupMember5" PackLocation="left,top" ScrollExtent="172,25" Size="172,25">
+        <Page BackgroundColor="#00FF00" Location="3,2" Name="MemberInfoPage" PackLocation="left,top" ScrollExtent="164,23" Size="164,23">
+            <Page AbsorbsInput="false" ClickThrough="False" Location="8,11" Name="CureButtons" ScrollExtent="154,10" Size="154,10">
+                <Button BackgroundOpacity="0.000" Name="Trauma" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Trauma" />
+                <Button BackgroundOpacity="0.000" Location="10,0" Name="Arcane" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Arcane" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Arcane" />
+                <Button BackgroundOpacity="0.000" Location="122,0" Name="Noxious" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Noxious" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Noxious" />
+                <Button BackgroundOpacity="0.000" Location="132,0" Name="Elemental" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure&#xD;&#xA;useabilityonplayer PlayerString Cure Elemental" ScrollExtent="10,10" Size="10,10" Style="/ButtonStyles.invisible" Tooltip="Elemental" />
+                <Button BackgroundOpacity="0.000" Location="142,0" Name="Curse" OnHoverIn="Parent.Parent.Parent.absorbsinput=false" OnHoverOut="Parent.Parent.Parent.absorbsinput=true" OnPress="PlayerString=Parent.Parent.MemberInfo.Name.localtext&#xD;&#xA;&#xD;&#xA;COND=(Parent.Parent.Parent.Parent.CancelSpellcast.checked == true)&#xD;&#xA;Parent.Parent.Parent.Parent.DoCommand.visible=COND&#xD;&#xA;&#xD;&#xA;clearallqueuedabilities&#xD;&#xA;useabilityonplayer PlayerString Cure Curse" ScrollExtent="10,10" Size="10,10" SpellName="Cure Curse" Style="/ButtonStyles.invisible" Tooltip="Curse" />
+            </Page>
+            <Page AbsorbsInput="false" Location="8,11" Name="Effects" PackLocation="cfc,top" ScrollExtent="154,10" Size="154,10">
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_5.Effect1" IconStyle="/IconStyles.effect" MouseOverColor="#FFFF00" Name="Effect1" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_5.Effect2" IconStyle="/IconStyles.effect" Location="10,0" MouseOverColor="#FFFF00" Name="Effect2" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_5.Effect3" IconStyle="/IconStyles.effect" Location="122,0" MouseOverColor="#FFFF00" Name="Effect3" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_5.Effect4" IconStyle="/IconStyles.effect" Location="132,0" MouseOverColor="#FFFF00" Name="Effect4" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Icon BackgroundTint="#000000" DynamicData="/GameData.Group.Group_5.Effect5" IconStyle="/IconStyles.effect" Location="142,0" MouseOverColor="#FFFF00" Name="Effect5" PackLocation="left,top" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+            </Page>
+            <Page Name="MemberInfo" ScrollExtent="164,35" Size="164,35">
+                <Icon DynamicData="/GameData.Group.Group_5.Speaking" IconRect="124,204,135,215" IconResource="/images/widgets01.dds" Location="28,0" Name="Speaking" OnPress="vivox_adjust_volume Parent.Name.Text" ScrollExtent="10,10" Size="10,10" TreatAsButton="true" />
+                <Progressbar AbsorbsInput="false" Location="40,15" Name="ManaBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Mana" />
+                <Text AbsorbsInput="false" Font="/Fonts.FontZapf15" Location="40,-3" Name="Name" PackLocation="top,left" ScrollExtent="122,16" ShadowStyle="/ShadowStyles.Outline1" Size="122,16" TextAlignmentVertical="Center">GroupMember</Text>
+                <Progressbar AbsorbsInput="false" BackgroundColor="#000000" Color="#FF0000" Location="40,11" Name="HealthBar" PackLocation="top,left" Progress="1.000" ScrollExtent="80,4" Size="80,4" Style="ArcaneProgress" Tooltip="Health" />
+                <Image Location="-1,10" Name="Bar1" ScrollExtent="161,10" Size="161,10" Style="ArcaneBars" />
+                <Text Font="/Fonts.FontZapf15" Location="-6,-2" Name="F6" ScrollExtent="20,20" ShadowStyle="/ShadowStyles.Outline1" Size="20,20" TextAlignment="Right">F6</Text>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" BackgroundColor="#00FF00" Location="4,0" Name="LFGPage" PackLocation="left,top" ScrollExtent="30,20" Size="30,20" Visible="false">
+            <Button BackgroundColor="#FFFFFF" Name="Find" ScrollExtent="15,10" Size="15,10" Style="/ButtonStyles.find.style" Tooltip="Search for players that are LFG">Find</Button>
+        </Page>
+    </Page>
+    <ImageStyle Name="ArcaneFill">
+        <ImageFrame Name="Fill" Source="DrumsUI/images/Bars.dds" SourceRect="0,10,100,18" />
+    </ImageStyle>
+    <ImageStyle Name="ArcaneBars">
+        <ImageFrame Name="Bars" Source="DrumsUI/images/Bars.dds" SourceRect="0,80,161,90" />
+    </ImageStyle>
+    <ProgressbarStyle Bar.Background="ArcaneFill" Name="ArcaneProgress" />
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="170,130" Size="170,130">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="170,130" Size="170,130" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindo" ScrollExtent="170,130" Size="170,130" />
+    </Page>
+</Page>

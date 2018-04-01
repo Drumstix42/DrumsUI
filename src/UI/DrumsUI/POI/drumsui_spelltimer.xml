@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Name="POI">
+    <Page Name="DrumsUI_Example">
+        <Icon Name="ST_1" PathFindLocation="0.00 20000.00 0.00" PoiDescription="Spell Name 1" PoiResource="site" PoiShowAlways="true" PoiType="LOCATION" Tooltip="ST_13" />
+    </Page>
+</Page>

@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page AbsorbsInput="false" Name="Community" ScrollExtent="1024,768" Size="1024,768" Visible="false">
+    <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="176,62" MaximumSize="675,626" MinimumSize="675,626" Name="Calendar" ScrollExtent="675,626" Size="675,626" UserMovable="true">
+        <Page BackgroundOpacity="0.400" Location="4,28" Name="AddEventPage" PackSize="a,a" ScrollExtent="668,595" Size="668,595" Visible="false">
+            <Page Location="145,95" Name="Window" PackLocation="center,center" PackSize="f,f" ScrollExtent="378,405" Size="378,405">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="15,10" Name="Title" ScrollExtent="345,22" Size="345,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">[DEVL]New Guild Event</Text>
+                <Page Location="3,29" Name="EventInfo" PackSize="a,a" ScrollExtent="369,334" Size="369,334">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="17,10" Margin="4,0,0,0" MaxLines="1" Name="Label" ScrollExtent="101,30" ShadowStyle="/ShadowStylesNew.Outline.style" Size="101,30" TextAlignmentVertical="Center" TextColor="#E0E0E0">Name</Text>
+                    <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="127,10" MaximumSize="16384,30" MaxLength="40" MinimumSize="30,30" Name="Name" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="230,30" Size="230,30" Style="/CommonElements.Textfield.data.style" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="17,45" Margin="4,0,0,0" MaxLines="1" Name="Label" ScrollExtent="101,30" ShadowStyle="/ShadowStylesNew.Outline.style" Size="101,30" TextAlignmentVertical="Center" TextColor="#E0E0E0">Category</Text>
+                    <Dropdownbox BackgroundOpacity="1.000" DataSource="CategoryDS" Location="123,44" MaximumSize="16384,32" MinimumSize="50,32" Name="Category" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="238,32" Size="238,32" Style="/CommonElements.Dropdown.data.style" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="17,80" Margin="4,0,0,0" MaxLines="1" Name="Label" ScrollExtent="101,30" ShadowStyle="/ShadowStylesNew.Outline.style" Size="101,30" TextAlignmentVertical="Center" TextColor="#E0E0E0">Date</Text>
+                    <Dropdownbox BackgroundOpacity="1.000" DataSource="MonthDS" Location="123,79" MaximumSize="16384,32" MinimumSize="50,32" Name="Month" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="80,32" Size="80,32" Style="/CommonElements.Dropdown.data.style" />
+                    <Dropdownbox BackgroundOpacity="1.000" DataSource="DayDS" Location="203,79" MaximumSize="16384,32" MinimumSize="50,32" Name="Day" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="80,32" Size="80,32" Style="/CommonElements.Dropdown.data.style" />
+                    <Dropdownbox BackgroundOpacity="1.000" DataSource="YearDS" Location="281,79" MaximumSize="16384,32" MinimumSize="50,32" Name="Year" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="80,32" Size="80,32" Style="/CommonElements.Dropdown.data.style" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="17,115" Margin="4,0,0,0" MaxLines="1" Name="Label" ScrollExtent="101,30" ShadowStyle="/ShadowStylesNew.Outline.style" Size="101,30" TextAlignmentVertical="Center" TextColor="#E0E0E0">Time</Text>
+                    <Dropdownbox BackgroundOpacity="1.000" DataSource="HourDS" Location="123,114" MaximumSize="16384,32" MinimumSize="50,32" Name="Hour" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="80,32" SelectedItemIndex="5" Size="80,32" Style="/CommonElements.Dropdown.data.style" />
+                    <Dropdownbox BackgroundOpacity="1.000" DataSource="MinuteDS" Location="203,114" MaximumSize="16384,32" MinimumSize="50,32" Name="Minute" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="80,32" Size="80,32" Style="/CommonElements.Dropdown.data.style" />
+                    <Dropdownbox BackgroundOpacity="1.000" DataSource="AMPMDS" Location="281,114" MaximumSize="16384,32" MinimumSize="50,32" Name="AMPM" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="80,32" SelectedItemIndex="1" Size="80,32" Style="/CommonElements.Dropdown.data.style" />
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="17,142" Margin="4,0,0,0" MaxLines="1" Name="Label" ScrollExtent="297,30" ShadowStyle="/ShadowStylesNew.Outline.style" Size="297,30" TextAlignmentVertical="Center" TextColor="#E0E0E0">Description</Text>
+                    <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="15,167" MaxLength="400" MaxLines="Unlimited" MinimumSize="30,30" Name="Description" PackSize="a,a" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="343,161" Size="343,161" Style="/CommonElements.Textfield.data.style" WrapWidth="Automatic" />
+                    <DataSource Name="AMPMDS">
+                        <Data Name="1" text="AM" />
+                        <Data Name="2" text="PM" />
+                    </DataSource>
+                    <DataSource Name="MinuteDS">
+                        <Data Name="1" text="00" />
+                        <Data Name="2" text="05" />
+                        <Data Name="3" text="10" />
+                        <Data Name="4" text="15" />
+                        <Data Name="5" text="20" />
+                        <Data Name="6" text="25" />
+                        <Data Name="7" text="30" />
+                        <Data Name="8" text="35" />
+                        <Data Name="9" text="40" />
+                        <Data Name="10" text="45" />
+                        <Data Name="11" text="50" />
+                        <Data Name="12" text="55" />
+                    </DataSource>
+                    <DataSource Name="HourDS">
+                        <Data Name="12" text="12" />
+                        <Data Name="1" text="1" />
+                        <Data Name="2" text="2" />
+                        <Data Name="3" text="3" />
+                        <Data Name="4" text="4" />
+                        <Data Name="5" text="5" />
+                        <Data Name="6" text="6" />
+                        <Data Name="7" text="7" />
+                        <Data Name="8" text="8" />
+                        <Data Name="9" text="9" />
+                        <Data Name="10" text="10" />
+                        <Data Name="11" text="11" />
+                    </DataSource>
+                    <DataSource Name="MonthDS">
+                        <Data Name="1" text="Jan" />
+                        <Data Name="2" text="Feb" />
+                        <Data Name="3" text="Mar" />
+                        <Data Name="4" text="Apr" />
+                        <Data Name="5" text="May" />
+                        <Data Name="6" text="Jun" />
+                        <Data Name="7" text="Jul" />
+                        <Data Name="8" text="Aug" />
+                        <Data Name="9" text="Sep" />
+                        <Data Name="10" text="Oct" />
+                        <Data Name="11" text="Nov" />
+                        <Data Name="12" text="Dec" />
+                    </DataSource>
+                    <DataSource Name="DayDS">
+                        <Data text="1" />
+                    </DataSource>
+                    <DataSource Name="YearDS">
+                        <Data Name="2010" text=":13a20c744076c247:2010" />
+                        <Data Name="2011" text=":13a20c743771f2d1:2011" />
+                        <Data Name="2012" text=":13a20c74ae78a36b:2012" />
+                        <Data Name="2013" text=":13a20c74d97f93fd:2013" />
+                        <Data Name="2014" text=":13a20c74471b065e:2014" />
+                    </DataSource>
+                    <DataSource Name="CategoryDS" />
+                </Page>
+                <Button Location="15,360" MaximumSize="16384,32" MinimumSize="32,32" Name="Delete" PackLocation="left,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">Delete</Button>
+                <Button Location="165,360" MaximumSize="16384,32" MinimumSize="32,32" Name="Save" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">Save</Button>
+                <Button Location="263,360" MaximumSize="16384,32" MinimumSize="32,32" Name="Cancel" OnPress="calendar_cancel_create" PackLocation="right,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">Cancel</Button>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.ThickDesktopWindowFrame.data.frame.rect" ScrollExtent="378,405" Size="378,405" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="3,5" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.CenterFrame.data.bkg.rect" ScrollExtent="371,396" Size="371,396" />
+            </Page>
+        </Page>
+        <Page Location="5,30" Name="CalendarPage" PackSize="a,a" ScrollExtent="665,591" Size="665,591">
+            <Page BackgroundOpacity="1.000" Location="371,415" Name="TooltipPage" ScrollExtent="272,160" Size="272,160">
+                <Composite Location="10,10" Name="Composite" ScrollExtent="252,140" Size="252,140" SpacingType="Constant">
+                    <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" MaxLines="1" MinimumSize="0,20" Name="Name" ScrollExtent="252,20" Size="252,20" TextColor="#F1CE02">[DEVL]Sample Calendar Event</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,20" MinimumSize="0,16" Name="Category" ScrollExtent="252,16" Size="252,16" TextColor="#C0C0C0">Category:</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,36" MinimumSize="0,16" Name="StartDate" ScrollExtent="252,16" Size="252,16" TextColor="#C0C0C0">Start Date:</Text>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,52" MinimumSize="0,16" Name="EndDate" ScrollExtent="252,16" Size="252,16" TextColor="#C0C0C0">End Date:</Text>
+                    <Page Location="0,68" Name="Divider" PackSize="a,f" ScrollExtent="252,5" Size="252,5">
+                        <Page BackgroundColor="#CFB000" BackgroundOpacity="1.000" Location="0,2" Name="Line" PackSize="a,f" ScrollExtent="252,1" Size="252,1" />
+                    </Page>
+                    <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="0,73" Name="Description" OnHide="parent.Divider.visible=false" OnShow="parent.Divider.visible=true" ScrollExtent="252,45" Size="252,45">:43a26ad53fd68238_1:Description goes here...
+Blah blah
+blah.
+</Text>
+                </Composite>
+                <Page BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="2,2" Name="Frame" PackLocation="left,top" PackSize="a,a" RStyleDefault="/FrameStyles.single_pixel" ScrollExtent="268,156" Size="268,156" />
+            </Page>
+            <VolumePage AbsorbsInput="false" BackgroundColor="/ColorStyles.window_background_dark" BackgroundOpacity="1.000" CellCount="7,1" CellCountFixed="7,1" CellSize="92,17" GetsInput="false" Location="0,-1" MinimumScrollExtent="660,21" Name="DayVolume" PackSize="a,f" ScrollExtent="665,21" Size="665,21">
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="2,2" MaximumSize="92,17" MinimumSize="92,17" Name="Label" ScrollExtent="92,17" Size="92,17" TextAlignment="Center" TextColor="#F0D080">Sunday</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="96,2" MaximumSize="92,17" MinimumSize="92,17" Name="Label" ScrollExtent="92,17" Size="92,17" TextAlignment="Center" TextColor="#F0D080">Monday</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="190,2" MaximumSize="92,17" MinimumSize="92,17" Name="Label" ScrollExtent="92,17" Size="92,17" TextAlignment="Center" TextColor="#F0D080">Tuesday</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="284,2" MaximumSize="92,17" MinimumSize="92,17" Name="Label" ScrollExtent="92,17" Size="92,17" TextAlignment="Center" TextColor="#F0D080">Wednesday</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="378,2" MaximumSize="92,17" MinimumSize="92,17" Name="Label" ScrollExtent="92,17" Size="92,17" TextAlignment="Center" TextColor="#F0D080">Thursday</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="472,2" MaximumSize="92,17" MinimumSize="92,17" Name="Label" ScrollExtent="92,17" Size="92,17" TextAlignment="Center" TextColor="#F0D080">Friday</Text>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" GetsInput="false" Location="566,2" MaximumSize="92,17" MinimumSize="92,17" Name="Label" ScrollExtent="92,17" Size="92,17" TextAlignment="Center" TextColor="#F0D080">Saturday</Text>
+            </VolumePage>
+            <VolumePage CellCountFixed="7,6" CellPadding="0,0" CellSize="95,95" Location="0,21" MultiSelection="false" Name="MonthVolume" PackSize="a,a" ScrollExtent="665,570" Size="665,570" />
+            <Text Font="/TextStyles.NormalOutline.NormalOutlineStyle" Location="0,60" Margin="5,0,5,2" MaxLines="1" Name="EventTextTemplate" OnHoverIn="TextColorSaved=TextColor&#xD;&#xA;TextColor=#F1DE02" OnHoverOut="TextColor=TextColorSaved" PackSize="a,a" ScrollExtent="98,17" Size="98,15" TextColor="#FFEFCF" UserScrollable="false" Visible="false">Test Event One</Text>
+            <Page MaximumSize="95,95" MinimumSize="95,95" Name="DayTemplate" OnActivate="Selection.Activated=true" OnDeactivate="Selection.Activated=false" ScrollExtent="95,95" Size="95,95" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Margin="1,1,4,0" Name="DayOfMonth" PackSize="a,f" ScrollExtent="95,19" Size="95,18" TextAlignment="Right">1</Text>
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,3" Name="Selection" PackSize="a,a" RStyleActivated="BackgroundStyles.Default.rect" RStyleDefault="BackgroundStyles.Default.rect" RStyleDisabled="BackgroundStyles.Default.rect" RStyleDisabledActivated="BackgroundStyles.Default.rect" RStyleMouseOver="BackgroundStyles.MouseOver.rect" RStyleMouseOverActivated="BackgroundStyles.MouseOver.rect" RStyleMouseOverSelected="BackgroundStyles.MouseOver.rect" ScrollExtent="95,92" Size="95,92" />
+                <Page AbsorbsInput="false" Name="Image" PackSize="a,a" ScrollExtent="95,95" Size="95,95" />
+                <Composite AbsorbsInput="false" Alignment="Back" Location="0,18" Name="Events" ScrollExtent="95,75" ScrollSize="1,10" Size="95,75" SpacingType="Constant" />
+                <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="0,3" Name="Today" PackSize="a,a" RStyleDefault="BackgroundStyles.Selected.rect" ScrollExtent="95,92" Size="95,92" Visible="false" />
+                <Page BackgroundOpacity="1.000" Name="Bkg" PackSize="a,a" RStyleDefault="BackgroundStyles.Background1.rect" ScrollExtent="95,95" Size="95,95" />
+            </Page>
+        </Page>
+        <Namespace Name="BackgroundStyles">
+            <Namespace Name="CityFestivals">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="285,95,380,190" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="NightsoftheDead">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="95,190,190,285" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Brewday">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="380,95,475,190" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Tinkerfest">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="95,95,190,190" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="HeroesFest">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="190,95,285,190" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Background2">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="95,0,190,95" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Background3">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="190,0,285,95" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="MouseOver">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="286,0,381,95" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Default">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="482,14,509,41" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Selected">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="381,0,476,95" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Background1">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="0,0,95,95" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Bristlebane">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="0,190,95,285" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Erollisi">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="0,95,95,190" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Frostfell">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="190,190,285,285" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+            <Namespace Name="Moonlight">
+                <ImageStyle Filter="true" Name="center">
+                    <ImageFrame Name="image" Source="images/calendar.dds" SourceRect="285,190,380,285" />
+                </ImageStyle>
+                <RectangleStyle Center="center" CenterShrinkH="true" CenterShrinkV="true" Name="rect" />
+            </Namespace>
+        </Namespace>
+        <Page AbsorbsInput="false" Location="-11,0" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="697,640" Size="697,640">
+            <Button Location="641,8" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip="Window Settings" UserMovable="true" />
+            <Button Location="621,8" Name="Help" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.help.style" Tooltip="Help" UserMovable="true" />
+            <Button Location="661,8" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":f:Close" UserMovable="true" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="LeftGrouper" RStyleDefault="/WindowElements.WindowFrame.data.left_grouper.rect" ScrollExtent="353,70" Size="353,70">
+                <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" GetsInput="false" Location="39,4" Name="Title" ScrollExtent="200,22" Size="200,22" TextAlignment="Center" TextAlignmentVertical="Center" TextColor="#F0D080">December, 2010</Text>
+                <Page Location="16,-1" Name="MonthNav" PackLocation="center,top" PackSize="fixed,fixed" ScrollExtent="247,33" Size="247,33">
+                    <Button Location="8,9" Name="MonthPrev" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_right" />
+                    <Button Location="223,9" Name="MonthNext" ScrollExtent="15,15" Size="15,15" Style="/ButtonStyles.tabscroll_left" />
+                </Page>
+            </Page>
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="507,0" Name="RightGrouper" PackLocation="right,top" RStyleDefault="/WindowElements.WindowFrame.data.right_grouper.rect" ScrollExtent="190,70" Size="190,70" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.frame.rect" ScrollExtent="697,640" Size="697,640" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="0,3" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="697,637" Size="697,637" />
+        </Page>
+    </Page>
+    <Page Activated="true" eq2opensound="ui_window_main_open" eq2usescomwndcontrols="true" Location="57,115" MinimumSize="380,320" Name="Community" PackLocation="center,center" ScrollExtent="505,320" Size="505,320" UserMovable="true" UserResizable="true">
+        <TabbedPane ActiveTab="0" DataSource="TabSource" Location="2,5" Name="Tabs" PackSize="absolute,fixed" ScrollExtent="404,36" Size="404,36" Style="/WindowElements.WindowFrame.data.tab_data.tabbed_pane_style" TargetPage="page Tabs" />
+        <TextboxStyle CaratColor="#FFFF00" CaratWidth="2" Cursor="/Cursor.Text" Name="style Community" NormalTextStyle="/Fonts.FontConsole14" SelectionColor="#C0C020" SelectionOpacity="1.000" TextColor="#F0C040" TextPadding="3,2,3,0" />
+        <DataSource Name="TabSource">
+            <Data Name="Friends" target="page Friends" text=":98afae0111acb60a:Friends" />
+            <Data Name="Ignored" target="page Ignored" text=":98afae01e696872d:Ignored" />
+            <Data Name="FindPlayers" target="page Finder" text=":98afae0133a5a044:Find Players" />
+        </DataSource>
+        <Page Location="2,34" Name="page Tabs" PackSize="absolute,absolute" ScrollExtent="501,284" Size="501,284">
+            <Page Name="page Friends" PackSize="absolute,absolute" ScrollExtent="501,284" Size="501,284">
+                <Button Location="365,9" MaximumSize="16384,26" MinimumSize="26,26" Name="button SaveFriends" OnPress="save_friends" PackLocation="right,top" ScrollExtent="115,26" Size="115,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip="Saves your friends list locally which can then be loaded onto another character.">SaveFriends</Button>
+                <Button Location="365,32" MaximumSize="16384,26" MinimumSize="26,26" Name="button LoadFriends" OnPress="load_friends" PackLocation="right,top" ScrollExtent="115,26" Size="115,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip="Brings up the Load Friends dialog. Save Friends must be done previously (on current or another character) for any options to display.">LoadFriends</Button>
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="13,9" Name="text Directions" PackSize="absolute,fixed" ScrollExtent="461,18" Size="461,18">Type a name and press Add</Text>
+                <Textbox AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="10,26" MaximumSize="16384,30" MinimumSize="30,30" Name="textbox Name" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="150,30" Size="150,30" Style="/CommonElements.Textfield.data.style" />
+                <Button Location="158,25" MaximumSize="16384,32" MinimumSize="32,32" Name="button Add" ScrollExtent="74,32" Size="74,32" Style="/CommonElements.PushButton.data.style">:98afae013aa8caf8:Add</Button>
+                <Page BackgroundOpacity="1.000" Name="RoundedGrouper" PackSize="a,f" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="501,65" Size="501,65" />
+                <Page Location="0,61" Name="page Table" PackSize="absolute,absolute" ScrollExtent="501,178" Size="501,178" VisualEditLock="true">
+                    <Listbox DataSource="TableDSContainer.Name" Name="LB" RowTemplate="/CommonElements.DropdownListbox.data.row_template" />
+                    <Composite Location="8,28" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="485,144" Size="485,144" SpacingType="Fill">
+                        <Table BackgroundColor="#555555" BackgroundOpacity="0.000" DefaultTextStyle="/TextStyles.Normal.NormalStyle" MinimumScrollExtent="485,17" Name="Table" PackSize="absolute,absolute" ScrollExtent="485,143" SelectionAllowedMultiRow="false" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" Size="485,143" TableModel="TableModel" />
+                        <Scrollbar ArrowPressSound="sounds/button" Control="Table" HideIfUnnecessary="true" Location="463,0" MaximumSize="22,16384" MinimumSize="22,0" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,144" Size="22,144" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                    </Composite>
+                    <TableHeader BackgroundColor="#FF0000" BackgroundOpacity="0.000" ButtonStyle="/CommonElements.Table.data.sort.style_center_align" GetsInput="false" Location="10,5" MinimumScrollExtent="485,0" Name="TableHeader" PackSize="absolute" ScrollExtent="485,16" Size="483,16" Table="Composite.Table" />
+                    <TableModelDefault DataSourceContainer="TableDSContainer" Name="TableModel" />
+                    <DataSourceContainer Name="TableDSContainer">
+                        <DataSource label=":98afae0101ee2ec7:Name" Name="Name" type="text">
+                            <Data Name="New Data" value="[DEVL]Test" />
+                        </DataSource>
+                        <DataSource label=":98afae0158171462:Location" Name="Location" type="text">
+                            <Data Name="New Data" value="[DEVL]Test" />
+                        </DataSource>
+                        <DataSource label=":98afae013f257677:Notes" Name="Notes" type="text">
+                            <Data Name="New Data" value="[DEVL]Test" />
+                        </DataSource>
+                    </DataSourceContainer>
+                    <Page Name="TableFrame" PackSize="a,a" ScrollExtent="501,178" Size="501,178">
+                        <Page BackgroundOpacity="1.000" Name="Header" PackSize="absolute,fixed" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="501,25" Size="501,25" />
+                        <Page BackgroundOpacity="1.000" Location="0,25" Name="Data" PackSize="absolute,absolute" RStyleDefault="/CommonElements.DataGrouper.data.data_frame.rect" ScrollExtent="501,153" Size="501,153" />
+                    </Page>
+                </Page>
+                <Button Location="61,235" MaximumSize="16384,26" MinimumSize="26,26" Name="button Notes" PackLocation="cfc,bottom" ScrollExtent="115,26" Size="115,26" Style="/CommonElements.SmallPushButton.data.style">:98afae013f257677_1:Notes</Button>
+                <Button Enabled="false" Location="191,235" MaximumSize="16384,26" MinimumSize="26,26" Name="buttonTell" OnPress="&apos;parent.page Table.LB.SelectedItemIndex&apos;=&apos;parent.page Table.Composite.Table.SelectedRow&apos;&#xD;&#xA;gm9tell=&quot;/tell&quot;&#xD;&#xA;beginchatinput gm9tell &apos;parent.page Table.LB.SelectedItem.Value&apos;" PackLocation="cfc,bottom" ScrollExtent="115,26" Size="115,26" Style="/CommonElements.SmallPushButton.data.style">Tell</Button>
+                <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="324,237" MinimumSize="22,22" Name="offline" PackLocation="cfc,bottom" ScrollExtent="112,22" Size="112,22" Style="/CommonElements.Checkbox.data.style">:98afae01e8f934c0:Online only</Checkbox>
+                <Button Enabled="false" Location="61,258" MaximumSize="16384,26" MinimumSize="26,26" Name="buttonGroupInvite" OnPress="&apos;parent.page Table.LB.SelectedItemIndex&apos;=&apos;parent.page Table.Composite.Table.SelectedRow&apos;&#xD;&#xA;invite &apos;parent.page Table.LB.SelectedItem.Value&apos;" PackLocation="cfc,bottom" ScrollExtent="115,26" Size="115,26" Style="/CommonElements.SmallPushButton.data.style">Group Invite</Button>
+                <Button Enabled="false" Location="191,258" MaximumSize="16384,26" MinimumSize="26,26" Name="buttonRaidInvite" OnPress="&apos;parent.page Table.LB.SelectedItemIndex&apos;=&apos;parent.page Table.Composite.Table.SelectedRow&apos;&#xD;&#xA;raidinvite &apos;parent.page Table.LB.SelectedItem.Value&apos;" PackLocation="cfc,bottom" ScrollExtent="115,26" Size="115,26" Style="/CommonElements.SmallPushButton.data.style">Raid Invite</Button>
+                <Button Location="321,258" MaximumSize="16384,26" MinimumSize="26,26" Name="button Remove" OnDisable="parent.buttonGroupInvite.Enabled=false parent.buttonRaidInvite.Enabled=false parent.buttonTell.Enabled=false" OnEnable="parent.buttonGroupInvite.Enabled=true parent.buttonRaidInvite.Enabled=true parent.buttonTell.Enabled=true" PackLocation="cfc,bottom" ScrollExtent="115,26" Size="115,26" Style="/CommonElements.SmallPushButton.data.style">:98afae0190d3e7f9:Remove</Button>
+            </Page>
+            <Page Enabled="false" Name="page Ignored" PackSize="absolute,absolute" ScrollExtent="501,284" Size="501,284" Visible="false">
+                <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="13,9" Name="text Directions" PackSize="absolute,fixed" ScrollExtent="461,18" Size="461,18">:98afae015e8b2020:To ignore a character, type their name and press Ignore.</Text>
+                <Textbox AbsorbsInput="false" BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="10,26" MaximumSize="16384,30" MinimumSize="30,30" Name="textbox Name" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="150,30" Size="150,30" Style="/CommonElements.Textfield.data.style" />
+                <Button Location="170,25" MaximumSize="16384,32" MinimumSize="32,32" Name="button Ignore" ScrollExtent="120,32" Size="120,32" Style="/CommonElements.PushButton.data.style">:98afae01f5db2c2b:Ignore</Button>
+                <Page BackgroundOpacity="1.000" Name="RoundedGrouper" PackSize="a,f" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="501,65" Size="501,65" />
+                <Page Location="0,61" Name="page Table" PackSize="absolute,absolute" ScrollExtent="501,200" Size="501,200" VisualEditLock="true">
+                    <Composite Location="8,28" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="485,166" Size="485,166" SpacingType="Fill">
+                        <Table BackgroundColor="#555555" BackgroundOpacity="0.000" DefaultTextStyle="/TextStyles.Normal.NormalStyle" Location="0,1" MinimumScrollExtent="485,0" Name="Table" PackSize="absolute,absolute" ScrollExtent="485,165" SelectionAllowedMultiRow="false" SelectionColorBackground="#4A404A" SelectionColorRect="#4A404A" Size="485,165" TableModel="TableModel" />
+                        <Scrollbar ArrowPressSound="sounds/button" Control="Table" HideIfUnnecessary="true" Location="463,0" MaximumSize="22,16384" MinimumSize="22,0" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,166" Size="22,166" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                    </Composite>
+                    <TableHeader BackgroundColor="#000000" BackgroundOpacity="0.000" ButtonStyle="/CommonElements.Table.data.sort.style_center_align" Location="10,5" MinimumScrollExtent="485,0" Name="TableHeader" PackSize="absolute" ScrollExtent="485,16" Size="482,16" Table="Composite.Table" />
+                    <TableModelDefault DataSourceContainer="TableDSContainer" Name="TableModel" />
+                    <DataSourceContainer Name="TableDSContainer">
+                        <DataSource label=":98afae0101ee2ec7_1:Name" Name="Name" type="text" />
+                        <DataSource label=":98afae013f257677_2:Notes" Name="Notes" type="text" />
+                    </DataSourceContainer>
+                    <Page Name="TableFrame" PackSize="a,a" ScrollExtent="501,200" Size="501,200">
+                        <Page BackgroundOpacity="1.000" Name="Header" PackSize="absolute,fixed" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="501,25" Size="501,25" />
+                        <Page BackgroundOpacity="1.000" Location="0,25" Name="Data" PackSize="absolute,absolute" RStyleDefault="/CommonElements.DataGrouper.data.data_frame.rect" ScrollExtent="501,175" Size="501,175" />
+                    </Page>
+                </Page>
+                <Button Location="120,257" MaximumSize="16384,26" MinimumSize="26,26" Name="button Remove" PackLocation="cfc,bottom" ScrollExtent="120,26" Size="120,26" Style="/CommonElements.SmallPushButton.data.style">:98afae0190d3e7f9_1:Remove</Button>
+                <Button Location="255,257" MaximumSize="16384,26" MinimumSize="26,26" Name="button Notes" PackLocation="cfc,bottom" ScrollExtent="120,26" Size="120,26" Style="/CommonElements.SmallPushButton.data.style">:98afae013f257677_3:Notes</Button>
+            </Page>
+            <Page Enabled="false" Name="page Finder" PackSize="absolute,absolute" ScrollExtent="501,284" Size="501,284" Visible="false">
+                <Page Activated="true" Name="pageSearch" PackSize="absolute,absolute" ScrollExtent="501,284" Size="501,284">
+                    <Text AbsorbsInput="false" Color="#FCD781" Font="/TextStyles.Normal.NormalStyle" Location="17,7" Name="labelSearchRange" PackLocation="top,left" PackSize="fixed, fixed" ScrollExtent="120,21" Size="120,21" TextAlignmentVertical="Center">:98afae01ff4bc431:Look here...</Text>
+                    <Dropdownbox BackgroundOpacity="1.000" Location="134,7" MaximumSize="16384,32" MinimumSize="50,32" Name="dropdownZone" PackSize="a,f" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="353,32" Size="353,32" Style="/CommonElements.Dropdown.data.style" />
+                    <Text AbsorbsInput="false" Color="#FCD781" Font="/TextStyles.Normal.NormalStyle" Location="16,32" Name="labelSearchCriteria" PackLocation="top,left" PackSize="fixed, fixed" ScrollExtent="288,21" Size="288,21" TextAlignmentVertical="Center">:98afae015a3c0481:For these players...</Text>
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="16,53" MinimumSize="22,22" Name="checkboxName" ScrollExtent="130,22" Size="130,22" Style="/CommonElements.Checkbox.data.style" Tooltip=":98afae01ce07b478:Search by character or guild name">:98afae0101ee2ec7_2:Name</Checkbox>
+                    <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="177,49" MaximumSize="16384,30" MinimumSize="30,30" Name="textName" PackSize="a,f" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="307,30" Size="307,30" Style="/CommonElements.Textfield.data.style" Visible="false" />
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="16,81" MinimumSize="22,22" Name="checkboxClass" ScrollExtent="130,22" Size="130,22" Style="/CommonElements.Checkbox.data.style">:98afae01d375c964:Class</Checkbox>
+                    <Dropdownbox BackgroundOpacity="1.000" Location="175,78" MaximumSize="16384,32" MinimumSize="50,32" Name="dropdownClass" PackSize="a,f" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="311,32" Size="311,32" Style="/CommonElements.Dropdown.data.style" Visible="false" />
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="16,110" MinimumSize="22,22" Name="checkboxRace" ScrollExtent="130,22" Size="130,22" Style="/CommonElements.Checkbox.data.style">:98afae0185a2eb6e:Race</Checkbox>
+                    <Dropdownbox BackgroundOpacity="1.000" Location="175,107" MaximumSize="16384,32" MinimumSize="50,32" Name="dropdownRace" PackSize="a,f" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="311,32" Size="311,32" Style="/CommonElements.Dropdown.data.style" Visible="false" />
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="16,139" MinimumSize="22,22" Name="checkboxAlignment" ScrollExtent="130,22" Size="130,22" Style="/CommonElements.Checkbox.data.style">:98afae0151c06300:Alignment</Checkbox>
+                    <Dropdownbox BackgroundOpacity="1.000" Location="175,136" MaximumSize="16384,32" MinimumSize="50,32" Name="dropdownAlignment" PackSize="a,f" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="311,32" Size="311,32" Style="/CommonElements.Dropdown.data.style" Visible="false" />
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="16,167" MinimumSize="22,22" Name="checkboxRoleplaying" ScrollExtent="130,22" Size="130,22" Style="/CommonElements.Checkbox.data.style">:98afae01f88f45f8:Roleplaying</Checkbox>
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="177,167" MinimumSize="22,22" Name="checkboxLFG" ScrollExtent="179,22" Size="179,22" Style="/CommonElements.Checkbox.data.style">:98afae01503aa459:Looking For Group</Checkbox>
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="177,193" MinimumSize="22,22" Name="checkboxLFW" ScrollExtent="300,22" Size="300,22" Style="/CommonElements.Checkbox.data.style">:98afae017e5153c3:Looking For Work</Checkbox>
+                    <Checkbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Location="16,193" MinimumSize="22,22" Name="checkboxLevel" ScrollExtent="100,22" Size="100,22" Style="/CommonElements.Checkbox.data.style">:98afae01a4d41ce8:Level</Checkbox>
+                    <Page Location="3,216" Name="pageLevel" ScrollExtent="210,30" Size="210,30" Visible="false">
+                        <Page Location="10,0" MaximumSize="16384,30" MinimumSize="80,30" Name="MinLevel" ScrollExtent="80,30" Size="80,30">
+                            <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" />
+                            <Button Location="54,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" />
+                            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="26,0" MaximumSize="16384,30" MaxLength="3" MinimumSize="30,30" Name="Value" NumericInteger="true" PackSize="a,f" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="30,30" Size="30,30" Style="/CommonElements.Textfield.data.style">:98afae017c231048:1</Textbox>
+                        </Page>
+                        <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="90,0" Name="labelTO" ScrollExtent="30,30" Size="30,30" TextAlignment="Center" TextAlignmentVertical="Center">:98afae0128782d3b:to</Text>
+                        <Page Location="120,0" MaximumSize="16384,30" MinimumSize="80,30" Name="MaxLevel" ScrollExtent="80,30" Size="80,30">
+                            <Button Location="0,2" Name="Previous" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.previous.style" />
+                            <Button Location="54,2" Name="Next" PackLocation="Right" ScrollExtent="26,26" Size="26,26" Style="/CommonElements.Spinner.data.next.style" />
+                            <Textbox BackgroundColor="#FFFFFF" BackgroundOpacity="1.000" Cursor="/Cursor.Text" Location="26,0" MaximumSize="16384,30" MaxLength="3" MinimumSize="30,30" Name="Value" NumericInteger="true" PackSize="a,f" RStyleActivated="/CommonElements.Textfield.data.selected.rect" RStyleDefault="/CommonElements.Textfield.data.default.rect" RStyleDisabled="/CommonElements.Textfield.data.disabled.rect" RStyleDisabledActivated="/CommonElements.Textfield.data.disabled.rect" RStyleMouseOver="/CommonElements.Textfield.data.mouseover.rect" RStyleMouseOverActivated="/CommonElements.Textfield.data.selected.rect" RStyleMouseOverSelected="/CommonElements.Textfield.data.selected.rect" RStyleSelected="/CommonElements.Textfield.data.selected.rect" ScrollExtent="30,30" Size="30,30" Style="/CommonElements.Textfield.data.style">:98afae0111e34cd9:80</Textbox>
+                        </Page>
+                    </Page>
+                    <Page BackgroundOpacity="1.000" Name="RoundedGrouper" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="501,262" Size="501,262" />
+                    <Button Location="270,257" MaximumSize="16384,26" MinimumSize="26,26" Name="buttonNewLFG" PackLocation="cfc,bottom" ScrollExtent="160,26" Size="160,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip=":98afae0177c3bf09:This opens the new lfg window, which can also be reached by /lfg">:98afae01a3330b32:Advanced LFG</Button>
+                    <Button Location="75,257" MaximumSize="16384,26" MinimumSize="26,26" Name="buttonSearch" PackLocation="cfc,bottom" ScrollExtent="160,26" Size="160,26" Style="/CommonElements.SmallPushButton.data.style">:98afae014ca3216e:Search</Button>
+                </Page>
+                <Page Activated="true" Name="pageResults" PackSize="absolute,absolute" ScrollExtent="501,284" Size="501,284" Visible="false">
+                    <Text AbsorbsInput="false" Color="#C7C7C7" Font="/TextStyles.Normal.NormalStyle" Location="13,11" Name="textWhoQuery" PackSize="absolute" ScrollExtent="481,18" Size="481,18" TextAlignmentVertical="Center">:98afae01077d7c38:/who</Text>
+                    <Page BackgroundOpacity="1.000" Name="WhoFrame" PackSize="a,f" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="501,40" Size="501,40" />
+                    <Page Location="0,36" Name="pageTable" PackSize="absolute,absolute" ScrollExtent="501,200" Size="501,200" VisualEditLock="true">
+                        <Composite Location="8,28" Name="Composite" Orientation="Horizontal" PackSize="a,a" ScrollExtent="485,151" Size="485,151" SpacingType="Fill">
+                            <Table BackgroundColor="#555555" BackgroundOpacity="0.000" DefaultTextStyle="/TextStyles.Normal.NormalStyle" MinimumScrollExtent="485,17" Name="Table" PackSize="absolute,absolute" ScrollExtent="485,166" SelectionAllowedMultiRow="false" SelectionColorBackground="#403740" SelectionColorRect="#403740" Size="485,166" TableModel="TableModel" />
+                            <Scrollbar ArrowPressSound="sounds/button" Control="Table" HideIfUnnecessary="true" Location="463,0" MaximumSize="22,16384" MinimumSize="22,0" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,166" Size="22,166" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                        </Composite>
+                        <TableHeader BackgroundColor="#000000" BackgroundOpacity="0.000" ButtonStyle="/CommonElements.Table.data.sort.style_center_align" Location="10,5" MinimumScrollExtent="485,0" Name="TableHeader" PackSize="absolute" ScrollExtent="485,16" Size="483,16" Table="Composite.Table" />
+                        <TableModelDefault DataSourceContainer="TableDSContainer" Name="TableModel" />
+                        <DataSourceContainer Name="TableDSContainer">
+                            <DataSource label=":98afae0101ee2ec7_3:Name" Name="Name" type="text">
+                                <Data Name="New Data" value="[DEVL]Test" />
+                            </DataSource>
+                            <DataSource label=":98afae01445fa14a:Lvl" Name="Level" textalignment="Center" type="text" />
+                            <DataSource label=":98afae01d375c964_1:Class" Name="Class" textalignment="Center" type="text" />
+                            <DataSource label=":98afae0158171462_1:Location" Name="Location" textalignment="Center" type="text" />
+                        </DataSourceContainer>
+                        <Page Name="TableFrame" PackSize="a,a" ScrollExtent="501,200" Size="501,200">
+                            <Page BackgroundOpacity="1.000" Name="Header" PackSize="absolute,fixed" RStyleDefault="/CommonElements.DataGrouper.data.header_frame.rect" ScrollExtent="501,25" Size="501,25" />
+                            <Page BackgroundOpacity="1.000" Location="0,25" Name="Data" PackSize="absolute,absolute" RStyleDefault="/CommonElements.DataGrouper.data.data_frame.rect" ScrollExtent="501,175" Size="501,175" />
+                        </Page>
+                    </Page>
+                    <Text AbsorbsInput="false" Color="#FBF1D9" Font="/TextStyles.Normal.NormalStyle" Location="10,232" Name="textMatchCount" PackLocation="left,bottom" PackSize="absolute" ScrollExtent="481,22" Size="481,22" TextAlignmentVertical="Center">:98afae018b6dfc87:Waiting for search results...</Text>
+                    <Button Location="70,252" MaximumSize="16384,32" MinimumSize="32,32" Name="buttonTell" PackLocation="cfc,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:98afae015984b805:Tell</Button>
+                    <Button Location="170,252" MaximumSize="16384,32" MinimumSize="32,32" Name="buttonInvite" PackLocation="cfc,bottom" ScrollExtent="100,32" Size="100,32" Style="/CommonElements.PushButton.data.style">:98afae013fb1ea1e:Invite</Button>
+                    <Button Location="270,252" MaximumSize="16384,32" MinimumSize="32,32" Name="buttonSearchAgain" PackLocation="cfc,bottom" ScrollExtent="160,32" Size="160,32" Style="/CommonElements.PushButton.data.style">:98afae017bef2c02:Search Again</Button>
+                </Page>
+            </Page>
+        </Page>
+        <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="505,320" Size="505,320">
+            <Button Location="470,3" Name="Settings" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.settings.style" Tooltip=":98afae01ec278586:Window Settings" UserMovable="true" Visible="false" />
+            <Button Location="486,3" Name="Close" PackLocation="right,top" ScrollExtent="18,18" Size="18,18" Style="/WindowElements.WindowFrame.data.close.style" Tooltip=":98afae012d3f513f:Close" UserMovable="true" />
+            <Page AbsorbsInput="false" Name="LeftGrouper" />
+            <Page AbsorbsInput="false" Name="RightGrouper" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-2,-3" Name="Frame" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="509,325" Size="509,325" />
+            <Page AbsorbsInput="false" backdropcontrol="true" BackgroundOpacity="1.000" Location="-12,-25" Name="UpperTabBkg" PackSize="a,f" RStyleDefault="/WindowElements.WindowFrame.data.upper_tab_bkg.rect" ScrollExtent="529,64" Size="529,64" />
+            <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="-12,8" Name="Bkg" PackSize="absolute,absolute" RStyleDefault="/WindowElements.WindowFrame.data.bkg.rect" ScrollExtent="527,326" Size="527,326" />
+        </Page>
+    </Page>
+</Page>

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+            <DataSource Name="FavSource6">
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="80" MinLvl="0" SellerName=" " Text="     Ammo &amp; Poisons" Tier="0" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="      == AMMO (Lvl) ==" Tier="0" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="     Titanium Ammo (80)" Tier="0" />
+                <Data ItemEffect=" " ItemName="Titanium Arrow" ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Titanium Arrows (80)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Titanium Dagger" ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Titanium Daggers (80)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Titanium Axe" ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Titanium Axes (80)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Titanium Hammer" ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Titanium Hammmer (80)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Titanium Shuriken" ItemType="8" MaxLvl="80" MinLvl="80" SellerName=" " Slot="1" Text="-Titanium Shurikens (80)" Tier="2" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="        Ferrite Ammo (70)" Tier="0" />
+                <Data ItemEffect=" " ItemName="Ferrite Arrow" ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Ferrite Arrows (70)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Ferrite Dagger" ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Ferrite Daggers (70)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Ferrite Axe" ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Ferrite Axes (70)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Ferrite Hammer" ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Ferrite Hammers (70)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Ferrite Shuriken" ItemType="8" MaxLvl="70" MinLvl="70" SellerName=" " Slot="1" Text="-Ferrite Shurikens (70)" Tier="2" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="    Adamantine Ammo (60)" Tier="0" />
+                <Data ItemEffect=" " ItemName="Adamantine Arrow" ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Adamantine Arrows (60)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Adamantine Dagger" ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Adamantine Daggers (60)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Adamantine Axe" ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Adamantine Axes (60)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Adamantine Hammer" ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Adamantine Hammers (60)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Adamantine Shuriken" ItemType="8" MaxLvl="60" MinLvl="60" SellerName=" " Slot="1" Text="-Adamantine Shurikens (60)" Tier="2" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="        Indium Ammo (50)" Tier="0" />
+                <Data ItemEffect=" " ItemName="Indium Arrow" ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Indium Arrows (50)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Indium Dagger" ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Indium Daggers (50)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Indium Axe" ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Indium Axes (50)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Indium Hammer" ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Indium Hammers (50)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Indium Shuriken" ItemType="8" MaxLvl="50" MinLvl="50" SellerName=" " Slot="1" Text="-Indium Shurikens (50)" Tier="2" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="       Fulginate Ammo (40)" Tier="0" />
+                <Data ItemEffect=" " ItemName="Fulginate Arrow" ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Fulginate Arrows (40)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Fulginate Dagger" ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Fulginate Daggers (40)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Fulginate Axe" ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Fulginate Axes (40)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Fulginate Hammer" ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Fulginate Hammers (40)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Fulginate Shuriken" ItemType="8" MaxLvl="40" MinLvl="40" SellerName=" " Slot="1" Text="-Fulginate Shurikens (40)" Tier="2" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="         Feyiron Ammo (30)" Tier="0" />
+                <Data ItemEffect=" " ItemName="Feyiron Arrow" ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Feyiron Arrows (30)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Feyiron Dagger" ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Feyiron Daggers (30)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Feyiron Axe" ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Feyiron Axes (30)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Feyiron Hammer" ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Feyiron Hammers (30)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Feyiron Shuriken" ItemType="8" MaxLvl="30" MinLvl="30" SellerName=" " Slot="1" Text="-Feyiron Shurikens (30)" Tier="2" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="        Carbonite Ammo (20)" Tier="0" />
+                <Data ItemEffect=" " ItemName="Carbonite Arrow" ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Carbonite Arrows (20)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Carbonite Dagger" ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Carbonite Daggers (20)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Carbonite Axe" ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Carbonite Axes (20)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Carbonite Hammer" ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Carbonite Hammers (20)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Carbonite Shuriken" ItemType="8" MaxLvl="20" MinLvl="20" SellerName=" " Slot="1" Text="-Carbonite Shurikens (20)" Tier="2" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="           Iron Ammo (10)" Tier="0" />
+                <Data ItemEffect=" " ItemName="Iron Arrow" ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Iron Arrows (10)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Iron Dagger" ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Iron Daggers (10)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Iron Axe" ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Iron Axes (10)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Iron Hammer" ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Iron Hamnmers (10)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Iron Shuriken" ItemType="8" MaxLvl="10" MinLvl="10" SellerName=" " Slot="1" Text="-Iron Shurikens (10)" Tier="2" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="           Tin Ammo (1)" Tier="0" />
+                <Data ItemEffect=" " ItemName="Tin Arrow" ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Tin Arrows (1)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Tin Dagger" ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Tin Daggers (1)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Tin Axe" ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Tin Axes (1)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Tin Hammer" ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Tin Hamnmers (1)" Tier="2" />
+                <Data ItemEffect=" " ItemName="Tin Shuriken" ItemType="8" MaxLvl="1" MinLvl="1" SellerName=" " Slot="1" Text="-Tin Shurikens (1)" Tier="2" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="  == POISONS (blue) ==" Tier="0" />
+                <Data ItemEffect=" " ItemName="Essence of Turgur" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Essence of Turgur" Tier="0" />
+                <Data ItemEffect=" " ItemName="Fettering Poison" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Fettering Poison" Tier="0" />
+                <Data ItemEffect=" " ItemName="Ignorant Bliss" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Ignorant Bliss" Tier="0" />
+                <Data ItemEffect=" " ItemName="Stupefying Poison" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Stupefying Poison" Tier="0" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="22" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="22" MinLvl="0" SellerName=" " Slot="0" Text="== POISONS (purple) ==" Tier="0" />
+                <Data ItemEffect=" " ItemName="Cerebral Ebb" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Cerebral Ebb" Tier="0" />
+                <Data ItemEffect=" " ItemName="Enfeebling Poison" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Enfeebling Poison" Tier="0" />
+                <Data ItemEffect=" " ItemName="Gracelessness" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Gracelessness" Tier="0" />
+                <Data ItemEffect=" " ItemName="Warding Ebb" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Warding Ebb" Tier="0" />
+                <Data ItemEffect=" " ItemName="..." ItemType="0" MaxLvl="22" MinLvl="0" SellerName=" " Slot="0" Special="0" Text=" " Tier="0" />
+                <Data ItemEffect=" " ItemName="..." ItemType="27" MaxLvl="0" MinLvl="0" SellerName=" " Slot="0" Text="    == POISONS (red) ==" Tier="0" />
+                <Data ItemEffect=" " ItemName="Caustic Poison" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Caustic Poison" Tier="0" />
+                <Data ItemEffect=" " ItemName="Hemotoxin" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Hemotoxin" Tier="0" />
+                <Data ItemEffect=" " ItemName="Mental Breach" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Mental Breach" Tier="0" />
+                <Data ItemEffect=" " ItemName="Vitality Breach" ItemType="27" MaxLvl="100" MinLvl="0" SellerName=" " Text="-Viality Breach" Tier="0" />
+            </DataSource>

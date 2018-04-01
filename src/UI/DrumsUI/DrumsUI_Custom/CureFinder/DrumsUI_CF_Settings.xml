@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="CF_CheckCurse" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="CF_CurseOnly" Size="1,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="CF_CheckGroup" Size="2,1" UserResizable="true"/>
+<Page Onshow="Location=99999,99999" Activated="true" eq2usescomwndcontrols="true" Location="1,1" MaximumSize="2,2" MinimumSize="1,1" Name="CF_CheckRaid" Size="2,1" UserResizable="true"/>

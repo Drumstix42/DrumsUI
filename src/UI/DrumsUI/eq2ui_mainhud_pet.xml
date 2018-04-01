@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Page actiontype="Pet" DynamicDataFilter="0005" eq2usescomwndcontrols="true" hCheck="true" Location="781,89" MinimumSize="167,47" Name="Pet" OnSize="hCheck=(Height &gt; 50)&#xD;&#xA;Volume.visible=hCheck" PackLocation="right,bottom" ScrollExtent="184,94" Size="184,94" UserMovable="true" UserResizable="true">
+    <Page Location="15,65" Name="Detriments" PackLocation="cfc" ScrollExtent="118,21" Size="118,21">
+        <Icon BackgroundTint="#000000" DynamicData="/GameData.Pet.Effect1" IconStyle="/IconStyles.effect" Location="2,2" MaximumSize="21,21" MinimumSize="21,21" MouseOverColor="#FFFF00" Name="Effect1" OnPress="cureplayer g0 trauma pet" ScrollExtent="21,21" Size="21,21" TreatAsButton="true" Visible="false" />
+        <Icon BackgroundTint="#000000" DynamicData="/GameData.Pet.Effect2" IconStyle="/IconStyles.effect" Location="25,2" MaximumSize="21,21" MinimumSize="21,21" MouseOverColor="#FFFF00" Name="Effect2" OnPress="cureplayer g0 arcane pet" ScrollExtent="21,21" Size="21,21" TreatAsButton="true" Visible="false" />
+        <Icon BackgroundTint="#000000" DynamicData="/GameData.Pet.Effect3" IconStyle="/IconStyles.effect" Location="48,2" MaximumSize="21,21" MinimumSize="21,21" MouseOverColor="#FFFF00" Name="Effect3" OnPress="cureplayer g0 noxious pet" ScrollExtent="21,21" Size="21,21" TreatAsButton="true" Visible="false" />
+        <Icon BackgroundTint="#000000" DynamicData="/GameData.Pet.Effect4" IconStyle="/IconStyles.effect" Location="71,2" MaximumSize="21,21" MinimumSize="21,21" MouseOverColor="#FFFF00" Name="Effect4" OnPress="cureplayer g0 elemental pet" ScrollExtent="21,21" Size="21,21" TreatAsButton="true" Visible="false" />
+        <Icon BackgroundTint="#000000" DynamicData="/GameData.Pet.Effect5" IconStyle="/IconStyles.effect" Location="94,2" MaximumSize="21,21" MinimumSize="21,21" MouseOverColor="#FFFF00" Name="Effect5" OnPress="cureplayer g0 curse pet" ScrollExtent="21,21" Size="21,21" TreatAsButton="true" Visible="false" />
+        <Image Location="2,2" Name="Icon" Opacity="0.200" ScrollExtent="21,21" Size="21,21" SourceRect="130,2,164,40" SourceResource="/images/icons/icon_as9.dds" />
+        <Image Location="25,2" Name="Icon" Opacity="0.200" ScrollExtent="21,21" Size="21,21" SourceRect="1,44,40,83" SourceResource="/images/icons/icon_as9.dds" />
+        <Image Location="48,2" Name="Icon" Opacity="0.200" ScrollExtent="21,21" Size="21,21" SourceRect="170,2,206,39" SourceResource="/images/icons/icon_as9.dds" />
+        <Image Location="71,2" Name="Icon" Opacity="0.200" ScrollExtent="21,21" Size="21,21" SourceRect="213,1,249,37" SourceResource="/images/icons/icon_as9.dds" />
+        <Image Location="94,2" Name="Icon" Opacity="0.200" ScrollExtent="21,21" Size="21,21" SourceRect="212,170,253,210" SourceResource="/images/icons/icon_ss22.dds" />
+    </Page>
+    <Text AbsorbsInput="false" Color="#F0D090" DynamicData="/GameData.Pet.ActualName" Font="/TextStyles.Normal.NormalStyle" Location="5,5" Margin="1,1,2,2" Name="Name" PackLocation="top,left" PackSize="absolute, fixed" ScrollExtent="143,18" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="143,18" TextAlignment="Center">:65eb2e8d9852dee5:Pet Name</Text>
+    <Text AbsorbsInput="false" actiontype="Target" Color="#00FF40" DynamicData="/GameData.Pet.Health" Font="/Fonts.FontZapf15" Location="148,14" MaximumSize="124,17" MaxLines="1" Name="Health" PackLocation="right,top" ScrollExtent="30,16" ShadowStyle="/ShadowStyles.Outline1" Size="30,16" TextAlignment="Right" TruncateElipsis="false">100%</Text>
+    <Text AbsorbsInput="false" actiontype="Target" Color="#6F64FE" DynamicData="/GameData.Pet.Power" DynamicDataFilter="FBFF" Font="/Fonts.FontZapf15" Location="148,25" MaximumSize="124,17" MaxLines="1" Name="Power" PackLocation="right,top" PackSize="f,f" ScrollExtent="30,16" ShadowStyle="/ShadowStyles.Outline1" Size="30,16" TextAlignment="Right" TruncateElipsis="false">100%</Text>
+    <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="8,22" Name="Health" PackSize="absolute" ScrollExtent="131,8" Size="131,8">
+        <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Pet.ActualHealth" DynamicDataFilter="FFFB" Location="1,0" Name="Bar" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="129,5" Size="129,5" Style="/progressbarlist.progress_default" />
+        <Image AbsorbsInput="false" BackgroundColor="#110000" BackgroundOpacity="0.800" Location="1,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="131,5" Size="131,5" />
+    </Page>
+    <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="8,29" Name="Power" PackSize="absolute" ScrollExtent="131,8" Size="131,8">
+        <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Pet.ActualPower" DynamicDataFilter="FFFB" Location="1,0" Name="Bar" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="129,4" Size="129,4" Style="/progressbarlist.progress_default" />
+        <Image AbsorbsInput="false" BackgroundColor="#002222" BackgroundOpacity="0.800" Location="1,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="131,5" Size="131,5" />
+    </Page>
+    <Page BackgroundColor="#00FF00" eq2usescomwndcontrols="true" Location="8,37" Name="Threat" PackSize="absolute" ScrollExtent="131,8" Size="131,8">
+        <Text COND="false" DynamicData="/GameData.Pet.Threat" Name="ThreatNum" OnTextChanged="COND=(Text == &apos;100%&apos;)&#xD;&#xA;rRESULT=(COND? &apos;#FF0000&apos; : &apos;#FFFF00&apos;)&#xD;&#xA;Parent.Bar.Color=(rRESULT)" rRESULT="#FFFF00" ScrollExtent="18,15">100</Text>
+        <Progressbar AbsorbsInput="false" Color="#FFFF00" DynamicData="/GameData.Pet.Threat" DynamicDataFilter="FFFB" Location="1,0" Name="Bar" PackSize="absolute,absolute" Progress="0.650" ScrollExtent="129,3" Size="129,3" Style="/progressbarlist.progress_default" />
+        <Image AbsorbsInput="false" BackgroundColor="#222200" BackgroundOpacity="0.800" Location="1,0" Name="Bkg" PackSize="absolute,absolute" ScrollExtent="131,3" Size="131,3" />
+    </Page>
+    <Page Location="6,21" Name="_Health" PackSize="absolute,fixed" ScrollExtent="165,6" Size="165,6" Visible="false">
+        <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="166,6" Size="166,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+        <Progressbar AbsorbsInput="false" Color="#FE0417" DynamicData="/GameData.Pet.ActualHealth" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="146,4" Size="146,4" Style="/progressbarlist.progress_default" />
+        <Image AbsorbsInput="false" BackgroundColor="#440000" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="159,6" Size="159,6" />
+    </Page>
+    <Page Location="6,29" Name="_Power" PackSize="absolute,fixed" ScrollExtent="165,6" Size="165,6" Visible="false">
+        <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="166,6" Size="166,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+        <Progressbar AbsorbsInput="false" Color="#6F64FE" DynamicData="/GameData.Pet.ActualPower" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="146,4" Size="146,4" Style="/progressbarlist.progress_default" Visible="false" />
+        <Image AbsorbsInput="false" BackgroundColor="#000044" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="159,6" Size="159,6" />
+    </Page>
+    <Page Location="6,36" Name="_Threat" PackSize="absolute,fixed" ScrollExtent="165,6" Size="165,6" Visible="false">
+        <Image AbsorbsInput="false" Name="BubblesOverlay" PackSize="absolute,absolute" ScrollExtent="166,6" Size="166,6" SourceRect="259,183,385,189" SourceResource="/images/window_elements_generic.dds" Stretch="false" />
+        <Progressbar AbsorbsInput="false" Color="#FFFF00" DynamicData="/GameData.Pet.Threat" DynamicDataFilter="FFFB" Location="9,1" Name="Bar" PackLocation="top,left" PackSize="absolute,absolute" Progress="1.000" ScrollExtent="146,4" Size="146,4" Style="/progressbarlist.progress_default" Visible="false" />
+        <Image AbsorbsInput="false" BackgroundColor="#222200" BackgroundOpacity="0.800" Location="5,0" Name="BarBkg" PackSize="absolute,absolute" ScrollExtent="159,6" Size="159,6" />
+    </Page>
+    <VolumePage AbsorbsInput="false" BackgroundColor="#FF0000" CellCount="8,1" CellSelectable="false" CellSize="19,19" Location="7,42" MinimumScrollExtent="170,23" Name="Volume" PackSize="a,f" ScrollExtent="172,23" Size="172,23">
+        <Icon ActionData="command petAttack" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="2,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Attack" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command petBackOff" BackgroundTint="#000000" Dragable="true" IconID="11" IconStyle="/IconStyles.button" Location="23,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Backoff" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command petAutoassist" BackgroundTint="#000000" Dragable="true" IconID="11" IconStyle="/IconStyles.button" Location="44,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="AutoAssist" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command petProtectMe" BackgroundTint="#000000" Dragable="true" IconID="12" IconStyle="/IconStyles.button" Location="65,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="ProtectMe" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command petProtectSelf" BackgroundTint="#000000" Dragable="true" IconID="13" IconStyle="/IconStyles.button" Location="86,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="ProtectSelf" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command petFollow" BackgroundTint="#000000" Dragable="true" IconID="14" IconStyle="/IconStyles.button" Location="107,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Follow" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command petStay" BackgroundTint="#000000" Dragable="true" IconID="14" IconStyle="/IconStyles.button" Location="128,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Stay" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+        <Icon ActionData="command petDismiss" BackgroundTint="#000000" Dragable="true" IconID="16" IconStyle="/IconStyles.button" Location="149,2" MaximumSize="19,19" MinimumSize="19,19" MouseOverColor="#FFFF00" Name="Dismiss" ScrollExtent="19,19" Size="19,19" TreatAsButton="true" />
+    </VolumePage>
+    <Page AbsorbsInput="false" Name="WindowFrame" PackSize="absolute,absolute" ScrollExtent="184,94" Size="184,94">
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Name="Frame" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.frame.rect" ScrollExtent="184,94" Size="184,94" />
+        <Page AbsorbsInput="false" BackgroundOpacity="1.000" Location="2,2" Name="Bkg" PackLocation="left,top" PackSize="absolute,absolute" RStyleDefault="/WindowElements.DesktopWindowFrame.data.bkg.rect" ScrollExtent="180,90" Size="180,90" />
+    </Page>
+</Page>
