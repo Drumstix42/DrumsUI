@@ -14,7 +14,22 @@
     <EffectorCycleOpacity Duration="3.000" InitialOpacity="1.000" MaxSpeed="1.200" MinSpeed="1.200" Name="FlashEffector" OpacityOne="0.300" Speed="1.200" />
     <OpacityEffector InitialOpacity="1.000" Name="FadeOutEffector" Speed="4.000" />
     <OpacityEffector Name="FadeInEffector" Speed="4.000" TargetOpacity="1.000" />
-    <Page AbsorbsInput="false" Location="6,6" Name="DailyObjectiveTemplate" PackSize="a,f" ScrollExtent="249,102" Size="249,102">
+<!-- start: Morlane PoP Public Quests update -->
+    <Page AbsorbsInput="false" Location="6,6" Name="PublicQuestTemplate" OnHoverIn="ActiveCheckbox.visible=true" OnHoverOut="ActiveCheckbox.visible=false" PackSize="a,f" ScrollExtent="249,102" Size="249,102" Visible="false">
+        <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="249,102" Size="249,102">
+            <Image Color="#00FF00" Location="0,1" Name="Tier" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" />
+            <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="19,0" Margin="2,1,0,0" MaxLines="1" MinimumSize="0,21" Name="QuestName" PackSize="a,f" ScrollExtent="230,21" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="230,21" TextColor="#F0D080">:f67043296981a7eb:Sample Quest Name</Text>
+            <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="36,22" Margin="3,0,0,0" MaxLines="1" Name="TimerValue" PackLocation="left,fixed" PackSize="absolute,fixed" ScrollExtent="249,17" Size="249,17" TextColor="#FF2B2B">:f670432927b7e0f2:[DEVL]Time Left 01:10:30</Text>
+            <Composite AbsorbsInput="false" Location="22,37" Name="Parts" PackSize="a,f" ScrollExtent="228,22" Size="228,22" SpacingType="Constant" />
+        </Page>
+        <Icon DropToParent="true" IconStyle="/IconStyles.button" Location="0,20" MouseOverColor="#FFFF00" Name="QuestBaubleTemplate" PackLocation="left,top" ScrollExtent="22,22" TreatAsButton="true" Visible="false" />
+    </Page>
+    <Page AbsorbsInput="false" Location="56,43" Name="PublicQuestPartTemplate" PackSize="a,f" ScrollExtent="228,20" Size="228,20" Visible="false">
+        <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Name="Bullet" ScrollExtent="8,17" Size="8,17">:f670432968224c07:-</Text>
+        <Text AbsorbsInput="false" Font="/TextStyles.Chat.ChatStyle" Location="10,0" Name="PartText" PackSize="a,f" ScrollExtent="214,17" ShadowStyle="/ShadowStylesNew.Outline.style" Size="214,17">:f670432948cbdaa4_1:Some sample quest text</Text>
+    </Page>
+<!-- end: Morlane PoP Public Quests update -->
+	<Page AbsorbsInput="false" Location="6,6" Name="DailyObjectiveTemplate" PackSize="a,f" ScrollExtent="249,102" Size="249,102">
         <Page AbsorbsInput="false" Name="Contents" PackSize="a,f" ScrollExtent="249,102" Size="249,102">
             <Image AbsorbsInput="false" Color="#7F00FF" GetsInput="true" Location="0,1" Name="Tier" Rotation="0.500" ScrollExtent="19,19" Size="19,19" Stretch="false" Style="tierstyles.tier3style" Tooltip="Click to show/hide details" />
             <Text AbsorbsInput="false" Font="/TextStyles.Large.LargeStyle" Location="19,0" Margin="2,1,0,0" MaxLines="1" MinimumSize="0,21" Name="ObjectiveName" OnHoverIn="TextColor=&apos;#fae7b6&apos;" OnHoverOut="TextColor=&apos;#F0D080&apos;" PackSize="a,f" ScrollExtent="230,21" ShadowStyle="/ShadowStylesNew.OutlineDrop.style" Size="230,21" TextColor="#F0D080" Tooltip="Click icon to show/hide details">Daily: Kill 25 Creatures</Text>

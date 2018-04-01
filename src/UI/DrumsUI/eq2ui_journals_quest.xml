@@ -82,10 +82,10 @@
                                     <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="207,0" Margin="0,0,5,0" Name="Copper" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#EA9129">:0e1f81bb29a34c65_3:9999</Text>
                                 </Page>
                                 <Scrollbar ArrowPressSound="sounds/button" Control="GrantedRewardPage.ScrollPage" Location="254,33" Name="GrantedRewardScroll" ScrollExtent="22,57" Size="22,57" Style="/CommonElements.ScrollbarVertical.data.style" />
-                                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,34" Name="GrantedRewardPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="238,44" Size="238,44">
-                                    <Page AbsorbsInput="false" Location="1,1" Name="ScrollPage" PackSize="a,a" ScrollExtent="235,43" Size="235,43">
-                                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
-                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="188,42" Size="188,42" TextAlignmentVertical="Center">:0e1f81bb69d2db30:Missing item name</Text>
+                                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,72" Name="GrantedRewardPage" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="257,44" Size="257,44">
+                                    <Page AbsorbsInput="false" Location="1,3" Name="ScrollPage" PackSize="a,a" ScrollExtent="254,43" Size="254,43">
+                                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="3,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="40,40" Size="40,40" TreatAsButton="true" />
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="207,42" Size="207,42" TextAlignmentVertical="Center">:dcd55f6c69d2db30:Missing item name</Text>
                                     </Page>
                                 </Page>
                                 <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="39,145" Name="StatusText" ScrollExtent="259,20" Size="259,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true" />
@@ -264,10 +264,10 @@
                                     <Text DragAccepts="icon" DragType="coin" Font="/Fonts.FontZapf15" Location="207,0" Margin="0,0,5,0" Name="Copper" ScrollExtent="29,20" Size="29,20" TextAlignmentVertical="Center" TextColor="#EA9129">:a2c3b63f29a34c65_7:9999</Text>
                                 </Page>
                                 <Scrollbar ArrowPressSound="sounds/button" Control="GrantedRewardPage.ScrollPage" Location="254,33" Name="GrantedRewardScroll" ScrollExtent="22,57" Size="22,57" Style="/CommonElements.ScrollbarVertical.data.style" />
-                                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,34" Name="GrantedRewardPage" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="238,44" Size="238,44">
-                                    <Page AbsorbsInput="false" Location="1,1" Name="ScrollPage" PackSize="a,a" ScrollExtent="235,43" Size="235,43">
-                                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="1,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="42,42" Size="42,42" TreatAsButton="true" />
-                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="188,42" Size="188,42" TextAlignmentVertical="Center">:a2c3b63f69d2db30_2:Missing item name</Text>
+                                <Page AbsorbsInput="false" Activated="true" BackgroundOpacity="1.000" Location="38,72" Name="GrantedRewardPage" PackSize="a,f" RStyleDefault="/rectlist.chat_bubble_frame" ScrollExtent="257,44" Size="257,44">
+                                    <Page AbsorbsInput="false" Location="1,3" Name="ScrollPage" PackSize="a,a" ScrollExtent="254,43" Size="254,43">
+                                        <Icon BackgroundTint="#000000" IconStyle="/IconStyles.item_list" Location="3,0" MouseOverColor="#FFFF00" Name="row Icon" ScrollExtent="40,40" Size="40,40" TreatAsButton="true" />
+                                        <Text Font="/TextStyles.Normal.NormalStyle" Location="47,0" Name="row Item Name" PackSize="a,f" ScrollExtent="207,42" Size="207,42" TextAlignmentVertical="Center">:dcd55f6c69d2db30:Missing item name</Text>
                                     </Page>
                                 </Page>
                                 <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="39,145" Name="StatusText" ScrollExtent="259,20" Size="259,20" TextAlignment="Center" TextAlignmentVertical="Center" UserMovable="true" UserResizable="true" />
@@ -511,6 +511,7 @@
             </DataSource>
         </Page>
         <Page Name="DailyObjectives" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="647,404" Size="647,404" Visible="false">
+            <Text Color="#FF0000" Font="/TextStyles.VeryLarge.VeryLargeStyle" Location="105,180" Margin="1,1,3,3" Name="PossessionMessage" ScrollExtent="470,50" Size="470,50" Visible="false">:x:Daily Objectives unavailable while in Possession.</Text>
             <Page MinimumSize="598,31" Name="TitleDecoration" PackSize="a,a" ScrollExtent="646,31" Size="646,31">
                 <Text Color="#FFFFAF" Font="/TextStyles.Large.LargeStyle" Location="-78,4" Margin="2,0,0,0" MinimumSize="0,24" Name="TitleText" PackSize="a,a" ScrollExtent="802,24" Size="802,24" TextAlignment="Center">Complete any 2 of the following Objectives</Text>
             </Page>
@@ -558,12 +559,17 @@
             </ImageStyle>
         </Page>
         <Page Name="MissionTimers" PackLocation="left,top" PackSize="absolute,absolute" ScrollExtent="647,404" Size="647,404" Visible="false">
-            <Text Font="/TextStyles.Large.LargeStyle" Location="29,7" MaxLines="1" Name="MissionGroupName" PackSize="absolute,fixed" ScrollExtent="135,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="135,22" TextAlignmentVertical="Center">:x:Mission</Text>
-            <Text Font="/TextStyles.Large.LargeStyle" Location="360,7" Name="TimeUntilReset" PackLocation="right" ScrollExtent="170,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,22" TextAlignmentVertical="Center">:x:Reset Time</Text>
-            <Text Font="/TextStyles.Large.LargeStyle" Location="525,7" Name="Completed" PackLocation="right" ScrollExtent="170,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,22" TextAlignmentVertical="Center">:x:Completed</Text>
-            <Page BackgroundOpacity="1.000" DragAccepts="icon" DragType="icon" Location="6,27" Name="MissionTimersTable" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="634,370" Size="634,370">
-                <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" DropToParent="true" HideIfUnnecessary="true" Location="604,8" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,350" Size="22,350" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
-                <Page AbsorbsInput="false" BackgroundColor="#2D251C" DropToParent="true" Location="13,11" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="634,340" ScrollSize="33,33" Size="634,340">
+            <DataSource Name="DropdownMissionFilterDataSource">
+                <Data Name="New Data" text=":8da6706704533fd9:Default: Sewing and Manequin" />
+                <Data Name="New Data" text=":8da6706787b22ecd:Test" />
+            </DataSource>
+            <Dropdownbox BackgroundOpacity="1.000" DataSource="DropdownMissionFilterDataSource" Location="18,7" MaximumSize="16384,32" MinimumSize="50,32" Name="DropdownMissionFilter" RowTemplate="/CommonElements.Dropdown.data.dropdown_template" ScrollExtent="200,32" Size="200,32" Style="/CommonElements.Dropdown.data.style" />
+            <Text Font="/TextStyles.Large.LargeStyle" Location="29,40" MaxLines="1" Name="MissionGroupName" PackSize="absolute,fixed" ScrollExtent="135,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="135,22" TextAlignmentVertical="Center">:x:Mission</Text>
+            <Text Font="/TextStyles.Large.LargeStyle" Location="360,40" Name="TimeUntilReset" PackLocation="right" ScrollExtent="170,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,22" TextAlignmentVertical="Center">:x:Reset Time</Text>
+            <Text Font="/TextStyles.Large.LargeStyle" Location="525,40" Name="Completed" PackLocation="right" ScrollExtent="170,22" ShadowStyle="/ShadowStylesNew.Outline.style" Size="170,22" TextAlignmentVertical="Center">:x:Completed</Text>
+            <Page BackgroundOpacity="1.000" DragAccepts="icon" DragType="icon" Location="6,60" Name="MissionTimersTable" PackSize="a,a" RStyleDefault="/CommonElements.RoundedGrouper.data.rect" ScrollExtent="634,340" Size="634,340">
+                <Scrollbar ArrowPressSound="sounds/button" Control="ScrollPage" DropToParent="true" HideIfUnnecessary="true" Location="604,8" MaximumSize="22,16384" MinimumSize="22,60" Name="Scroll" PackLocation="right,top" PackSize="fixed,absolute" ScrollExtent="22,324" Size="22,324" Style="/CommonElements.ScrollbarVertical.data.style" Visible="false" />
+                <Page AbsorbsInput="false" BackgroundColor="#2D251C" DropToParent="true" Location="13,11" Name="ScrollPage" PackSize="absolute,absolute" ScrollExtent="634,320" ScrollSize="33,33" Size="634,320">
                     <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="10,0" Name="row Mission Name" PackSize="a,f" ScrollExtent="284,31" ShrinkFontToFit="true" Size="284,31" TextAlignmentVertical="Center">:x:[DEVL]Mission Name</Text>
                     <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="344,0" Name="row Remaining Time" PackLocation="right,top" PackSize="f,f" ScrollExtent="200,31" ShrinkFontToFit="true" Size="200,31" TextAlignmentVertical="Center">:x:3 hours 15 minutes</Text>
                     <Text DropToParent="true" Font="/TextStyles.Normal.NormalStyle" Location="519,0" Name="row Completed" PackLocation="right,top" PackSize="f,f" ScrollExtent="50,31" ShrinkFontToFit="true" Size="50,31" TextAlignment="Center" TextAlignmentVertical="Center">:x:No</Text>

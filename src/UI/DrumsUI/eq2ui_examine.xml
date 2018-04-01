@@ -108,7 +108,7 @@
                 <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_cyan" Location="3,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon7" ScrollExtent="30,30" Size="30,30" />
                 <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_orange" Location="36,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon8" ScrollExtent="30,30" Size="30,30" />
                 <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_turquoise" Location="69,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon9" ScrollExtent="30,30" Size="30,30" />
-                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_grey" Location="102,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon10" ScrollExtent="30,30" Size="30,30" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_black" Location="102,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon10" ScrollExtent="30,30" Size="30,30" />
             </VolumePage>
             <VolumePage CellCount="6,2" CellPadding="3,3" CellSize="30,30" Location="0,136" MinimumScrollExtent="201,69" Name="AddOnPageTwo" ScrollExtent="220,69" Size="220,36">
                 <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_white" Location="3,3" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon1" ScrollExtent="30,30" Size="30,30" />
@@ -120,7 +120,7 @@
                 <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_cyan" Location="3,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon7" ScrollExtent="30,30" Size="30,30" />
                 <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_orange" Location="36,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon8" ScrollExtent="30,30" Size="30,30" />
                 <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_turquoise" Location="69,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon9" ScrollExtent="30,30" Size="30,30" />
-                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_grey" Location="102,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon10" ScrollExtent="30,30" Size="30,30" />
+                <Icon BackgroundTint="#000000" IconStyle="/IconStyles.addon_black" Location="102,36" MaximumSize="30,30" MinimumSize="30,30" MouseOverColor="#FFFF00" Name="Icon10" ScrollExtent="30,30" Size="30,30" />
             </VolumePage>
         </Page>
         <Page BackgroundColor="#00FFFF" Location="7,135" MaximumSize="295,16384" Name="GrowthPage" ScrollExtent="295,66" Size="295,66">

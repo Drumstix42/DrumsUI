@@ -83,37 +83,37 @@
             <Textbox BackgroundOpacity="0.275" Cursor="/Cursor.Text" Location="527,54" MaximumSize="16384,28" MaxLength="3" Name="TextMaxLevel" NumericInteger="true" PackSize="fixed,fixed" ScrollExtent="20,18" Size="20,18" Style="filters_textbox" WrapWidth="Automatic" />
             <Page AbsorbsInput="false" BackgroundOpacity="1.000" GetsInput="false" Location="523,51" Name="MaxLevelFrame" PackSize="absolute, fixed" RStyleDefault="/rectlist.win_plain" ScrollExtent="28,24" Size="28,24" />
             <Page AbsorbsInput="false" Location="404,73" Name="SetLvlClass" ScrollExtent="137,25" Size="137,25">
-                <Text DynamicData="/GameData.Self.SubClass" Name="SubClass" />
-                <Text DynamicData="/GameData.Self.Level" Name="Level" />
-                <Button Name="ClassSelect" />
-                <Button Name="LevelSet" OnActivate="Parent.Parent.TextMaxLevel.Text=Parent.Level.LocalText&#xD;&#xA;tmpNormal=(Parent.Level.LocalText - 10)&#xD;&#xA;tmpCheck=(tmpNormal &lt; 1)&#xD;&#xA;COND=(tmpCheck ? 1 : tmpNormal)&#xD;&#xA;Parent.Parent.TextMinLevel.Text=COND&#xD;&#xA;Activated=false" Visible="false" />
-                <Button Name="CommandClassLevel" OnPress="Parent.ClassSelect.OnPress=&apos;Parent.&apos; ## (Parent.Subclass.LocalText) ## &apos;.Press=true&apos;&#xD;&#xA;Parent.ClassSelect.Press=true&#xD;&#xA;Parent.LevelSet.Activated=true" ScrollExtent="138,26" Size="138,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip="Click to set filters to your level range (10 levels below) and your class.">Set: Level and Class</Button>
-                <Button Name="Assassin" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=1" />
-                <Button Name="Beastlord" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=2" />
-                <Button Name="Berserker" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=3" />
-                <Button Name="Brigand" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=4" />
-                <Button Name="Bruiser" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=5" />
-                <Button Name="Channeler" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=6" />
-                <Button Name="Coercer" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=7" />
-                <Button Name="Conjuror" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=8" />
-                <Button Name="Defiler" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=9" />
-                <Button Name="Dirge" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=10" />
-                <Button Name="Fury" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=11" />
-                <Button Name="Guardian" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=12" />
-                <Button Name="Illusionist" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=13" />
-                <Button Name="Inquisitor" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=14" />
-                <Button Name="Monk" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=15" />
-                <Button Name="Mystic" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=16" />
-                <Button Name="Necromancer" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=17" />
-                <Button Name="Paladin" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=18" />
-                <Button Name="Ranger" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=19" />
-                <Button Name="Shadowknight" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=20" />
-                <Button Name="Swashbuckler" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=21" />
-                <Button Name="Templar" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=22" />
-                <Button Name="Troubador" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=23" />
-                <Button Name="Warden" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=24" />
-                <Button Name="Warlock" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=25" />
-                <Button Name="Wizard" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=26" />
+               <Text DynamicData="/GameData.Self.SubClass" Name="SubClass" />
+               <Text DynamicData="/GameData.Self.Level" Name="Level" />
+               <Button Name="ClassSelect" />
+               <Button Name="LevelSet" OnActivate="Parent.Parent.TextMaxLevel.Text=Parent.Level.LocalText&#xD;&#xA;tmpNormal=(Parent.Level.LocalText - 10)&#xD;&#xA;tmpCheck=(tmpNormal &lt; 1)&#xD;&#xA;COND=(tmpCheck ? 1 : tmpNormal)&#xD;&#xA;Parent.Parent.TextMinLevel.Text=COND&#xD;&#xA;Activated=false" Visible="false" />
+               <Button Name="CommandClassLevel" OnPress="Parent.ClassSelect.OnPress=&apos;Parent.&apos; ## (Parent.Subclass.LocalText) ## &apos;.Press=true&apos;&#xD;&#xA;Parent.ClassSelect.Press=true&#xD;&#xA;Parent.LevelSet.Activated=true" ScrollExtent="138,26" Size="138,26" Style="/CommonElements.SmallPushButton.data.style" Tooltip="Click to set filters to your level range (10 levels below) and your class.">Set: Level and Class</Button>
+               <Button Name="Assassin" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=1" />
+               <Button Name="Beastlord" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=2" />
+               <Button Name="Berserker" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=3" />
+               <Button Name="Brigand" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=4" />
+               <Button Name="Bruiser" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=5" />
+               <Button Name="Channeler" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=6" />
+               <Button Name="Coercer" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=7" />
+               <Button Name="Conjuror" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=8" />
+               <Button Name="Defiler" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=9" />
+               <Button Name="Dirge" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=10" />
+               <Button Name="Fury" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=13"/>
+               <Button Name="Guardian" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=15"/>
+               <Button Name="Illusionist" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=16"/>
+               <Button Name="Inquisitor" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=17"/>
+               <Button Name="Monk" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=18"/>
+               <Button Name="Mystic" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=19"/>
+               <Button Name="Necromancer" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=20"/>
+               <Button Name="Paladin" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=21"/>
+               <Button Name="Ranger" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=22"/>
+               <Button Name="Shadowknight" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=23"/>
+               <Button Name="Swashbuckler" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=24"/>
+               <Button Name="Templar" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=25"/>
+               <Button Name="Troubador" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=27"/>
+               <Button Name="Warden" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=28"/>
+               <Button Name="Warlock" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=29"/>
+               <Button Name="Wizard" OnPress="Parent.Parent.ComboClass.SelectedItemIndex=30"/>
             </Page>
             <Text AbsorbsInput="false" Font="/TextStyles.Normal.NormalStyle" Location="196,35" Margin="5,0,0,0" MaxLines="1" Name="LabelMinimumPrice" PackSize="fixed,fixed" ScrollExtent="75,17" Size="75,17" TextAlignment="Right" TextColor="#F0D080" UserMovable="true">Min Price</Text>
             <Button BackgroundOpacity="0.000" Location="275,34" Name="CommandSetMinPrice" PackLocation="top,left" PackSize="fixed,fixed" ScrollExtent="115,18" Size="115,18" Style="/ButtonStyles.invisible" Tooltip=":5f6b97ae1e062872:Set minimum price for search." />
