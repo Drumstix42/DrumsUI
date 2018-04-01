@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Obsolete>
+	<File>
+		<Path>UI/DrumsUI/DrumsUI/Settings/DrumsUI_CureButtonSettings.xml</Path>
+		<Hash>44e043cad0a0906a33e4e1f5e157b7e5</Hash>
+	</File>
+	<File>
+		<Path>UI/DrumsUI/Alternatives/OUTDATED_eq2ui_mainhud_player(OriginalStyle-OUTDATED).xml</Path>
+		<Hash>8b3b48928eddebe1c0d418f58ceb9dee</Hash>
+	</File>
+	<File>
+		<Path>UI/DrumsUI/eq2ui_inventory_inventory.xml</Path>
+		<Hash>19936c8e8f367efeff4c33fdca297888</Hash>
+	</File>
+	<File>
+		<Path>UI/DrumsUI/images/widgets03.dds</Path>
+		<Hash>42d35835de5e2861501a389446d0d86b</Hash>
+	</File>
+    <File>
+        <Path>UI/DrumsUI/Razc_Attack.xml</Path>
+        <Hash>dabdf47a3a1532ffdc0bb7a04a616379</Hash>
+    </File>
+    <File>
+        <Path>UI/DrumsUI/eq2ui_mainhud_welcome.xml</Path>
+        <Hash>34902BAEB016A744D46FB88625314A1B</Hash>
+    </File>
+</Obsolete>

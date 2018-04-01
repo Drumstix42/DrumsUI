@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Softignore>
+	<File>
+		<Path>UI\DrumsUI\POI\drumsui_castingmacros.xml</Path>
+	</File>
+	<File>
+		<Path>UI\DrumsUI\POI\drumsui_itemnotes.xml</Path>
+	</File>
+	<File>
+		<Path>UI\DrumsUI\POI\drumsui_spelltimer.xml</Path>
+	</File>
+	<File>
+		<Path>UI\DrumsUI\POI\drumsui_textsettings.xml</Path>
+	</File>
+</Softignore>

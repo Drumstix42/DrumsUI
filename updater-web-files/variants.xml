@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Variants>
+	<Group name="UI Color Themes">
+		<Variant name="Default - Blue with Gold borders">
+			<Archive>UI\DrumsUI\Alternatives\Blue_Gold(Default).zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Blue with Silver borders">
+			<Archive>UI\DrumsUI\Alternatives\Blue_Silver.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Blue with Blue borders">
+			<Archive>UI\DrumsUI\Alternatives\Blue_Blue.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Black with Gold borders">
+			<Archive>UI\DrumsUI\Alternatives\Black_Gold.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Black with Silver borders">
+			<Archive>UI\DrumsUI\Alternatives\Black_Silver.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Black with Black borders">
+			<Archive>UI\DrumsUI\Alternatives\Black_Black.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Pink with Gold borders">
+			<Archive>UI\DrumsUI\Alternatives\Pink_Gold.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Pink with Silver borders">
+			<Archive>UI\DrumsUI\Alternatives\Pink_Silver.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Pink with Pink borders">
+			<Archive>UI\DrumsUI\Alternatives\Pink_Pink.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Purple with Gold borders">
+			<Archive>UI\DrumsUI\Alternatives\Purple_Gold.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Purple with Silver borders">
+			<Archive>UI\DrumsUI\Alternatives\Purple_Silver.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+		<Variant name="Purple with Purple borders">
+			<Archive>UI\DrumsUI\Alternatives\Purple_Purple.zip</Archive>
+			<ExtractTo>UI\DrumsUI\images\</ExtractTo>
+		</Variant>
+	</Group>
+	<Group name="Voice (Users) Chat Window">
+		<Variant name="Default - No change from default UI">
+			<Archive>UI\DrumsUI\Alternatives\eq2ui_mainhud_voicechat(Default).zip</Archive>
+			<ExtractTo>UI\DrumsUI\</ExtractTo>
+		</Variant>
+		<Variant name="Voice users align to bottom of window">
+			<Archive>UI\DrumsUI\Alternatives\eq2ui_mainhud_voicechat(BottomAlignedUsers).zip</Archive>
+			<ExtractTo>UI\DrumsUI\</ExtractTo>
+		</Variant>
+	</Group>
+    <Group name="Main Chat Window">
+		<Variant name="Default - Static Input, Right Side, AutoHide Scrollbar">
+			<Archive>UI\DrumsUI\Alternatives\eq2ui_mainhud_mainchat(Default-RightSide).zip</Archive>
+			<ExtractTo>UI\DrumsUI\</ExtractTo>
+		</Variant>
+		<Variant name="Hidable Input, Right Side, AutoHide Scrollbar">
+			<Archive>UI\DrumsUI\Alternatives\eq2ui_mainhud_mainchat(HidableChatInput).zip</Archive>
+			<ExtractTo>UI\DrumsUI\</ExtractTo>
+		</Variant>
+		<Variant name="Non-Hidable Input, Left Side Static Scrollbar">
+			<Archive>UI\DrumsUI\Alternatives\eq2ui_mainhud_mainchat(OriginalLeftSide).zip</Archive>
+			<ExtractTo>UI\DrumsUI\</ExtractTo>
+		</Variant>
+	</Group>
+    <Group name="Casting Bar">
+        <Variant name="NO Countdown - Normal Casting Bar">
+            <Archive>UI\DrumsUI\Alternatives\eq2ui_mainhud_casting(Default).zip</Archive>
+            <ExtractTo>UI\DrumsUI\</ExtractTo>
+        </Variant>
+    </Group>
+    <Group name="Target Casting Bar">
+        <Variant name="NO Countdown - Normal Target Casting Bar">
+            <Archive>UI\DrumsUI\Alternatives\DrumsUI_TargetCasting(Default).zip</Archive>
+            <ExtractTo>UI\DrumsUI\DrumsUI_custom\</ExtractTo>
+        </Variant>
+    </Group>
+	<Group name="EQ2Map Icons">
+        <Variant name="Time Remaining Casting Bar">
+            <Archive>UI\DrumsUI\Alternatives\DrumsUI_MapIcons.zip</Archive>
+            <ExtractTo>UI\DrumsUI\</ExtractTo>
+        </Variant>
+    </Group>
+</Variants>

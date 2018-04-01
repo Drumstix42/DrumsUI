@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Message>
+	<Number>2015112203</Number>
+	<Text>
+Version 2.07 (Nov 22, 2015)
+See patch notes for the changes.
+
+If you are having patcher problems, check Sticky @ EQ2Interface.com in DrumsUI section.
+Report UI problems also @ EQ2Interface.com
+	</Text>
+	<Suspend>false</Suspend>
+	<ShowToNewUsers>true</ShowToNewUsers>
+</Message>
