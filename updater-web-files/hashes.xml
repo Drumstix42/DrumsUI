@@ -135,16 +135,6 @@
         <Size>788347</Size>
     </File>
     <File>
-        <Path>UI/DrumsUI/Alternatives/RoundIconBorders(Default).zip</Path>
-        <Hash>68DB761A3840D55BDE4B6FAA4E3CC6DB</Hash>
-        <Size>7651</Size>
-    </File>
-    <File>
-        <Path>UI/DrumsUI/Alternatives/SquareIconBorders.zip</Path>
-        <Hash>3B1F1EE18673D48224D646D0A3BDB7DD</Hash>
-        <Size>4473</Size>
-    </File>
-    <File>
         <Path>UI/DrumsUI/DrumsUI_browser_favorites.xml</Path>
         <Hash>5B7B0BEA1885FDBBC241FAC3AFA9D6CD</Hash>
         <Size>2625</Size>
@@ -171,8 +161,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/DrumsUI_Custom/DrumsUI_MenuWindow.xml</Path>
-        <Hash>DC2F8180E0BE8A6D94DB68953AF0B3AD</Hash>
-        <Size>349365</Size>
+        <Hash>6B07D236D54AFE69585E89E65E8FBCFE</Hash>
+        <Size>352693</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/DrumsUI_Custom/DrumsUI_STI.xml</Path>
@@ -206,8 +196,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/DrumsUI_Custom/Market/Market_Favorites1.xml</Path>
-        <Hash>967792A6F6B8871221B757B93E065386</Hash>
-        <Size>28293</Size>
+        <Hash>9F27FDD82AC3BBF291FAF989FAE99334</Hash>
+        <Size>26894</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/DrumsUI_Custom/Market/Market_Favorites2.xml</Path>
@@ -221,8 +211,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/DrumsUI_Custom/Market/Market_Favorites4.xml</Path>
-        <Hash>019E9A5D35ED0DF37FFAA8F11378E13D</Hash>
-        <Size>26455</Size>
+        <Hash>FF0F82849A5F445431621D67C341CC93</Hash>
+        <Size>25666</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/DrumsUI_Custom/Market/Market_Favorites5.xml</Path>
@@ -261,8 +251,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/DrumsUI_Custom/Settings/DrumsUI_StatBarSettings.xml</Path>
-        <Hash>7AA522BC50BA9228D665630AA2DADE66</Hash>
-        <Size>10952</Size>
+        <Hash>EFEC1A0B9BDDCBCA12964C38F5BB40AC</Hash>
+        <Size>11346</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/DrumsUI_Custom/Settings/DrumsUI_TextSettings.xml</Path>
@@ -306,8 +296,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_examine.xml</Path>
-        <Hash>3375E182BFB16EEA2B222A65448068E2</Hash>
-        <Size>64368</Size>
+        <Hash>C253386E3258246C270125756D337DE4</Hash>
+        <Size>64370</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_hud_zoning.xml</Path>
@@ -336,8 +326,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_inventory_guildbank.xml</Path>
-        <Hash>ECCF92220A48E24CEB30C7F45C76470D</Hash>
-        <Size>28254</Size>
+        <Hash>DF6FB0BA93009FAE10FF2348D297D297</Hash>
+        <Size>28245</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_inventory_loot.xml</Path>
@@ -346,23 +336,23 @@
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_inventory_market.xml</Path>
-        <Hash>46E942882FC40DAACDF140C8322D335A</Hash>
-        <Size>83127</Size>
+        <Hash>07BF812C1A21F7291BC572CAFF02BC10</Hash>
+        <Size>83080</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_inventory_merchant.xml</Path>
-        <Hash>DFFE2745EF33C916975DAF8DA8B12B2A</Hash>
-        <Size>17458</Size>
+        <Hash>5AEA739F681076A3551A295A513913BA</Hash>
+        <Size>17871</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_journals_active.xml</Path>
-        <Hash>B26B1B08E96925281A6FE9F23B16AC63</Hash>
-        <Size>7868</Size>
+        <Hash>52C2D4A3388AC9B18DB77D1D9DE6EE18</Hash>
+        <Size>10016</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_journals_quest.xml</Path>
-        <Hash>81889B39B8E6042A3F572E36B6595C92</Hash>
-        <Size>97957</Size>
+        <Hash>6767EDEC915BF573BD9A92623D898E32</Hash>
+        <Size>98830</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_listboxrow_mercenary_current_template.xml</Path>
@@ -416,8 +406,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_mainhud_experience.xml</Path>
-        <Hash>B53109967855D255598CF732C58352DA</Hash>
-        <Size>41226</Size>
+        <Hash>A8697CC27B9C51BC82C192EF734C6BAC</Hash>
+        <Size>53277</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_mainhud_groupmembers.xml</Path>
@@ -451,8 +441,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_mainhud_knowledge.xml</Path>
-        <Hash>FA9CC74097A920D7762796F12D2A823C</Hash>
-        <Size>54253</Size>
+        <Hash>90EC4F88D5E1CF029473B0C7C8B11503</Hash>
+        <Size>65047</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_mainhud_mail.xml</Path>
@@ -481,8 +471,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_mainhud_persona.xml</Path>
-        <Hash>CEAAB74DC4E39F8110F7BB2A1244A2CC</Hash>
-        <Size>294764</Size>
+        <Hash>4577EF6AC856DED7A27056360E6ECA35</Hash>
+        <Size>324875</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_mainhud_pet.xml</Path>
@@ -511,8 +501,8 @@
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_mainhud_startbutton.xml</Path>
-        <Hash>3A8A9960B516B57A3908B942AF3DE97C</Hash>
-        <Size>96709</Size>
+        <Hash>6681EC08BC44234776E33CEA0F3E54EF</Hash>
+        <Size>99653</Size>
     </File>
     <File>
         <Path>UI/DrumsUI/eq2ui_mainhud_target.xml</Path>
@@ -576,7 +566,7 @@
     </File>
     <File>
         <Path>UI/DrumsUI/images/icons/icon_transp1.dds</Path>
-        <Hash>810E32167F45F9BAB86FD3B3C3DD6366</Hash>
+        <Hash>5776CB42BAFF09E57005610AB5CA633B</Hash>
         <Size>262272</Size>
     </File>
     <File>
@@ -586,7 +576,7 @@
     </File>
     <File>
         <Path>UI/DrumsUI/images/specialelements.dds</Path>
-        <Hash>E46A464A29763F7294676F9FBA27E888</Hash>
+        <Hash>BACC2D8155DECEC955C1061F845AD040</Hash>
         <Size>1048704</Size>
     </File>
     <File>
@@ -601,7 +591,7 @@
     </File>
     <File>
         <Path>UI/DrumsUI/images/window_elements_specific.dds</Path>
-        <Hash>E127284DB1284E1735C3183674815BF9</Hash>
+        <Hash>838B28D748228B7C73287D2247D2B59F</Hash>
         <Size>1048704</Size>
     </File>
     <File>
